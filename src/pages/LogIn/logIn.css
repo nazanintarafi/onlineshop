@@ -1,0 +1,85 @@
+body{
+    height: 100%!important;
+    margin: 0;
+    padding: 0;
+}
+.signIn{
+    background-color: white;
+    position: relative;
+    z-index: 4;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+}
+.signInContent{
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+}
+.signInContent h2{
+    margin-top: 60px;
+    margin-bottom:30px;
+    font-size: 25px;
+}
+.logInContent h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    color: white;
+}
+.logIn{
+    background-color: #F36B07;
+    position: absolute;
+    z-index: 6;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    box-sizing: border-box;
+    display: block;
+    top:140px;
+}
+.logInContent{
+    text-align: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #F36B07;
+    
+}
+.ligInContent{
+    text-align : center;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+}
+.test{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input::placeholder{
+    color: #000000b8;
+    font-size: 12px;
+    font-weight: bold;
+}
+input{
+    border: none;
+    border-bottom: 2px solid #0000006b;
+    opacity: 0.6;
+    width: 70%;
+    padding: 8px;
+    margin: 15px auto;
+    background-color: transparent;
+}
+
+.buttonSubmit{
+    text-align: center;
+    margin: 50px auto;
+    padding-bottom: 30px;
+}

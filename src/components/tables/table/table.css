@@ -1,0 +1,21 @@
+.table{
+    border: 3px white solid;
+}
+.glassesTitle{
+    text-align: right;
+    position: relative;
+    margin-top: 12px;
+}
+.glassesTitle h4{
+    font-size: 13px;
+    color: black;
+}
+.glassesTitle::after{
+    content: '';
+    position: absolute;
+    height: 1.7px;
+    width: 67%;
+    left:5px;
+    background-color: #ff6d02;
+    top: 50%;
+}

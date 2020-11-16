@@ -1,0 +1,13 @@
+.ProfileMenu{
+    text-align: right;
+    margin:auto;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: relative;
+    right: 0;
+    line-height: 50px;
+}
+.ProfileMenu li a{
+    color: #080957;
+}

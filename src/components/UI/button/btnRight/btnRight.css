@@ -1,0 +1,56 @@
+
+.rightBackgroundButton{
+    background-color: #BFBFCF;
+    height: 76px;
+    width: 24px;
+    position: relative;
+    top:-20px;
+    left: 10px;
+}
+.rightButton{
+    background-color: white;
+    padding: 0px 9px 2px 9px;
+    color: black;
+    font-weight: 900;
+    border-radius: 50%;
+    border: #BFBFCF 7px solid;
+    margin-top: 17px;
+    margin-right: 3px;
+}
+.rightButton img{
+    align-items: center;
+    margin: auto;
+    margin-bottom: 3px;
+    height: 12px;
+}
+.rightButton:focus{
+    outline: none;
+}
+.rotate{
+    transform:rotate(180deg);
+}
+.rightButton::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    z-index: 300;
+    right: 8px;
+    top: -8px;
+    border-top: 22px solid white;
+    border-left: white solid 10px;
+    border-right: white solid 11px;
+    border-bottom: 3px solid white;
+    border-radius: 24px 0px 24px 0px;
+}
+.rightButton::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    z-index: 300;
+    left: -5px;
+    top: 57px;
+    border-top: 22px solid white;
+    border-right:white solid 11px;
+    border-left: white solid 10px;
+    border-radius: 0px 39px 0px 23px;
+}

@@ -1,0 +1,45 @@
+body {
+    background-color: #bfbfcf;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+}
+.bodyToggle{
+    background-color:white;
+    position: relative;
+    right: 10px;
+    height: 100%;
+    z-index: 5;
+}
+.btnRight{
+    position: absolute;
+    right: 2px;
+    top: 200px;
+}
+
+
+@media only screen and (min-width: 337px){
+    .btnRight{
+        top: 260px;
+    }
+}
+@media only screen and (min-width: 440px){
+    .btnRight{
+        top: 300px;
+    }
+}
+@media only screen and (min-width: 514px){
+    .btnRight{
+        top: 330px;
+    }
+}
+@media only screen and (min-width: 586px){
+    .btnRight{
+        top: 360px;
+    }
+}
+@media only screen and (min-width: 647px){
+    .btnRight{
+        top: 430px;
+    }
+}

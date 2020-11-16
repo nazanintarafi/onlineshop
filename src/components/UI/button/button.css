@@ -1,0 +1,42 @@
+.Button{
+    background-color: white;
+    outline: none;
+    border: 2px solid #FF6D02;
+    color: #FF6D02;
+    width: 95px;
+    font-size: 12px;
+    align-items: center;
+    margin: auto;
+    border-radius: 40px;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+.Button:focus{
+    outline: none;
+}
+
+.login{
+    border: white;
+    box-shadow: #707070;
+    color: black;
+    font-weight: 700;
+    width: 50%;
+}
+.signUp{
+    border: white;
+    box-shadow: #707070;
+    color: white;
+    font-weight: 700;
+    width: 50%;
+    background-color: #FF6D02;
+}
+.submit{
+    background-color: #FF6D02;
+    width: 60%;
+    color: white;
+}
+.cansel{
+    width: 30%;
+    border: 1px solid #FF6D02;
+    color: #FF6D02;
+}

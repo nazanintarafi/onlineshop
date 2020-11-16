@@ -1,0 +1,114 @@
+.mainMenu{
+    direction: rtl;
+    text-align: right;
+    margin: auto;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0%;
+    background-color: red;
+    width: 100%;
+    color: #080957;
+    height: 100%;
+    overflow: hidden;
+}
+.Logo{
+    padding: 40px 16px;
+}
+.menuWidth{
+    width: 55%;
+    background-color: pink;
+}
+.menuTitre{
+    align-items: center;
+}
+.access ul{
+    padding-right:15px;
+}
+.access{
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+.access ul{
+    list-style: none;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+}
+.access ul li {
+    color: #080957;
+    position: relative;
+    float: right;
+    width: 100%;
+}
+.access ul li span{
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    margin: auto;
+    font-weight: 400;
+}
+.access li > ul {
+    display: block;
+    height: 0;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -ms-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+.access li:hover > ul {
+    height: 47px;
+    overflow:visible;
+}
+.access li ul > li a:hover {
+    font-weight:600;
+}
+.subMenu{
+    font-size: 12px;
+    padding: 12px 0;
+}
+.aboutUs{
+    list-style: none;
+    padding-right: 15px;
+    font-size: 13px;
+    line-height: 25px;
+}
+.aboutUs li a{
+    color: #080957;
+    text-decoration: none;
+}
+.List svg{
+    font-weight: bold;
+    font-size: 20px;
+}
+.access ul li{
+    line-height: 25px;
+}
+.profile span{
+    font-size: 14px;
+    padding-right: 7px;
+}
+.profile svg{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.subMenu:hover{
+    color: #FF6D02;
+    transition: 0.5s;
+}
+.subMenu:hover svg{
+    transform: rotate(-90deg);
+    color: #FF6D02;
+    transition: 0.5s;
+}
+.access.bi-chevron-compact-left{
+    font-weight: 900;
+    height: 12px;
+}

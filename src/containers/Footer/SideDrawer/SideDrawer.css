@@ -1,0 +1,16 @@
+.sideDrawer{
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    direction: rtl;
+    z-index: 99;
+    background-color: pink;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+.Home{
+    display: none;
+}

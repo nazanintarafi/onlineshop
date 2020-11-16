@@ -1,0 +1,221 @@
+body{
+    margin-bottom: 60px;
+    direction: rtl;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin-top: 40px;
+}
+.menuToggle{
+    background-color: white;
+}
+.homeHeader{
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    padding: 8px;
+    z-index: 5;
+}
+.question img{
+    width: 100%;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.boxes li{
+    list-style: none;
+}
+.boxes li img{
+    width: 100%;
+}
+.banner{
+    text-align: center;
+    margin: auto;
+    padding:12px;
+}
+.banner li{
+    list-style: none;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 12px;
+}
+.banner li img{
+    width: 100%;
+}
+.monoSlide div img{
+    width: 100%;
+}
+.monoSlide {
+    position: relative;
+    z-index: 1;
+}
+.monoSlide ul.slick-dots{
+    position: absolute;
+    bottom: 12px;
+}
+.monoSlide .slick-prev:before, .slick-next:before {
+    color: #080819!important;
+    opacity: 0.3!important;
+}
+.monoSlide button.slick-next{
+    position: absolute;
+    right: 12px;
+}
+.monoSlide button.slick-prev{
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+}
+.groups img{
+    width: 100%;
+}
+.condition{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items:center;
+    box-sizing: border-box;
+    height: 100px;
+    opacity: 0.8;
+}
+.condition div{
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+.img_condition{
+    width: 31px;
+}
+.img_condition img{
+    width: 100%;
+}
+.condition p{
+   font-size: 7px;
+   padding-top: 5px;
+}
+.condition p:first-child{
+    font-size: 1px;
+ }
+ .call{
+     text-align: right;
+ }
+ .call h4{
+     font-size: 10px;
+ }
+ .callFooter{
+     text-align: center;
+ }
+ .callFooter a{
+     color: black;
+     font-size: 12px;
+     width: 100%;
+ }
+ .callFooter a img{
+    padding-left: 4px;
+}
+.call span{
+    width: 100%;
+    line-height: 30px;
+}
+.answer{
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    width: 80%;
+}
+.answer h4{
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+.email{
+    display: flex;
+    align-items: center;
+}
+.email div{
+    padding-left: 5px;
+    padding-right: 15%;
+}
+.email span{
+    margin: 0;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+}
+.enamad{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.enamad img{
+    width: 100%;
+    margin-top: 12px;
+}
+.answer p{
+    font-size: 10px;
+    line-height: 19px;
+    margin-top: 12px;
+    margin-bottom: 100px;
+}
+.titreFooter{
+    font-size: 17px;
+}
+.productSlider{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.amazingProduct{
+    background-color: #D4D3E3;
+}
+.productSlider h2{
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.newProduct{
+    background-color: #7577CD;
+    color: white;
+}
+.banner2 img{
+    width: 100%;
+}
+.glassesTitle{
+    text-align: right;
+    position: relative;
+    margin-top: 12px;
+}
+.glassesTitle h4{
+    font-size: 13px;
+    color: black;
+}
+.glassesTitle::after{
+    content: '';
+    position: absolute;
+    height: 1.7px;
+    width: 67%;
+    left:5px;
+    background-color: #ff6d02;
+    top: 50%;
+}
+.table  {
+    text-align: center;
+    margin: auto;
+}
+.amazingProductBlue{
+    background-color: #080a57;
+    color: white;
+}
+.groups .row{
+    width: 100%;
+    text-align: 100%;
+    margin: auto;
+}

@@ -1,0 +1,55 @@
+
+.backgroundButton{
+    background-color: white;
+    height: 40px;
+    width: 70px;
+    position: relative;
+    top:-20px;
+    left: 10px;
+}
+.button{
+    background-color: #FF6D02;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-weight: 900;
+    border-radius: 50%;
+    border: white 8px solid;
+    box-shadow: #f36b07 0px 14px 0px 1px;
+
+}
+.button img{
+    align-items: center;
+    margin: auto;
+}
+.button:focus{
+    outline: none;
+}
+.Rotate{
+    transform:rotate(180deg);
+    padding-top: 10px;
+}
+.button::after{
+    content: "";
+    background-color: white;
+    position: absolute;
+    z-index: 300;
+    right: -10px;
+    top: 19.5px;
+    border-top: 22px solid #f36b07;
+    border-left: #f36b07 solid 10px;
+    border-right: #f36b07 solid 11px;
+    border-bottom: 3px solid #f36b07;
+    border-radius: 20px 0px 8px 9px;
+}
+.button::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    z-index: 300;
+    left: -9px;
+    top: 20px;
+    border-top: 22px solid #f36b07;
+    border-right:#f36b07 solid 10px;
+    border-left: #f36b07 solid 10px;
+    border-radius: 2px 20px 6px 19px;
+}
