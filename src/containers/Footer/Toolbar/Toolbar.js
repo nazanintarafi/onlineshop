@@ -10,18 +10,22 @@ import menu from '../../../assets/images/Repeat Grid 3.png';
 import contact from '../../../assets/images/Group 1288.png';
 import {Link} from 'react-router-dom';
 import { timers } from 'jquery';
+import { useHistory, useLocation, useParams } from "react-router-dom";
 const Toolbar=(props)=>{
+    let history = useHistory();
     const [showDrawer,setShowDrawer] = useState(false);
     const [openSideDrawer,setOpenSideDrawer] = useState(false);
     const openDrawer=()=>{
         setShowDrawer(true)
     }
     const sideClosed=()=>{
+        history.push('/')//alan test kon
         setShowDrawer(false)
     }
 
     return(
-        <React.Fragment>
+        
+        <>
             <footer className="toolbarStyle" style={{opacity:showDrawer?'0':'1'}}>
                 <div className="phone">
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/"><img src={home} alt="home" /></Link></div></span>
@@ -30,7 +34,7 @@ const Toolbar=(props)=>{
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/contact"><img src={contact} alt="contact" /></Link></div></span>
                 </div>
             </footer>
-        </React.Fragment>
+        </>
 
     )
 }
