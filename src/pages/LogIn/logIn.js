@@ -19,8 +19,8 @@ const LogIn=(props)=>{
                     <div className="signInContent">
                         <h2>ثبت نام</h2>
                         <form  style={{opacity:top?'1':'0',transition:top?'1s':'1s'}}>
-                            <div><input type="number" placeholder="شماره همراه"></input></div>
-                            <div><input type="text" placeholder="سوال امنیتی"></input></div>
+                            <div><input type="number" placeholder="شماره همراه" className="input"></input></div>
+                            <div><input type="text" placeholder="سوال امنیتی" className="input"></input></div>
                             <div className="buttonSubmit">
                                 <Button btnType="signUp">ثبت نام مشتری</Button>
                             </div>
@@ -30,8 +30,8 @@ const LogIn=(props)=>{
                         <div className="logInContent">
                             <h2>ورود</h2>
                             <form  style={{opacity:top?'0':'1',transition:top?'3s':'null'}}>
-                                <div><input type="number" placeholder="شماره همراه"></input></div>
-                                <div><input type="text" placeholder="رمز عبور"></input></div>
+                                <div><input type="number" placeholder="شماره همراه" className="input"></input></div>
+                                <div><input type="text" placeholder="رمز عبور" className="input"></input></div>
                                 <div className="buttonSubmit">
                                     <Button btnType="login">ورود</Button>
                                 </div>

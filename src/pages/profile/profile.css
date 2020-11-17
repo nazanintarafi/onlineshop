@@ -18,11 +18,16 @@
     right: 2px;
     top: 200px;
 }
-
+.Content{
+    margin-top: 200px;
+}
 
 @media only screen and (min-width: 337px){
     .btnRight{
         top: 260px;
+    }
+    .Content{
+        margin-top: 300px;
     }
 }
 @media only screen and (min-width: 440px){
@@ -43,5 +48,8 @@
 @media only screen and (min-width: 647px){
     .btnRight{
         top: 430px;
+    }
+    .Content{
+        margin-top: 450px;
     }
 }

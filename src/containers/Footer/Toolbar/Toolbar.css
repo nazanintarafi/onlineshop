@@ -10,7 +10,8 @@
       justify-content: center;
       z-index: 10;
       background-color: white;
-      border-top: 2px solid #21252912;
+      border-top: 1px solid #2125290d;
+      box-shadow: 0px 0px 6px 1px #0000001a;
       
 }
 .toolbarItem{
@@ -19,7 +20,7 @@
 }
 .toolbarItem:hover .imgBorder{
       border-radius: 50%;
-      box-shadow: 0px 6px 0px 1px #21252914;
+      box-shadow: 0px 6px 0px 1px #2125290d, 0px 0px 4px -1px #21252959 ;
       position: relative;
       top: -10px;
       left: -5px;
@@ -27,13 +28,16 @@
       z-index: 11;
       width: 40px;
       height: 35px;
+      align-items: center;
       background-color: white;
+      border: 1px solid #2125291c;
       transition: box-shadow 0.3s;
-      border: 3px solid #21252926;
 }
 .toolbarItem:hover img{
-      width: 20px;
-      padding-bottom: 8px;
+      width: 22px;
+      margin-bottom: 25px;
+      align-items: center;
+      transition: all 0.4s;
 }
 .phone span{
       background-color: white;
@@ -50,14 +54,14 @@
       position: absolute;
       z-index: 300;
       right: -19px;
-      top: -4px;
+      top: -6px;
       border-top: 22px solid white;
       border-left: white solid 10px;
       border-right: white solid 11px;
       border-bottom: 3px solid white;
       border-radius: 25px 2px 19px 0px;
-      box-shadow: -3px -4px 8px -4px #21252936;
-      transition: box-shadow 0.5s;
+      box-shadow: -3px -4px 8px -4px #2125291f;
+      transition: box-shadow 3s;
 }
 .toolbarItem:hover::before{
       content: "";
@@ -65,11 +69,11 @@
       position: absolute;
       z-index: 300;
       left: -8px;
-      top: -4px;
+      top: -5px;
       border-top: 24px solid white;
       border-right:white solid 10px;
       border-left: white solid 11px;
       border-radius: 2px 25px 0px 19px;
-      box-shadow: 2px -3px 4px -1px #21252936;
-      transition: box-shadow 0.5s;
+      box-shadow: 2px -3px 4px -1px #2125291f;
+      transition: box-shadow 3s;
   }

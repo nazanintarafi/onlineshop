@@ -3,7 +3,7 @@ import './profile.css';
 import ProfileMenu from '../../components/profileMenu/profileMenu';
 import Header from '../../containers/profileHeader/profileHeader';
 import BtnRight from '../../components/UI/button/btnRight/btnRight';
-import userName from '../../components/ProfileComponents/userName/userName';
+import UserName from '../../components/ProfileComponents/userName/userName';
 const Profile=(props)=>{
     const [openMenu,setOpenMenu] = useState(false);
     const MenuToggle=(props)=>{
@@ -20,8 +20,8 @@ const Profile=(props)=>{
                     transition:openMenu?'all 1s':'all 1s',zIndex:openMenu?'100':"null"}}
                 >
                     <Header rightToggle={openMenu} titre="پروفایل"/>
-                    <div >
-                        <userName />
+                    <div className="Content">
+                        <UserName />
                     </div>
                     <div className="btnRight">
                         <BtnRight clicked={MenuToggle}/>
