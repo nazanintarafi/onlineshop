@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Table=(props)=>{
     return(
         <>
-            <div className="glassesTitle" style={{}}>
+            <div className="glassesTitle">
                 <h4>{props.titre}</h4>
             </div>
             <table className="table table-bordered">

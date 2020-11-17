@@ -3,6 +3,7 @@ import './profile.css';
 import ProfileMenu from '../../components/profileMenu/profileMenu';
 import Header from '../../containers/profileHeader/profileHeader';
 import BtnRight from '../../components/UI/button/btnRight/btnRight';
+import userName from '../../components/ProfileComponents/userName/userName';
 const Profile=(props)=>{
     const [openMenu,setOpenMenu] = useState(false);
     const MenuToggle=(props)=>{
@@ -20,17 +21,7 @@ const Profile=(props)=>{
                 >
                     <Header rightToggle={openMenu} titre="پروفایل"/>
                     <div >
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
-                        <h1>hi</h1>
+                        <userName />
                     </div>
                     <div className="btnRight">
                         <BtnRight clicked={MenuToggle}/>
