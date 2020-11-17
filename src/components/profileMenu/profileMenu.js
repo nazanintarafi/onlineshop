@@ -4,9 +4,7 @@ import {Link} from 'react-router-dom';
 import {BrowserRouter,Route} from 'react-router-dom';
 const ProfileMenu=(props)=>{
     return(
-        <ul className="ProfileMenu"  style={{
-            display:props.openMenu?'block':'none'}}>
-                <li></li>
+        <ul className="ProfileMenu"  style={{display:props.rightToggle?'block':'none'}}>
             <li>
                 <Link to="/profile">پروفایل</Link>
             </li>

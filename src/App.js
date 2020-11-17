@@ -17,9 +17,9 @@ const App=() =>{
   return(
     <BrowserRouter>
         <Toolbar />
+        <Route path="/" exact component={HomePage} />
         <Route path="/profile" exact component={ProfileMainBody}/>
         <Route path="/login" exact component={LogIn} />
-        <Route path="/" exact component={HomePage} />
         <Route path="/kitchen" exact component={HomePage} />
         <Route path="/cosmetics" exact component={HomePage} />
         <Route path="/digital" exact component={HomePage} />

@@ -4,30 +4,30 @@ import {BrowserRouter,Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 const Table=(props)=>{
     return(
-        <React.Fragment>
+        <>
             <div className="glassesTitle" style={{}}>
                 <h4>{props.titre}</h4>
             </div>
             <table className="table table-bordered">
                 <tbody>
                     <tr>
-                        <td><Link to="/home">{props.glassesImg1}</Link></td>
-                        <td><Link to="/home">{props.glassesImg2}</Link></td>
-                        <td><Link to="/home">{props.glassesImg3}</Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg1} alt="product" /></Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg2} alt="product" /></Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg3} alt="product" /></Link></td>
                     </tr>
                     <tr>
-                        <td><Link to="/home">{props.glassesImg4}</Link></td>
-                        <td><Link to="/home">{props.glassesImg5}</Link></td>
-                        <td><Link to="/home">{props.glassesImg6}</Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg4} alt="product" /></Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg5} alt="product" /></Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg6} alt="product" /></Link></td>
                     </tr>
                     <tr>
-                        <td><Link to="/home">{props.glassesImg7}</Link></td>
-                        <td><Link to="/home">{props.glassesImg8}</Link></td>
-                        <td><Link to="/home">{props.glassesImg9}</Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg7} alt="product" /></Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg8} alt="product" /></Link></td>
+                        <td><Link to="/home"><img src={props.glassesImg9} alt="product" /></Link></td>
                     </tr>
                 </tbody>
             </table>
-        </React.Fragment>
+        </>
     )
 }
 export default Table;

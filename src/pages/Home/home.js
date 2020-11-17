@@ -61,7 +61,7 @@ const Home=(props) =>{
   };
   
   return(
-    <React.Fragment>
+    <>
       <div className="Home">
         <section className="menuToggle"  style={{
                     position:props.show?'relative':'relative',right:props.show?'150px':'0px',
@@ -349,7 +349,7 @@ const Home=(props) =>{
           </div>
         </section>
       </div>
-    </React.Fragment>
+    </>
   )
 }
 export default React.memo(Home);

@@ -13,13 +13,16 @@ const Profile=(props)=>{
             <div className="Profile" style={{backgroundColor:"#bfbfcf"}}>
                 <ProfileMenu  rightToggle={openMenu}/>
                 <section className="bodyToggle" style={{
-                    position:openMenu?'relativ':'relative',right:openMenu?'50%':'10px',
-                    top:openMenu?'110px':'0px',height:openMenu?'350px':'100%',width:openMenu?'100%':'100%',
+                    position:openMenu?'fixed':'relative',right:openMenu?'50%':'10px',
+                    top:openMenu?'90px':'0px',height:openMenu?'390px':'100%',width:openMenu?'100%':'100%',
                     overflowX:openMenu?'hidden':'hidden',
                     transition:openMenu?'all 1s':'all 1s',zIndex:openMenu?'100':"null"}}
                 >
-                    <Header rightToggle={openMenu}/>
+                    <Header rightToggle={openMenu} titre="پروفایل"/>
                     <div >
+                        <h1>hi</h1>
+                        <h1>hi</h1>
+                        <h1>hi</h1>
                         <h1>hi</h1>
                         <h1>hi</h1>
                         <h1>hi</h1>
