@@ -62,7 +62,7 @@ const Home=(props) =>{
   
   return(
     <React.Fragment>
-      <body>
+      <div className="Home">
         <section className="menuToggle"  style={{
                     position:props.show?'relative':'relative',right:props.show?'150px':'0px',
                     top:props.show?'110px':'0px',height:props.show?'350px':'100%',overflow:props.show?'hidden':'auto',
@@ -348,7 +348,7 @@ const Home=(props) =>{
             </div>
           </div>
         </section>
-      </body>
+      </div>
     </React.Fragment>
   )
 }

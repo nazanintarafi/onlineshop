@@ -9,8 +9,8 @@ const Profile=(props)=>{
         setOpenMenu(!openMenu)
     }
     return(
-        <React.Fragment>
-            <body style={{backgroundColor:"#bfbfcf"}}>
+        <>
+            <div className="Profile" style={{backgroundColor:"#bfbfcf"}}>
                 <ProfileMenu  rightToggle={openMenu}/>
                 <section className="bodyToggle" style={{
                     position:openMenu?'relativ':'relative',right:openMenu?'50%':'10px',
@@ -33,8 +33,8 @@ const Profile=(props)=>{
                         <BtnRight clicked={MenuToggle}/>
                     </div>
                 </section>
-            </body>
-        </React.Fragment>
+            </div>
+        </>
     )
 }
 export default Profile;
