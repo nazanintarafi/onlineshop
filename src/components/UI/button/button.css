@@ -17,7 +17,7 @@
 
 .login{
     border: white;
-    box-shadow: #707070;
+    box-shadow:1px 2px 11px 0px #707070ad;
     color: black;
     font-weight: 700;
     width: 50%;
@@ -30,14 +30,22 @@
     width: 50%;
     background-color: #FF6D02;
 }
+.cancel{
+    width: 30%;
+    border: 1px solid #FF6D02;
+    color: #FF6D02;
+    background-color: white;
+}
+.changePass{
+    background-color: #FF6D02;
+    width: 30%;
+    color: white;
+    height: 25px;
+    border: none;
+}
 .submit{
     background-color: #FF6D02;
     width: 60%;
     color: white;
     height: 30px;
-}
-.cansel{
-    width: 30%;
-    border: 1px solid #FF6D02;
-    color: #FF6D02;
 }

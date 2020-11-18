@@ -9,6 +9,7 @@
     border: none;
     border-bottom: 1px solid #707070;
     height: 40px;
+    background-color: transparent;
 }
 .Input::placeholder{
     color: #A5A5B2;

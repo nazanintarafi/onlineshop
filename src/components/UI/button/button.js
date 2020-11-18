@@ -7,6 +7,8 @@ const Button =(props)=>{
             classes.push("seeAll");
         case "submit":
             classes.push("submit");
+        case "changePass":
+            classes.push("changePass");
         case "cancel":
             classes.push("cancel");
         case "signUp":

@@ -14,7 +14,7 @@ const BtnTop =(props)=>{
         <div className="backgroundButton">
             <button onClick={props.clicked} className="button">
                 <img src={down} alt="down" className={classes.join(' ')} onClick={Top} style={{transform:top?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                transition:top?"all 1s":"all 1s"}} />
+                transition:top?"all 0.5s":"all 0.5s"}} />
             </button>
         </div>
     )

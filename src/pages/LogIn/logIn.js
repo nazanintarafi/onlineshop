@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {BrowserRouter,Route} from 'react-router-dom';
 import Button from '../../components/UI/button/button';
 import BtnTop from '../../components/UI/button/btnTop/btnTop';
+import Input from '../../components/Forms/Form/form';
 const LogIn=(props)=>{
     const[top,setTop]=useState(false);
     const Top=(props)=>{
@@ -18,20 +19,20 @@ const LogIn=(props)=>{
                 <div className="signIn">
                     <div className="signInContent">
                         <h2>ثبت نام</h2>
-                        <form  style={{opacity:top?'1':'0',transition:top?'1s':'1s'}}>
-                            <div><input type="number" placeholder="شماره همراه" className="input"></input></div>
-                            <div><input type="text" placeholder="سوال امنیتی" className="input"></input></div>
-                            <div className="buttonSubmit">
-                                <Button btnType="signUp">ثبت نام مشتری</Button>
-                            </div>
+                        <form>
+                                <Input type="text" placeholder="شماره همراه" />
+                                <Input type="text" placeholder="سوال امنیتی" />
+                                <div className="buttonSubmit">
+                                    <Button btnType="signUp">ثبت نام مشتری</Button>
+                                </div>
                         </form>
                     </div>
-                    <div className="logIn" style={{height:top?'30%':'100%',top:top?'100%':'180px',bottom:top?'0px':'-150px',transition:top?'all 1s':'all 1s'}}>
+                    <div className="logIn" style={{height:top?'30%':'100%',top:top?'100%':'180px',bottom:top?'0px':'-150px',transition:top?'all 0.5s':'all 0.5s'}}>
                         <div className="logInContent">
                             <h2>ورود</h2>
-                            <form  style={{opacity:top?'0':'1',transition:top?'3s':'null'}}>
-                                <div><input type="number" placeholder="شماره همراه" className="input"></input></div>
-                                <div><input type="text" placeholder="رمز عبور" className="input"></input></div>
+                            <form>
+                                <Input type="text" placeholder="شماره همراه" />
+                                <Input type="text" placeholder="رمز عبور" />
                                 <div className="buttonSubmit">
                                     <Button btnType="login">ورود</Button>
                                 </div>
