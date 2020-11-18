@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
-import './profile.css';
-import ProfileMenu from '../../components/profileMenu/profileMenu';
+import './profilePagesBody.css';
+import ProfileMenu from '../profileMenu/profileMenu';
 import Header from '../../containers/profileHeader/profileHeader';
-import BtnRight from '../../components/UI/button/btnRight/btnRight';
-import UserName from '../../components/ProfileComponents/userName/userName';
-import Button from '../../components/UI/button/button';
-const Profile=(props)=>{
+import BtnRight from '../UI/button/btnRight/btnRight';
+import Button from '../UI/button/button';
+const ProfilePagesBody=(props)=>{
     const [openMenu,setOpenMenu] = useState(false);
     const MenuToggle=(props)=>{
         setOpenMenu(!openMenu)
@@ -22,7 +21,7 @@ const Profile=(props)=>{
                 >
                     <Header rightToggle={openMenu} titre="پروفایل"/>
                     <div className="Content">
-                        <UserName />
+                        {props.children}
                     </div>
                     <div className="btnRight" style={{right:openMenu?"50.5%":"12px",top:openMenu?"300px":null,transition:openMenu?'all 1s':'all 1s'}}>
                         <BtnRight clicked={MenuToggle}/>
@@ -32,4 +31,4 @@ const Profile=(props)=>{
         </>
     )
 }
-export default Profile;
+export default ProfilePagesBody;

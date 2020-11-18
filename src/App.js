@@ -1,7 +1,6 @@
 import React,{useState, useEffect, useRef} from 'react';
 import './App.css';
-import ProfileMainBody from './pages/profile/profile';
-import Profile from './containers/profileHeader/profileHeader';
+import Profile from './pages/profilePages/Profile/profile';
 import HomePage from './pages/Home/home';
 import Toolbar from './containers/Footer/Toolbar/Toolbar';
 import SideDrawer from './containers/Footer/SideDrawer/SideDrawer';
@@ -18,7 +17,7 @@ const App=() =>{
     <BrowserRouter>
         <Toolbar />
         <Route path="/" exact component={HomePage} />
-        <Route path="/profile" exact component={ProfileMainBody}/>
+        <Route path="/profile" exact component={Profile}/>
         <Route path="/login" exact component={LogIn} />
         <Route path="/kitchen" exact component={HomePage} />
         <Route path="/cosmetics" exact component={HomePage} />
