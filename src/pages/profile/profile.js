@@ -23,9 +23,6 @@ const Profile=(props)=>{
                     <Header rightToggle={openMenu} titre="پروفایل"/>
                     <div className="Content">
                         <UserName />
-                        <div className="submitBtn">
-                            <Button btnType="submit">ثبت اطلاعات</Button>
-                        </div>
                     </div>
                     <div className="btnRight" style={{right:openMenu?"50.5%":"12px",top:openMenu?"300px":null,transition:openMenu?'all 1s':'all 1s'}}>
                         <BtnRight clicked={MenuToggle}/>

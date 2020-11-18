@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Input from '../../Forms/Form/form';
 import "./userName.css";
+import Button from '../../UI/button/button';
 const UserName=()=>{
     const[placeHolder,setPlaceholder]=useState(['نام','نام خانوادگی','تاریخ تولد','کد ملی','شماره موبایل','آدرس ایمیل','شماره کارت'])
     return(
@@ -21,6 +22,9 @@ const UserName=()=>{
                     <input type="checkbox" value="share" name="newsletters" checked="checked"/>
                     <span className="checkmark">اشتراک در خبرنامه آنلاین شاپ</span>
                 </label>
+                <div className="submitBtn">
+                    <Button btnType="submit">ثبت اطلاعات</Button>
+                </div>
             </form>
         </>
     )

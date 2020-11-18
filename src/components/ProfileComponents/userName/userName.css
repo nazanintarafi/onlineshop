@@ -9,7 +9,7 @@
     font-size: 12px;
     opacity: 0.6;
     position: relative;
-    z-index: 1!important;
+    z-index: -1!important;
     cursor: pointer;
 }
 .userNameRadioBtn span{
@@ -27,6 +27,10 @@
     padding-right: 20%;
     width: 8px;
     position: relative;
+}
+.submitBtn{
+    text-align: center;
+    margin: 30px auto;
 }
 
 
