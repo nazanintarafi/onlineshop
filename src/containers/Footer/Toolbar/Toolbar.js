@@ -31,7 +31,7 @@ const Toolbar=(props)=>{
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/"><img src={home} alt="home" /></Link></div></span>
                     <span onClick={openDrawer} className="toolbarItem"><div className="imgBorder"><img src={menu} alt="menu" /></div></span>
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/cart"><img src={cart} alt="cart" /></Link></div></span>
-                    <span className="toolbarItem"><div className="imgBorder"><Link to="/contact"><img src={contact} alt="contact" /></Link></div></span>
+                    <span className="toolbarItem"><div className="imgBorder"><Link to="/profile"><img src={contact} alt="contact" /></Link></div></span>
                 </div>
             </footer>
         </>

@@ -1,6 +1,11 @@
 import React,{useState, useEffect, useRef} from 'react';
 import './App.css';
 import Profile from './pages/profilePages/Profile/profile';
+import Orders from './pages/profilePages/Orders/orders';
+import Favorits from './pages/profilePages/Favorits/favorits';
+import AddressList from './pages/profilePages/AddressList/addressList';
+import ChangePassword from './pages/profilePages/ChangePassword/changePassword';
+import AddAddress from './pages/profilePages/AddAddress/addAddress';
 import HomePage from './pages/Home/home';
 import Toolbar from './containers/Footer/Toolbar/Toolbar';
 import SideDrawer from './containers/Footer/SideDrawer/SideDrawer';
@@ -18,12 +23,17 @@ const App=() =>{
         <Toolbar />
         <Route path="/" exact component={HomePage} />
         <Route path="/profile" exact component={Profile}/>
+        <Route path="/orders" exact component={Orders} />
+        <Route path="/favorits" exact component={Favorits} />
+        <Route path="/address-list" exact component={AddressList} />
+        <Route path="/add-address" exact component={AddAddress} />
+        <Route path="/change-password" exact component={ChangePassword} />
+        <Route path="/cloths" exact component={HomePage} />
         <Route path="/login" exact component={LogIn} />
         <Route path="/kitchen" exact component={HomePage} />
         <Route path="/cosmetics" exact component={HomePage} />
         <Route path="/digital" exact component={HomePage} />
-        <Route path="/cloths" exact component={HomePage} />
-        {/*<Route path="/profile" exact component={ProfilePage} />*/}
+
     </BrowserRouter>
     
   )
