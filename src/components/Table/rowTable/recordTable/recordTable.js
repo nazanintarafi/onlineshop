@@ -1,4 +1,5 @@
 import React from 'react';
+import './recordTable.css';
 const RecordTable=(props)=>{
     return(
        <>
@@ -6,7 +7,7 @@ const RecordTable=(props)=>{
             <td>{props.code}</td>
             <td>{props.date}</td>
             <td>{props.price}</td>
-            <td>{props.result}</td>
+            <td style={{color:props.color?"#076A02":"#BC0606"}}>{props.result}</td>
        </>
     )
 }

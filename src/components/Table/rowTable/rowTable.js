@@ -1,9 +1,10 @@
 import React from 'react';
-import Record from './recordTable/recordTable'
+import Record from './recordTable/recordTable';
+import './rowTable.css';
 const RowTable=(props)=>{
     return(
         props.row.map((row,i)=>
-            <tr>
+            <tr className="RowTable">
                 <Record
                     key={i}
                     id={row.id}
@@ -11,6 +12,7 @@ const RowTable=(props)=>{
                     date={row.date}
                     price={row.price}
                     result={row.result}
+                    color={row.color}
                 />
             </tr>
         )
