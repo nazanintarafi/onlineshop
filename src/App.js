@@ -24,6 +24,7 @@ const App=() =>{
         <Route path="/cosmetics" exact component={HomePage} />
         <Route path="/digital" exact component={HomePage} />
         <Route path="/cloths" exact component={HomePage} />
+        {/*<Route path="/profile" exact component={ProfilePage} />*/}
     </BrowserRouter>
     
   )
