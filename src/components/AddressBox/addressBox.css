@@ -1,0 +1,49 @@
+.AddressBox {
+    display: flex;
+    box-sizing: content-box;
+    width: 75%;
+    text-align: center;
+    margin: 15px auto;
+    border: #A5A5B2 1px solid;
+    padding: 10px 15px;
+    border-radius: 15px;
+    
+}
+.AddressBox:hover {
+    border: #FF6D02 1px solid;
+    box-shadow: #70707047 0px 2px 12px 2px;
+}
+.deleteEdit {
+    display: flex;
+    align-items: center;
+}
+.delete svg{
+    font-size: 23px;
+    color: #A5A5B2;
+}
+.AddressBox:hover .delete svg{
+    font-size: 23px;
+    color: #FF6D02;
+}
+.edit {
+    opacity: 0.7;
+}
+.AddressBox:hover .edit {
+    opacity: 1;
+}
+.AddressText {
+    color: #A5A5B2;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+    margin: auto;
+    align-items: center;
+}
+.AddressBox:hover .AddressText {
+    color: #606061;
+}
+.AddressBox label{
+    text-align: right;
+    margin: auto;
+    align-items: center;
+}
