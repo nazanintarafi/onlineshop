@@ -20,7 +20,7 @@ import img3 from './assets/images/Mask Group 176.png';
 const App=() =>{
   return(
     <BrowserRouter>
-        <Toolbar />
+        
         <Route path="/" exact component={HomePage} />
         <Route path="/profile" exact component={Profile}/>
         <Route path="/orders" exact component={Orders} />

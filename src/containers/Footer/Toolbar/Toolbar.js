@@ -22,12 +22,13 @@ const Toolbar=(props)=>{
         history.push('/')//alan test kon
         setShowDrawer(false)
     }
+    
 
     return(
         
         <>
             <footer className="toolbarStyle" style={{opacity:showDrawer?'0':'1'}}>
-                <div className="phone">
+                <div className="phone" style={{width:props.minWidth?'97%':'100%'}}>
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/"><img src={home} alt="home" /></Link></div></span>
                     <span onClick={openDrawer} className="toolbarItem"><div className="imgBorder"><img src={menu} alt="menu" /></div></span>
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/cart"><img src={cart} alt="cart" /></Link></div></span>

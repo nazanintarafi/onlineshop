@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './profilePagesBody.css';
+import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import ProfileMenu from '../profileMenu/profileMenu';
 import Header from '../../containers/profileHeader/profileHeader';
 import BtnRight from '../UI/button/btnRight/btnRight';
@@ -12,6 +13,9 @@ const ProfilePagesBody=(props)=>{
     return(
         <>
             <div className="Profile" style={{backgroundColor:"#bfbfcf"}}>
+                <div className="profileToolbar">
+                    <Toolbar minWidth="true"/>
+                </div>
                 <ProfileMenu  rightToggle={openMenu}/>
                 <section className="bodyToggle" style={{
                     position:openMenu?'fixed':'relative',right:openMenu?'50%':'10px',

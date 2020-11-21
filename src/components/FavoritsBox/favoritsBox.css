@@ -1,0 +1,50 @@
+.favoritsBox{
+    display: flex;
+    box-sizing: border-box;
+    line-height: 40px;
+    box-shadow: 4px 4px 9px -2px #7070706b;
+    text-align: center;
+    margin: 12px auto;
+    width: 90%;
+    border-radius: 12px;
+}
+.boxPrice{
+    display: flex;
+    color: #FF6D02;
+}
+#price{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.BtnFav{
+    text-align: left;
+    margin: auto;
+}
+.BtnFav button{
+    width: 100%;
+    line-height: 5px;
+    font-weight: inherit;
+    font-size: 10px;
+    padding: 0 2px;
+    box-shadow: none;
+    height: 20px;
+}
+.boxName{
+    display: flex;
+    font-weight: 600;
+    font-size: 10px;
+}
+.boxImg img{
+    width: 100%;
+    align-items: center;
+    padding-top: 5px;
+}
+.close{
+    position: relative;
+    z-index: -1;
+}
+.close svg{
+    font-size: 14px;
+    margin-top: -5px;
+    margin-right: 15px;
+}

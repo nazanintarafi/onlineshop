@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef } from 'react';
 import './home.css';
+import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import SlidShow from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -68,6 +69,7 @@ const Home=(props) =>{
                     top:props.show?'110px':'0px',height:props.show?'350px':'100%',overflow:props.show?'hidden':'auto',
                     transition:props.show?'all 2s':'all 2s',zIndex:props.show?'100':"null"}}
         >
+          <Toolbar />
           <header className="homeHeader">
             <Logo />
           </header>
