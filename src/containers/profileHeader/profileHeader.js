@@ -11,8 +11,14 @@ const ProfileHeader=(props)=>{
             <div className="backgroundImg">
                 <img src={backImg} alt="header" />
             </div>
-            <div className="profileTitre">
+            <div className="profileTitre" style={{opacity:props.profile?'0':'1'}}>
                 <h1>{props.titre}</h1>
+            </div>
+            <div className="titreHeader" style={{opacity:props.profile?'1':'0'}}>
+                <h1>نام کاربری</h1>
+                <div className="profilePhoto">
+                    <img src="#" alt="profile"/>
+                </div>
             </div>
         </header>
     )

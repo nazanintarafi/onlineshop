@@ -28,11 +28,7 @@ const App=() =>{
         <Route path="/address-list" exact component={AddressList} />
         <Route path="/add-address" exact component={AddAddress} />
         <Route path="/change-password" exact component={ChangePassword} />
-        <Route path="/cloths" exact component={HomePage} />
         <Route path="/login" exact component={LogIn} />
-        <Route path="/kitchen" exact component={HomePage} />
-        <Route path="/cosmetics" exact component={HomePage} />
-        <Route path="/digital" exact component={HomePage} />
 
     </BrowserRouter>
     

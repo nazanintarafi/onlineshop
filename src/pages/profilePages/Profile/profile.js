@@ -6,7 +6,7 @@ import Body from '../../../components/ProfilePagesBody/profilePagesBody';
 const Profile=()=>{
     return(
         <>
-            <Body>
+            <Body profile="true">
                 <form className="UserName">
                     <Input type="text" placeholder="نام" />
                     <Input type="text" placeholder="نام خانوادگی" />

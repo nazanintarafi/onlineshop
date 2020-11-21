@@ -19,7 +19,7 @@ const ProfilePagesBody=(props)=>{
                     overflowX:openMenu?'hidden':'hidden',overflowY:openMenu?'hidden':'hidden',
                     transition:openMenu?'all 1s':'all 1s',zIndex:openMenu?'100':"null"}}
                 >
-                    <Header rightToggle={openMenu} titre={props.titre}/>
+                    <Header rightToggle={openMenu} titre={props.titre} profile={props.profile}/>
                     <div className="Content">
                         {props.children}
                     </div>

@@ -26,3 +26,29 @@
     color: white;
     font-weight: normal;
 }
+.titreHeader{
+    position: absolute;
+    top: 22%;
+    display: flex;
+    left: 20px;
+}
+.profilePhoto{
+    width: 93px;
+    height: 93px;
+    background-color: white;
+    border-radius: 50%;
+}
+.profilePhoto img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+}
+.titreHeader h1{
+    font-size: 22px;
+    color: white;
+    align-items: center;
+    padding-top: 18%;
+    padding-left: 20px;
+    font-weight: inherit;
+}
