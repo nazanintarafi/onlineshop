@@ -15,7 +15,7 @@ const ProfileMenu=(props)=>{
                 <Link to="/favorits">مورد علاقه ها</Link>
             </li>
             <li>
-                <Link to="/add-address">آدرس ها</Link>
+                <Link to="/address-list">آدرس ها</Link>
             </li>
             <li>
                 <Link to="/change-password">تغییر رمز عبور</Link>
