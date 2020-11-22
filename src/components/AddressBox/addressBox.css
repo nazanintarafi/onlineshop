@@ -31,19 +31,66 @@
 .AddressBox:hover .edit {
     opacity: 1;
 }
-.AddressText {
+.AddressText span{
     color: #A5A5B2;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: right;
     margin: auto;
     align-items: center;
+}
+.AddressText{
+    margin-right: 20px;
 }
 .AddressBox:hover .AddressText {
     color: #606061;
 }
+.edit{
+    position: relative;
+    z-index:-1;
+}
 .AddressBox label{
+    display: block;
+    position: relative;
+    padding-left: 3px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    color: #555 ;
     text-align: right;
     margin: auto;
     align-items: center;
+}
+.AddressBox input[type=radio]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.AddressBox input:checked~.radio{
+    background-color: white;/*white*/
+    opacity: 1!important;
+}
+.AddressBox input:checked~.radio::after{
+    content: "";
+    background-color: #FF6D02;/*white*/
+    opacity: 1!important;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    top: 1px;
+    right: 1px;
+}
+.AddressBox .radio {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid #A5A5B2;
+    width: 12px;
+    height: 12px;
 }
