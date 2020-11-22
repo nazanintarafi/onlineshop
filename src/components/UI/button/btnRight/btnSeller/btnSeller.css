@@ -1,0 +1,41 @@
+
+.sellerBackBtn.rightButton {
+    padding: 0px 5px 0px 7px;
+}
+.rightBackgroundButton.sellerBackBtn{
+    background-color: #BFBFCF;
+    height: 67px;
+    width: 24px;
+    position: relative;
+    top:-20px;
+    left: 10px;
+}
+.rightButton.sellerBtn {
+    border: #BFBFCF 5px solid;
+    padding: 0px 6px 0px 7px;
+}
+.rightButton.sellerBtn::after{
+    content: "";
+    background-color: #0b0b09;
+    position: absolute;
+    z-index: 300;
+    right: 8px;
+    top: -7px;
+    border-top: 22px solid #0b0b09;
+    border-left: #0b0b09 solid 10px;
+    border-right: #0b0b09 solid 11px;
+    border-bottom: 3px solid #0b0b09;
+    border-radius: 24px 0px 24px 0px;
+}
+.rightButton.sellerBtn::before{
+    content: "";
+    background-color: #0b0b09;
+    position: absolute;
+    z-index: 300;
+    left: -5px;
+    top: 50px;
+    border-top: 22px solid #0b0b09;
+    border-right:#0b0b09 solid 11px;
+    border-left: #0b0b09 solid 10px;
+    border-radius: 0px 39px 0px 23px;
+}

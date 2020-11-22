@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './btnRight.css';
-import right from '../../../../assets/images/Group 1569.png';
-const BtnRight=(props)=>{
+import './btnSeller.css';
+import right from '../../../../../assets/images/Path 2113.png';
+const BtnSeller=(props)=>{
     const[rightToggle,setRight]=useState(false);
     const Right=(props)=>{
         setRight(!rightToggle)
@@ -11,8 +11,8 @@ const BtnRight=(props)=>{
         classes.push("rotate");
     }
     return(
-        <div className="rightBackgroundButton">
-            <button onClick={props.clicked} className="rightButton">
+        <div className="rightBackgroundButton sellerBackBtn">
+            <button onClick={props.clicked} className="rightButton sellerBtn">
                 <img src={right} alt="right" className={classes.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
                 transition:rightToggle?"all 0.5s":"all 0.5s"}} />
             </button>
@@ -20,4 +20,4 @@ const BtnRight=(props)=>{
         
     )
 }
-export default BtnRight;
+export default BtnSeller;

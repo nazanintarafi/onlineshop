@@ -8,6 +8,13 @@ import "slick-carousel/slick/slick-theme.css";
 import img1 from '../../../assets/images/efs.png';
 
 const ProductSlider=(props)=>{
+    let classes=["slider"];
+    switch(props.sliderType){
+        case "wide":
+            classes.push("wide");
+        default:
+            break; 
+    }
     var settings = {
         dots: true,
         infinite: true,
@@ -17,7 +24,7 @@ const ProductSlider=(props)=>{
     };
     return(
         <SlidShow {...settings}>
-            <div  className="slider">
+            <div className={classes.join(' ')} >
                <div className="sliderPadding">
                     <Discount isDiscount={true} discount={'30%'} />
                     <div className="slideImg">

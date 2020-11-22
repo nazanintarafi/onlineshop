@@ -4,7 +4,7 @@
     border: 2px solid #D4D3E3;
     border-radius: 10px;
     margin: 20px auto;
-    width: 150px!important;
+    width: 20%;
     text-align: center;
     position: relative;
 }
@@ -55,4 +55,11 @@
 .price div{
     font-size: 9px;
     color: #A5A5B2;
+}
+.wide {
+    width: 90%;
+}
+.wide .sliderPadding{
+    display: flex;
+    margin: auto;
 }

@@ -27,9 +27,6 @@ const Button =(props)=>{
     )
 }
 export default Button;
-{/*harja sedash kardi 
-btnType="seeAll"
-clicked={props.deleted}
-
+{/*harja sedash kardi :
 <Button btnType="seeAll" clicked={props.deleted}>حذف</Button>
 */}

@@ -1,5 +1,6 @@
 import React,{useState, useEffect, useRef} from 'react';
 import './App.css';
+import Seller from './pages/Seller/seller';
 import Profile from './pages/profilePages/Profile/profile';
 import Orders from './pages/profilePages/Orders/orders';
 import Favorits from './pages/profilePages/Favorits/favorits';
@@ -29,6 +30,7 @@ const App=() =>{
         <Route path="/add-address" exact component={AddAddress} />
         <Route path="/change-password" exact component={ChangePassword} />
         <Route path="/login" exact component={LogIn} />
+        <Route path="/seller" exact component={Seller} />
 
     </BrowserRouter>
     
