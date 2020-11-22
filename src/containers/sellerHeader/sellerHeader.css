@@ -1,0 +1,16 @@
+.backgroundImg img{
+    filter: blur(0px);
+}
+.stars{
+    color: #A5A5B2;
+}
+.stars .checked {
+    color: #FFC107;
+}
+.SellerHeader{
+    position: relative;
+}
+.titreSeller{
+    position: absolute;
+    top: 100px;
+}

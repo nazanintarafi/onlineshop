@@ -3,6 +3,7 @@ import './profilePagesBody.css';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import ProfileMenu from '../profileMenu/profileMenu';
 import Header from '../../containers/profileHeader/profileHeader';
+import SellerHeader from '../../containers/sellerHeader/sellerHeader';
 import BtnRight from '../UI/button/btnRight/btnRight';
 import Button from '../UI/button/button';
 const ProfilePagesBody=(props)=>{
@@ -23,7 +24,12 @@ const ProfilePagesBody=(props)=>{
                     overflowX:openMenu?'hidden':'hidden',overflowY:openMenu?'hidden':'hidden',
                     transition:openMenu?'all 1s':'all 1s',zIndex:openMenu?'100':"null"}}
                 >
-                    <Header rightToggle={openMenu} titre={props.titre} profile={props.profile}/>
+                    <div style={{opacity:props.profilePage?'0':'0'}}>
+                        <Header rightToggle={openMenu} titre={props.titre} profile={props.profile}/>
+                    </div>
+                    <div style={{opacity:props.sellerPage?'1':'1'}}>
+                        <SellerHeader rightToggle={openMenu} titre={props.titre} profile={props.profile}/>
+                    </div>
                     <div className="Content">
                         {props.children}
                     </div>

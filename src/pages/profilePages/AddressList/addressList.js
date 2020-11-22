@@ -14,7 +14,7 @@ const AddressList=(props)=>{
     ]
     return(
         <>
-            <Body titre="آدرس های ثبت شده" className="Favorits">
+            <Body titre="آدرس های ثبت شده" className="Favorits" profilePage="true">
                     <AddressBox 
                         address={address[0]}
                     />

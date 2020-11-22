@@ -6,7 +6,7 @@ import img from '../../../assets/images/Cosmetics (3).png';
 const Favorits=(props)=>{
     return(
         <>
-            <Body titre="مورد علاقه ها" className="Favorits">
+            <Body titre="مورد علاقه ها" className="Favorits" profilePage="true">
                 <Box name="ماشین اصلاح صورت فیلیپس مدل" img={img} price="560.000.000تومان" code=" S5370/26"/>
                 <Box name="ماشین اصلاح صورت فیلیپس مدل" img={img} price="560.000.000تومان" code=" S5370/26"/>
                 <Box name="ماشین اصلاح صورت فیلیپس مدل" img={img} price="560.000.000تومان" code=" S5370/26"/>

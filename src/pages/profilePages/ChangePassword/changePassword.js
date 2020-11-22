@@ -17,7 +17,7 @@ const ChangePassword=()=>{
     return(
         <>
             <div className="orders">
-                <Body titre="تغییر پسورد">
+                <Body titre="تغییر پسورد" profilePage="true">
                     <form>
                         <Input type="text" placeholder="رمز عبور فعلی" />
                         <Input type="text" placeholder="رمز عبور جدید" />

@@ -17,7 +17,7 @@ const Orders=()=>{
     return(
         <>
             <div className="orders">
-                <Body titre="سفارش ها">
+                <Body titre="سفارش ها" profilePage="true">
                     <Table orders={tableContent} />
                 </Body>
             </div>

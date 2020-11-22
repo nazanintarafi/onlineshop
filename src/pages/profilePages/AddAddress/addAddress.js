@@ -17,7 +17,7 @@ const AddAddress=()=>{
     return(
         <>
             <div className="orders">
-                <Body titre="آدرس ها">
+                <Body titre="آدرس ها" profilePage="true">
                     <form>
                         <Input type="text" placeholder="تحویل گیرنده" />
                         <Input type="text" placeholder="استان" />
