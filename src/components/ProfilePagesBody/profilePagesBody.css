@@ -18,6 +18,11 @@
     right: 12px;
     top: 200px;
 }
+.btnSeller{
+    position: fixed;
+    right: 12px;
+    top: 25px;
+}
 .Content{
     margin-top: 200px;
     margin-bottom: 150px;

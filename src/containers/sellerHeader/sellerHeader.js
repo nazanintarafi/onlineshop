@@ -48,9 +48,6 @@ const SellerHeader=(props)=>{
                 <div className="profilePhoto">
                     <img src={proImg} alt="profile"/>
                 </div>
-                <div className="btnRight btnSeller" style={{right:openMenu?"50.5%":"12px",top:openMenu?"300px":null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
-                        <BtnSeller clicked={MenuToggle}/>
-                </div>
             </div>
         </header>
     )

@@ -1,19 +1,27 @@
 .slider{
     direction: rtl;
     background-color: white;
-    border: 2px solid #D4D3E3;
+    box-shadow: 3px 2px 6px 1px #D4D3E3;
     border-radius: 10px;
     margin: 20px auto;
-    width: 20%;
     text-align: center;
     position: relative;
+    width: 90%!important;
+}
+.ratingStar{
+    text-align: right;
+    margin: auto;
+}
+.wide .ratingStar{
+    text-align: left;
+    margin: auto;
 }
 .sliderPadding{
     padding: 2px 10px;
 }
 .slider:hover{
     border: 2px solid #ff6d02;
-    transition: all 0.5s;
+    transition: all 0.01s;
 }
 .star svg path{
     color: #A5A5B2;
@@ -25,24 +33,32 @@
     text-align: center;
     margin: auto;
     align-items: center;
-    width: 70%;
     padding: 6px 0;
     padding-bottom: 0;
+    width: 50%;
 }
-.slideImg img{
+.wide .slideImg{
     width: 100%;
-    height: 100%;
 }
 .ratingStar{
     text-align: right;
     font-size: 8px;
     padding : 5px;
 }
+.description{
+    height: 60px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
 .description p{
     text-align: justify;
     font-size: 9px;
     color: black;
-    font-weight: bold;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    margin-left: 14px;
 }
 .price{
     text-align: left;
@@ -51,6 +67,9 @@
     font-weight: bold;
     font-size: 10px;
     color: #ff6d02;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
 }
 .price div{
     font-size: 9px;

@@ -38,6 +38,9 @@ const ProfilePagesBody=(props)=>{
                     <div className="btnRight" style={{opacity:props.profilePage?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"300px":null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
                         <BtnRight clicked={MenuToggle}/>
                     </div>
+                    <div className="btnSeller" style={{opacity:props.sellerPage?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"25px":null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                        <BtnSeller clicked={MenuToggle}/>
+                    </div>
                 </section>
             </div>
         </>
