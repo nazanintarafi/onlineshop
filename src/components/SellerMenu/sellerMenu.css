@@ -1,0 +1,60 @@
+.SellerMenu{
+    text-align: right;
+    margin:auto;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: relative;
+    right: 0;
+    top: -340px;
+    line-height: 62px;
+    padding-right: 20px;
+}
+.SellerMenu li a{
+    color: #080957;
+}
+.SellerMenu label{
+    display: block;
+    line-height: 17px;
+    color: #080957;
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+}
+.SellerMenu input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.SellerMenu input:checked ~ .radio{
+    opacity: 1;
+    background-color: #FF6D02;
+    height: 9px;
+    width: 9px;
+}
+.SellerMenu label .radio{
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #080957;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.SellerMenu li h4{
+    font-weight: 400;
+    font-size: 17px;
+    color: #080957;
+    line-height: 40px;
+}
+.SellerMenu li h4 img{
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.radioName{
+    padding-right: 20px;
+}

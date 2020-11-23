@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './profilePagesBody.css';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import ProfileMenu from '../profileMenu/profileMenu';
+import SellerMenu from '../SellerMenu/sellerMenu';
 import Header from '../../containers/profileHeader/profileHeader';
 import SellerHeader from '../../containers/sellerHeader/sellerHeader';
 import BtnRight from '../UI/button/btnRight/btnRight';
@@ -22,6 +23,7 @@ const ProfilePagesBody=(props)=>{
                     <ProfileMenu  rightToggle={openMenu}/>
                 </div>
                 <div style={{opacity:props.sellerPage?'1':'0'}}>
+                    <SellerMenu  rightToggle={openMenu}/>
                 </div>
                 
                 <section className="bodyToggle" style={{
