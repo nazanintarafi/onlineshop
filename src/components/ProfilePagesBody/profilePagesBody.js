@@ -18,7 +18,12 @@ const ProfilePagesBody=(props)=>{
                 <div className="profileToolbar">
                     <Toolbar minWidth="true"/>
                 </div>
-                <ProfileMenu  rightToggle={openMenu}/>
+                <div style={{opacity:props.profilePage?'1':'0'}}>
+                    <ProfileMenu  rightToggle={openMenu}/>
+                </div>
+                <div style={{opacity:props.sellerPage?'1':'0'}}>
+                </div>
+                
                 <section className="bodyToggle" style={{
                     position:openMenu?'fixed':'relative',right:openMenu?'50%':'10px',
                     top:openMenu?'90px':'0px',height:openMenu?'390px':'100%',width:openMenu?'100%':'100%',
@@ -38,7 +43,7 @@ const ProfilePagesBody=(props)=>{
                     <div className="btnRight" style={{opacity:props.profilePage?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"300px":null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
                         <BtnRight clicked={MenuToggle}/>
                     </div>
-                    <div className="btnSeller" style={{opacity:props.sellerPage?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"25px":null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                    <div className="btnRight btnSeller" style={{opacity:props.sellerPage?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"160px":null,zIndex:openMenu?"200":"200",transition:openMenu?'all 0.5s':'all 0.5s'}}>
                         <BtnSeller clicked={MenuToggle}/>
                     </div>
                 </section>

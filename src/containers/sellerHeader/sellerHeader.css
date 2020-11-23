@@ -1,4 +1,8 @@
 
+.SellerHeader{
+    position: relative;
+    z-index: 101;
+}
 .backgroundImg img{
     filter: blur(0px);
 }
@@ -31,9 +35,45 @@
     color: #FFC107;
 }
 
+.SellerHeader form input{
+    border: 1px solid #707070;
+    border-radius: 30px;
+    height: 20px;
+    align-items: center;
+    margin: auto;
+    box-shadow: none;
+    width: 60%;
+}
+.SellerHeader form{
+    position: relative;
+    right: -57px;
+}
+.SellerHeader form input:focus{
+    outline: none;
+    padding-right: 7px;
+}
+.SellerHeader form span svg{
+    position: absolute;
+    right: 74px;
+    font-size: 9px;
+    color: #707070;
+    top: 7px;
+}
+.SellerHeader form input::placeholder{
+    font-size: 9px;
+    align-items: center;
+    padding-right: 22px;
+    padding-bottom: 12px;
+}
+
+
+
 @media only screen and (min-width: 360px){
     .titreSeller{
         top: 115px;
+    }
+    .SellerHeader form span svg{
+        right: 80px;
     }
 }
 @media only screen and (min-width: 414px){
@@ -42,6 +82,9 @@
     }
     .stars{
         margin-top: 25px;
+    }
+    .SellerHeader form span svg{
+        right: 90px;
     }
 }
 @media only screen and (min-width: 600px){
@@ -61,5 +104,21 @@
         background-color: white;
         border-radius: 50%;
         box-shadow: 1px 1px 5px 1px #0000001f;
+    }
+    .SellerHeader form {
+        bottom: -7px;
+    }
+    .SellerHeader form input {
+        width: 74%;
+        height: 32px;
+    }
+    .SellerHeader form span svg{
+        right: 110px;
+        font-size: 15px;
+    }
+    .SellerHeader form input::placeholder{
+        font-size: 12px;
+        padding-right: 29px;
+        align-items: center;
     }
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import imgProduct from '../../../assets/images/Mask Group 190.png';
 import Discount from '../../../components/discount/discount';
 import SlidShow from 'react-slick';
@@ -6,6 +6,7 @@ import './productSlider.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import img1 from '../../../assets/images/11873.png';
+import { render } from '@testing-library/react';
 
 const ProductSlider=(props)=>{
     let classes=["slider"];
@@ -14,13 +15,19 @@ const ProductSlider=(props)=>{
             classes.push("wide");
         default:
             break; 
-    }
+    };
+    var state = {
+        display: true,
+        width: 200
+    };
     var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow:1,
-        slidesToScroll: 1
+            display:true,
+            width:20,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow:1,
+            slidesToScroll: 1
     };
     return(
         <SlidShow {...settings}>

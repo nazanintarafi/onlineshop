@@ -13,7 +13,7 @@ const BtnRight=(props)=>{
     return(
         <div className="rightBackgroundButton">
             <button onClick={props.clicked} className="rightButton">
-                <img src={right} alt="right" className={classes.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                <img src={right} alt="right" onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
                 transition:rightToggle?"all 0.5s":"all 0.5s"}} />
             </button>
         </div>

@@ -21,7 +21,7 @@
 .btnSeller{
     position: fixed;
     right: 12px;
-    top: 25px;
+    top: 40px;
 }
 .Content{
     margin-top: 200px;
@@ -33,6 +33,9 @@
     .btnRight{
         top: 260px;
     }
+    .btnSeller{
+        top: 40px;
+    }
     .Content{
         margin-top: 300px;
     }
@@ -41,15 +44,24 @@
     .btnRight{
         top: 300px;
     }
+    .btnSeller{
+        top: 40px;
+    }
 }
 @media only screen and (min-width: 514px){
     .btnRight{
         top: 330px;
     }
+    .btnSeller{
+        top: 40px;
+    }
 }
 @media only screen and (min-width: 586px){
     .btnRight{
         top: 360px;
+    }
+    .btnSeller{
+        top: 40px;
     }
 }
 @media only screen and (min-width: 647px){
@@ -58,5 +70,8 @@
     }
     .Content{
         margin-top: 450px;
+    }
+    .btnSeller{
+        top: 180px;
     }
 }
