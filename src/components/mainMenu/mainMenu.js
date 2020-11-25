@@ -5,7 +5,7 @@ import chevronLeft from '../../assets/images/Group 1569.png';
 import {Link} from 'react-router-dom';
 const MainMenu=(props)=>{
     return(
-        <React.Fragment>
+        <>
             <div className="mainMenu">
                 <div className="menuWidth">
                     <div className="Logo">
@@ -199,7 +199,7 @@ const MainMenu=(props)=>{
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        </>
     )
 }
 export default MainMenu;

@@ -6,7 +6,7 @@
     height: 100%;
     position: relative;
     right: 0;
-    top: -340px;
+    top: -301px;
     line-height: 62px;
     padding-right: 20px;
 }
@@ -30,9 +30,20 @@
 }
 .SellerMenu input:checked ~ .radio{
     opacity: 1;
-    background-color: #FF6D02;
+    background-color: transparent;
     height: 9px;
     width: 9px;
+}
+.SellerMenu input:checked ~ .radio::after{
+    position: absolute;
+    content: "";
+    top: 1px;
+    right: 1px;
+    opacity: 1;
+    background-color: #FF6D02;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
 }
 .SellerMenu label .radio{
     position: absolute;
@@ -56,5 +67,134 @@
     padding-top: 5px;
 }
 .radioName{
+    padding-right: 20px;
+}
+.SellerMenu .FilterItem{
+    display: flex;
+}
+.Filtering{
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+.Filtering ul{
+    list-style: none;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    padding-right: 0;
+}
+.Filtering .CheckBox{
+    list-style: none;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    padding-right: 0;
+}
+.Filtering ul li {
+    color: #080957;
+    position: relative;
+    width: 100%;
+}
+.Filtering ul li span:first-child{
+    text-align: right;
+    margin: auto;
+    font-weight: 400;
+}
+.Filtering li > .CheckBox {
+    display: block;
+    height: 0;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -ms-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+    transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+.Filtering li:hover > .CheckBox {
+    height: 116px;
+    overflow:visible;
+    padding-right: 15px;
+    text-align: right;
+    margin: auto;
+}
+.Filtering li ul > li a:hover {
+    font-weight:600;
+}
+.FilterItem{
+    font-size: 12px;
+    padding: 5px;
+    width: 120px;
+}
+.Filtering ul li{
+    line-height: 25px;
+}
+.FilterItem:hover{
+    color: #FF6D02;
+    transition: 0.5s;
+}
+.FilterItem img{
+    width: 5px;
+}
+.FilterItem:hover img{
+    transform: rotate(-90deg);
+    color: #FF6D02;
+    transition: 0.5s;
+}
+.Filtering.bi-chevron-compact-left{
+    font-weight: 900;
+    height: 12px;
+}
+.Filtering ul li span:nth-child(2){
+    text-align: left;
+    margin: auto;
+}
+.CheckBox label{
+    display: block;
+    line-height: 17px;
+    color: #080957;
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+}
+.CheckBox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.CheckBox label input:checked ~ .checkbox{
+    opacity: 1;
+    background-color: transparent;
+    height: 9px;
+    width: 9px;
+}
+.CheckBox label input:checked ~ .checkbox::after{
+    content: "";
+    position: absolute;
+    opacity: 1;
+    top:1px;
+    right: 1px;
+    background-color: #FF6D02;
+    height: 5px;
+    width: 5px;
+}
+.CheckBox label .checkbox{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    height: 9px;
+    width: 9px;
+    border: 1px solid #080957;
+    background: transparent;
+}
+.checkmark{
     padding-right: 20px;
 }
