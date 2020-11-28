@@ -1,0 +1,25 @@
+.store{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    width: 78%;
+    position: relative;
+}
+.store div:last-child{
+    text-align: left;
+    margin: auto;
+}
+.FirstContent h2{
+    font-size: 16px;
+    text-align: center;
+    padding: 30px 0;
+}
+.store ul{
+    list-style: none;
+    text-align: right;
+}
+.FirstContent ul li{
+    list-style: none;
+    text-align: right;
+}

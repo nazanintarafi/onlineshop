@@ -1,0 +1,10 @@
+.ratingStar{
+    text-align: right;
+    margin: auto;
+}
+.star svg path{
+    color: #A5A5B2;
+}
+.checked svg path{
+    color: #FFC107;
+}
