@@ -1,5 +1,6 @@
 import React,{useState, useEffect, useRef} from 'react';
 import './App.css';
+import Arthboard from './pages/Arthboard/arthboard';
 import Seller from './pages/Seller/seller';
 import Profile from './pages/profilePages/Profile/profile';
 import Orders from './pages/profilePages/Orders/orders';
@@ -21,7 +22,7 @@ import img3 from './assets/images/Mask Group 176.png';
 const App=() =>{
   return(
     <BrowserRouter>
-        
+        <Route path="/arthboard" exact component={Arthboard} />
         <Route path="/" exact component={HomePage} />
         <Route path="/profile" exact component={Profile}/>
         <Route path="/orders" exact component={Orders} />

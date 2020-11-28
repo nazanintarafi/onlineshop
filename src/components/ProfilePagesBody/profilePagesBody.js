@@ -8,6 +8,7 @@ import SellerHeader from '../../containers/sellerHeader/sellerHeader';
 import BtnRight from '../UI/button/btnRight/btnRight';
 import BtnSeller from '../UI/button/btnRight/btnSeller/btnSeller';
 import Button from '../UI/button/button';
+import Logo from '../logo/logo';
 const ProfilePagesBody=(props)=>{
     const [openMenu,setOpenMenu] = useState(false);
     const MenuToggle=(props)=>{
@@ -22,8 +23,12 @@ const ProfilePagesBody=(props)=>{
                 <div style={{opacity:props.profilePage?'1':'0'}}>
                     <ProfileMenu  rightToggle={openMenu}/>
                 </div>
-                <div style={{opacity:props.sellerPage?'1':'0'}}>
+                <div style={{opacity:props.sellerMenu?'1':'0'}}>
                     <SellerMenu  rightToggle={openMenu}/>
+                </div>
+                <div  className="homeHeader arthHeader" style={{opacity:props.arthPage?'1':'0',top:openMenu?'90px':'0px',
+                    left:openMenu?'-47%':null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                        <Logo />
                 </div>
                 
                 <section className="bodyToggle" style={{
@@ -38,15 +43,18 @@ const ProfilePagesBody=(props)=>{
                     <div style={{opacity:props.sellerPage?'1':'0'}}>
                         <SellerHeader rightToggle={openMenu} titre={props.titre} profile={props.profile}/>
                     </div>
-                    <div className="Content">
+                    <div className="Content" style={{marginTop:props.arthPage?'60px':'200px'}}>
                         {props.children}
                     </div>
                     <div></div>
                     <div className="btnRight" style={{opacity:props.profilePage?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"300px":null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
                         <BtnRight clicked={MenuToggle}/>
                     </div>
-                    <div className="btnRight btnSeller" style={{opacity:props.sellerPage?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"160px":null,zIndex:openMenu?"200":"200",transition:openMenu?'all 0.5s':'all 0.5s'}}>
-                        <BtnSeller clicked={MenuToggle}/>
+                    <div className="btnRight btnSeller" style={{opacity:props.sellerBtn?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"160px":null,zIndex:openMenu?"200":"200",transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                        <BtnSeller clicked={MenuToggle} btnType="sellerBtn"/>
+                    </div>
+                    <div className="btnRight btnSeller" style={{opacity:props.arthBtn?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"160px":"100px",zIndex:openMenu?"200":"200",transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                        <BtnSeller clicked={MenuToggle} btnType="arthBtn"/>
                     </div>
                 </section>
             </div>

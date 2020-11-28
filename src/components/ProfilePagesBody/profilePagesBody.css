@@ -28,6 +28,12 @@
     margin-bottom: 150px;
     overflow: auto;
 }
+.homeHeader.arthHeader {
+    box-shadow: 5px 1px 10px 9px #7070700f;
+    left: 0;
+    z-index: 101;
+    width: 97%;
+}
 
 @media only screen and (min-width: 337px){
     .btnRight{

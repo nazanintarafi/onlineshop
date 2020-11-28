@@ -39,6 +39,9 @@
 .wide .slideImg{
     width: 100%;
 }
+.wide.slider {
+    width: 94%!important;
+}
 .ratingStar{
     text-align: right;
     font-size: 8px;
