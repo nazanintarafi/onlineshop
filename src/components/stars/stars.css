@@ -1,8 +1,8 @@
-.ratingStar{
+.Stars{
     text-align: right;
     margin: auto;
 }
-.star svg path{
+.Star svg path{
     color: #A5A5B2;
 }
 .checked svg path{

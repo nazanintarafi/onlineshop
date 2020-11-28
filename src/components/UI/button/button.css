@@ -36,6 +36,7 @@
     color: #FF6D02;
     background-color: white;
 }
+
 .changePass{
     background-color: #FF6D02;
     width: 30%;
@@ -43,9 +44,16 @@
     height: 25px;
     border: none;
 }
+
 .submit{
     background-color: #FF6D02;
     width: 60%;
     color: white;
     height: 30px;
+}
+.seeAll{
+    width: 60%;
+    border: 1px solid #FF6D02;
+    color: #FF6D02;
+    background-color: white;
 }

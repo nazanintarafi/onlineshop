@@ -1,0 +1,75 @@
+.productImage{
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+.productImage .productItems{
+    position: absolute;
+}
+.activeLike{
+    color: red;
+}
+.ProductContent .productItems li{
+    list-style: none;
+    text-align: right;
+    margin: 5px auto;
+}
+.ProductContent h2{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 30px;
+}
+.store{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    position: relative;
+}
+.ProductContent div{
+    width: 88%;
+    text-align: center;
+    margin: auto;
+}
+.store div:last-child{
+    text-align: left;
+    margin: auto;
+}
+.productImage {
+    margin-top: 20px;
+}
+.btnProduct{
+    text-align: center;
+    margin: 30px auto;
+}
+.btnProduct Button{
+    text-align: center;
+    box-shadow: none;
+    margin: 8px auto;
+    width: 45%;
+    display: block;
+    height: 23px;
+    font-weight: normal;
+}
+.ProductContent ul:last-child{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 88%;
+    opacity: 0.6;
+    padding-right: 0;
+}
+.ProductContent ul:last-child li{
+    width: 20%;
+    text-align: center;
+    list-style: none;
+}
+.ProductContent ul:last-child img{
+    align-items: center;
+}
+.ProductContent ul:last-child li span{
+    font-size: 6px;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+}
