@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {BrowserRouter,Route} from 'react-router-dom';
 import Button from '../../components/UI/button/button';
 import BtnTop from '../../components/UI/button/btnTop/btnTop';
-import specifications from '../../components/ProductContent/specifications/specifications';
+import Specifications from '../../components/ProductContent/specifications/specifications';
 import ProductContent from '../../components/ProductContent/productContent';
 
 const Product=(props)=>{
@@ -19,8 +19,13 @@ const Product=(props)=>{
                     top:props.show?'110px':'0px',height:props.show?'350px':'100%',overflow:props.show?'hidden':'auto',
                     transition:props.show?'all 1s':'all 1s',zIndex:props.show?'100':"null",overflow:top?"hidden":"null"}}>
                 <div className="First">
-                    <ProductContent />
-                    <div className="logIn" style={{height:top?'20%':'40%',top:top?'100%':'180px',transition:top?'all 0.5s':'all 0.5s'}}>
+                    <div style={{display:top?"none":"block"}}>
+                        <ProductContent />
+                    </div>
+                    <div style={{display:top?"block":"none"}}>
+                        <Specifications />
+                    </div>
+                    <div className="logIn" style={{height:top?'20%':'40%',top:top?'20%':'180px',transition:top?'all 0.5s':'all 0.5s'}}>
                         <div className="logInContent">
                             <div className="detail">
                                 <h2>مشخصات محصول</h2>
