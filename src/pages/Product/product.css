@@ -1,2 +1,14 @@
-
-
+.Product {
+    position: relative;
+}
+.specifications{
+    position: absolute ;
+    top: 20%;
+}
+.Product .detail {
+    text-align: right;
+    padding-right: 20px;
+}
+.Product .detail h2{
+    font-size: 21px;
+}

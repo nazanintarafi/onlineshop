@@ -1,0 +1,110 @@
+.Specifications{
+    text-align: center;
+}
+.Specifications .row{
+    display: flex;
+}
+.Specifications input{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.Specifications .tabs {
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    width: 97%;
+}
+.Specifications .tab{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #a5a5b275;
+    margin: auto;
+}
+.Specifications .tabLabel{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 9px 0;
+}
+.Specifications .tabLabel div{
+    width: 40%;
+    text-align: right;
+}
+.Specifications .tabContent div{
+    padding: 20px;
+}
+.Specifications .tabContent p{
+    text-align: right;
+    font-size: 12px;
+    line-height: 8px;
+}
+.Specifications .tabContent {
+    max-height: 0;
+    padding: 0;
+    transition: all 0.5s;
+}
+.Specifications input:checked ~ .tabContent{
+    max-height: 200px;
+    transition: all 0.7s;
+}
+.Specifications input:checked .tabLabel::after {
+    transform: rotate(90deg);
+}
+.Specifications input:checked ~ .tabLabel div{
+    animation-name: img;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyFrames img{
+    from {
+        text-align: right;
+    }
+    to {
+        text-align: left;
+        margin: auto;
+    }
+}
+.Specifications input:checked ~ .tabLabel img{
+    animation-name: Left;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.1s;
+}
+@keyFrames Left{
+    from {
+        margin-right: auto;
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+.
+.technicalS::-webkit-scrollbar {
+    width: 10px;
+
+}
+.technicalS::-webkit-scrollbar-track {
+    
+    background-color: red;
+
+}
+.technicalS::-webkit-scrollbar-thumb {
+    background-color: black;
+    border: 30px;
+    border: 3px solid pink;
+}
+.similarProducts{
+    text-align: right;
+}
+.similarProducts div:first-child h3{
+    font-size: 18px;
+    padding-right: 20px;
+}
+.similarProducts div:last-child{
+    text-align: center;
+    width: 98%;
+    margin: 5px auto;
+}
