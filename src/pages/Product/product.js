@@ -6,6 +6,7 @@ import Button from '../../components/UI/button/button';
 import BtnTop from '../../components/UI/button/btnTop/btnTop';
 import Specifications from '../../components/ProductContent/specifications/specifications';
 import ProductContent from '../../components/ProductContent/productContent';
+import topArrow from '../../assets/images/top-arrow (2).png';
 
 const Product=(props)=>{
     const[top,setTop]=useState(false);
@@ -32,7 +33,7 @@ const Product=(props)=>{
                                 <h2 style={{marginTop:top?'-20px':'50px',width:"100%"}}>مشخصات محصول</h2>
                             </div>
                             <div className="test">
-                                <BtnTop clicked={Top}/>
+                                <BtnTop clicked={Top} imgName={topArrow} paddingProduct="true"/>
                             </div>
                         </div>
                     </div>

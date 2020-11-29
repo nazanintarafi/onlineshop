@@ -5,6 +5,7 @@ import {BrowserRouter,Route} from 'react-router-dom';
 import Button from '../../components/UI/button/button';
 import BtnTop from '../../components/UI/button/btnTop/btnTop';
 import Input from '../../components/Forms/Form/form';
+import down from '../../assets/images/down-arrow.png';
 const LogIn=(props)=>{
     const[top,setTop]=useState(false);
     const Top=(props)=>{
@@ -38,7 +39,7 @@ const LogIn=(props)=>{
                                 </div>
                             </form>
                             <div className="test">
-                                <BtnTop clicked={Top}/>
+                                <BtnTop clicked={Top} imgName={down}/>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './btnTop.css';
-import down from '../../../../assets/images/down-arrow.png';
 const BtnTop =(props)=>{
     const[top,setTop]=useState(false);
     const Top=(props)=>{
@@ -13,8 +12,10 @@ const BtnTop =(props)=>{
     return(
         <div className="backgroundButton">
             <button onClick={props.clicked} className="button">
-                <img src={down} alt="down" className={classes.join(' ')} onClick={Top} style={{transform:top?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                transition:top?"all 0.5s":"all 0.5s"}} />
+                <img src={props.imgName} alt="down" className={classes.join(' ')} onClick={Top} style={{
+                    paddingTop:top?"10px":null,paddingBottom:props.paddingProduct?"6px":null,
+                    paddingTop:props.paddingProduct?"0px 0":null,transform:top?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                    transition:top?"all 0.5s":"all 0.5s"}} />
             </button>
         </div>
     )
