@@ -1,0 +1,25 @@
+.Variety {
+   border: 1px #D1E5F0 solid; 
+   padding: 18px 0px;
+   border-radius: 18px;
+   box-shadow: #becfd8bf 1px 1px 7px 1px;
+}
+.Variety .varietyBtn Button{
+    box-shadow: none;
+    width: 85%;
+    font-weight: 400;
+}
+.Variety .VarietyContent{
+    margin-top: 15px;
+    font-size: 11px;
+    color: #707070;
+    font-weight: bold;
+    width: 100%;
+}
+.Variety .BorderRightV{
+    border-right:#D1E5F0 1px solid;
+    width: 100%;
+}
+.Variety .BorderRightV span{
+    width: 100%;
+}

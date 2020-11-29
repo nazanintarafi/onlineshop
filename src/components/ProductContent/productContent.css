@@ -1,7 +1,18 @@
-.productImage{
-    position: relative;
+
+.ProductContent div{
+    width: 88%;
     text-align: center;
     margin: auto;
+}
+.ProductContent .productImage{
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+}
+.ProductContent .ProductIMG img{
+    margin-top: 63px;
+    margin-bottom: 12px;
 }
 .productImage .productItems{
     position: absolute;
@@ -26,11 +37,7 @@
     font-size: 12px;
     position: relative;
 }
-.ProductContent div{
-    width: 88%;
-    text-align: center;
-    margin: auto;
-}
+
 .store div:last-child{
     text-align: left;
     margin: auto;
@@ -72,4 +79,15 @@
     padding: 0;
     text-align: center;
     margin: auto;
+}
+.ProductContent .btnProduct{
+    margin-bottom: 22px;
+}
+.ProductContent section{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.VarietyStyle .Variety{
+    width: 65%;
 }

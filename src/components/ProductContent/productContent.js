@@ -11,6 +11,7 @@ import img1 from '../../assets/images/Group 598.png';
 import img2 from '../../assets/images/Group 599.png';
 import img3 from '../../assets/images/Group 600.png';
 import Button from '../UI/button/button';
+import Variety from '../Variety/variety';
 const ProductContent=(props)=>{
     const[like,setLike]=useState(false);
     const Like=(props)=>{
@@ -51,14 +52,17 @@ const ProductContent=(props)=>{
                             <img src={video} alt="video"/>
                         </li>
                     </ul>
-                    <div>
+                    <div className="ProductIMG">
                         <img src={product1} alt="online shop" />
                     </div>
                     <div className="btnProduct">
-                        <Button btnType="seeAll" >انتخاب تنوع</Button>
+                        <span className="productSelection"><Button btnType="seeAll" >انتخاب تنوع</Button></span>
                         <Button btnType="submit" >افزودن به سبد خرید</Button>
                     </div>
-                    <div>
+                    <div className="VarietyStyle">
+                        <Variety />
+                    </div>
+                    <section>
                         <ul>
                             <li>
                                 <div>
@@ -91,7 +95,7 @@ const ProductContent=(props)=>{
                                 <span>7 روز ضمانت بازگشت</span>
                             </li>
                         </ul>
-                    </div>
+                    </section>
                 </div>
             </div>
         </>
