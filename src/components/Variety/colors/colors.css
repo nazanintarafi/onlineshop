@@ -1,14 +1,9 @@
 .Colors{
     border: 1px #D1E5F0 solid; 
-    padding: 15px 0px;
-    padding-bottom: 5px;
-    border-radius: 8px;
+    padding: 18px 0px;
+    border-radius: 18px;
     box-shadow: #becfd8bf 1px 1px 7px 1px;
     width: 100%;
-    font-size: 10px;
-    background-color: white;
-    position: relative;
-    top: -110px;
 }
 .SelectColor label{
     position: relative;
@@ -25,6 +20,7 @@
     font-weight: 500;
     border-right: 1px solid #D1E5F0;
     padding: 5px 6px;
+    font-size: 13px;
 }
 .SelectColor label:first-child .checkColor {
     border-right:  none;

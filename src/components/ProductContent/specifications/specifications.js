@@ -1,9 +1,8 @@
-import React , {useState} from 'react';
+import React from 'react';
 import './specifications.css';
 import Left from "../../../assets/images/down-arrowx.png";
 import Slider from '../../slider/productSlider/productSlider';
 const Specifications=(props)=>{
-
     return(
         <>
             <div className="Specifications">
