@@ -17,6 +17,26 @@ const ProductContent=(props)=>{
     const Like=(props)=>{
         setLike(!like)
     }
+    const[changeButton,setButton]=useState(false);
+    const ChangeButton=(props)=>{
+        setButton(!changeButton)
+    }
+    let classes=["productSelection"];
+    switch(changeButton){
+        case true:
+            classes.push("CloseAnimation");
+        default:
+            break; 
+    }
+
+    let variety=["VarietyStyle"];
+    switch(changeButton){
+        case true:
+            variety.push("VarietyAnimation");
+        default:
+            break; 
+    }
+  
     return(
         <>
             <div className="ProductContent">
@@ -51,17 +71,21 @@ const ProductContent=(props)=>{
                         <li>
                             <img src={video} alt="video"/>
                         </li>
+
                     </ul>
                     <div className="ProductIMG">
-                        <img src={product1} alt="online shop" />
+                        <img src={product1} alt="online shop"/>
                     </div>
                     <div className="btnProduct">
-                        <span className="productSelection"><Button btnType="seeAll" >انتخاب تنوع</Button></span>
+                        <span className={classes.join(' ')} onClick={ChangeButton}>
+                            <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
+                        </span>
+                        {/*variety*/}
+                        <section className={variety.join(' ')}>
+                            <Variety changeButton={changeButton}/>
+                        </section>
                         <Button btnType="submit" >افزودن به سبد خرید</Button>
                     </div>
-                    <section className="VarietyStyle">
-                        <Variety />
-                    </section>
                     <section>
                         <ul>
                             <li>
