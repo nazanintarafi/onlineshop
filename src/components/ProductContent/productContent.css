@@ -1,8 +1,13 @@
 
 .ProductContent div{
-    width: 88%;
     text-align: center;
     margin: auto;
+}
+.productTitre{
+    width: 88%;
+}
+.productImage{
+    width: 88%;
 }
 .ProductContent .productImage{
     position: relative;
@@ -11,7 +16,6 @@
     width: 100%;
 }
 .ProductContent .ProductIMG img{
-    margin-top: 63px;
     margin-bottom: 12px;
 }
 .productImage .productItems{
@@ -53,7 +57,7 @@
     text-align: center;
     box-shadow: none;
     margin: 8px auto;
-    width: 45%;
+    width: 35%;
     display: block;
     height: 23px;
     font-weight: normal;
@@ -87,7 +91,4 @@
     text-align: center;
     margin: auto;
     width: 100%;
-}
-.VarietyStyle .Variety{
-    width: 65%;
 }

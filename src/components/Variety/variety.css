@@ -3,6 +3,7 @@
    padding: 18px 0px;
    border-radius: 18px;
    box-shadow: #becfd8bf 1px 1px 7px 1px;
+   width: 50%;
 }
 .Variety .varietyBtn Button{
     box-shadow: none;
@@ -22,4 +23,7 @@
 }
 .Variety .BorderRightV span{
     width: 100%;
+}
+.VarietyColors{
+    width: 80%;
 }
