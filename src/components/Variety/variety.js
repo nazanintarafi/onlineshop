@@ -1,7 +1,5 @@
 import React from 'react';
 import Button from '../UI/button/button';
-import Colors from './colors/colors';
-import Warranty from './warranty/warranty';
 import './variety.css';
 const Variety=(props)=>{
     return(
@@ -18,12 +16,6 @@ const Variety=(props)=>{
                         <span>گارانتی ضمانت سلامت تحویل کالا آنلاین شاپ</span>
                     </div>
                 </div>
-            </div>
-            <div className="VarietyColors">
-                <Colors />
-            </div>
-            <div className="VarietyWarranty">
-                <Warranty />
             </div>
         </>
     )

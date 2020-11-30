@@ -59,9 +59,9 @@ const ProductContent=(props)=>{
                         <span className="productSelection"><Button btnType="seeAll" >انتخاب تنوع</Button></span>
                         <Button btnType="submit" >افزودن به سبد خرید</Button>
                     </div>
-                    <section className="VarietyStyle">
+                    <div className="VarietyStyle">
                         <Variety />
-                    </section>
+                    </div>
                     <section>
                         <ul>
                             <li>
