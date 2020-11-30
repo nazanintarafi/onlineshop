@@ -71,23 +71,21 @@ const ProductContent=(props)=>{
                         <li>
                             <img src={video} alt="video"/>
                         </li>
+
                     </ul>
                     <div className="ProductIMG">
                         <img src={product1} alt="online shop"/>
                     </div>
-                    
                     <div className="btnProduct">
+                        <span className={classes.join(' ')} onClick={ChangeButton}>
+                            <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
+                        </span>
                         {/*variety*/}
                         <section className={variety.join(' ')}>
                             <Variety changeButton={changeButton}/>
                         </section>
-                        <span className={classes.join(' ')} onClick={ChangeButton}>
-                            <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
-                        </span>
-
                         <Button btnType="submit" >افزودن به سبد خرید</Button>
                     </div>
-                    
                     <section>
                         <ul>
                             <li>
@@ -123,7 +121,6 @@ const ProductContent=(props)=>{
                         </ul>
                     </section>
                 </div>
-                
             </div>
         </>
     )

@@ -50,6 +50,7 @@
 }
 .btnProduct{
     text-align: center;
+    margin: 30px auto;
 }
 .btnProduct Button{
     text-align: center;
@@ -94,41 +95,12 @@
     display: none;
     transition: 0.1s;
 }
-
-/*.CloseAnimation Button{
+.CloseAnimation Button{
     width: 10%;
     height: 25px;
     border: #D1E5F0 2px solid; 
     box-shadow: 1px 1px 10px 1px #D1E5F0;
-    transition: all 0.1s ;  
-}*/
-.CloseAnimation Button{
-    animation-name: close;
-    animation-duration: 0.6s;  
-    animation-fill-mode: forwards;
-}
-@keyframes close{
-    0%{
-        margin: auto;
-        border: #D1E5F0 2px solid;
-    }
-    30%{
-        width: 10%;
-        height: 25px;
-        border: #D1E5F0 2px solid; 
-        box-shadow: 1px 1px 10px 1px #D1E5F0; 
-    }
-    50%{
-        width: 10%;
-        height: 25px;
-        border: #D1E5F0 2px solid; 
-        box-shadow: 1px 1px 10px 1px #D1E5F0;
-    }
-    100%{
-        height: 0;
-        width: 0;
-        opacity: 0;
-    }
+    transition: 0.3s;  
 }
 .btnProduct .VarietyStyle{
     width: 0;
@@ -137,23 +109,17 @@
 }
 .btnProduct .VarietyAnimation{
     animation-name: varAnimation;
-    animation-duration: 0.5s;  
+    animation-duration: 0.2s;  
     animation-fill-mode: forwards;
 }
 @keyframes varAnimation{
-    0%{
+    from{
         width: 0;
         height: 0;
         opacity: 0;
     }
-    50%{
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-    100%{
+    to{
         width: 77%;
-        height: 100%;
         opacity: 1;
     }
 }
