@@ -11,12 +11,32 @@ import img1 from '../../assets/images/Group 598.png';
 import img2 from '../../assets/images/Group 599.png';
 import img3 from '../../assets/images/Group 600.png';
 import Button from '../UI/button/button';
-import Variety from '../Variety/variety';
+import Variety from '../ProductComponents/Variety/variety';
 const ProductContent=(props)=>{
     const[like,setLike]=useState(false);
     const Like=(props)=>{
         setLike(!like)
     }
+    const[changeButton,setButton]=useState(false);
+    const ChangeButton=(props)=>{
+        setButton(!changeButton)
+    }
+    let classes=["productSelection"];
+    switch(changeButton){
+        case true:
+            classes.push("CloseAnimation");
+        default:
+            break; 
+    }
+
+    let variety=["VarietyStyle"];
+    switch(changeButton){
+        case true:
+            variety.push("VarietyAnimation");
+        default:
+            break; 
+    }
+  
     return(
         <>
             <div className="ProductContent">
@@ -31,6 +51,9 @@ const ProductContent=(props)=>{
                             <Stars />
                         </div>
                     </div>
+                </div>
+                <div className="in the middle">
+                    <Stars />
                 </div>
                 <div className="productImage">
                     <ul className="productItems">
@@ -53,15 +76,21 @@ const ProductContent=(props)=>{
                         </li>
                     </ul>
                     <div className="ProductIMG">
-                        <img src={product1} alt="online shop" />
+                        <img src={product1} alt="online shop"/>
                     </div>
+                    
                     <div className="btnProduct">
-                        <span className="productSelection"><Button btnType="seeAll" >انتخاب تنوع</Button></span>
+                        {/*variety*/}
+                        <section className={variety.join(' ')}>
+                            <Variety changeButton={changeButton}/>
+                        </section>
+                        <span className={classes.join(' ')} onClick={ChangeButton}>
+                            <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
+                        </span>
+
                         <Button btnType="submit" >افزودن به سبد خرید</Button>
                     </div>
-                    <div className="VarietyStyle">
-                        <Variety />
-                    </div>
+                    
                     <section>
                         <ul>
                             <li>
@@ -97,6 +126,7 @@ const ProductContent=(props)=>{
                         </ul>
                     </section>
                 </div>
+                
             </div>
         </>
     )

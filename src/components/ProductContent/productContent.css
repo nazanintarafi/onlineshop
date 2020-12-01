@@ -37,7 +37,6 @@
     font-size: 12px;
     position: relative;
 }
-
 .store div:last-child{
     text-align: left;
     margin: auto;
@@ -88,6 +87,41 @@
     margin: auto;
     width: 100%;
 }
+<<<<<<< HEAD
 .VarietyStyle .Variety{
     width: 65%;
 }
+=======
+.CloseAnimation Button span{
+    display: none;
+    transition: 0.1s;
+}
+.CloseAnimation Button{
+    width: 10%;
+    height: 25px;
+    border: #D1E5F0 2px solid; 
+    box-shadow: 1px 1px 10px 1px #D1E5F0;
+    transition: 0.3s;  
+}
+.btnProduct .VarietyStyle{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.btnProduct .VarietyAnimation{
+    animation-name: varAnimation;
+    animation-duration: 0.2s;  
+    animation-fill-mode: forwards;
+}
+@keyframes varAnimation{
+    from{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        width: 77%;
+        opacity: 1;
+    }
+}
+>>>>>>> parent of 36b2bcf... Revert "gh"
