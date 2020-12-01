@@ -10,8 +10,9 @@ import activeLike from '../../assets/images/like.png';
 import img1 from '../../assets/images/Group 598.png';
 import img2 from '../../assets/images/Group 599.png';
 import img3 from '../../assets/images/Group 600.png';
-import Button from '../UI/button/button';
 import Variety from '../ProductComponents/Variety/variety';
+import Button from '../UI/button/button';
+
 const ProductContent=(props)=>{
     const[like,setLike]=useState(false);
     const Like=(props)=>{
