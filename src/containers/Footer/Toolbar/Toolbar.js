@@ -1,15 +1,10 @@
-import React, {useState, useEffect, useRef } from 'react';
-import SideDrawer from '../SideDrawer/SideDrawer';
-import Home from '../../../pages/Home/home';
-import LogIn from '../../../pages/LogIn/logIn';
-import mainMenu from '../../../components/mainMenu/mainMenu';
+import React, {useState} from 'react';
 import './Toolbar.css';
 import home from '../../../assets/images/Path 146.png';
 import cart from '../../../assets/images/Group 1287.png';
 import menu from '../../../assets/images/Repeat Grid 3.png';
 import contact from '../../../assets/images/Group 1288.png';
 import {Link} from 'react-router-dom';
-import { timers } from 'jquery';
 import { useHistory, useLocation, useParams } from "react-router-dom";
 const Toolbar=(props)=>{
     let history = useHistory();

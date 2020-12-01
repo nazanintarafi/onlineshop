@@ -1,11 +1,10 @@
 
-import React,{useState} from 'react';
+import React from 'react';
 import Body from '../../../components/ProfilePagesBody/profilePagesBody';
 import './addressList.css';
 import AddressBox from '../../../components/AddressBox/addressBox';
 import Button from '../../../components/UI/button/button';
 import {Link} from 'react-router-dom';
-import {BrowserRouter,Route} from 'react-router-dom';
 const AddressList=(props)=>{
     const address =[
         "تهران، تهران، پاسداران، بهارستان یکم،کوچه نوربخش اول، پلاک 5، طبقه اول",

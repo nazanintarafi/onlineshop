@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './home.css';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import SlidShow from 'react-slick';
@@ -33,14 +33,12 @@ import {Link} from 'react-router-dom';
 import Button from '../../components/UI/button/button';
 import Tables from '../../components/tables/tables';
 const Home=(props) =>{
-  const [favoritsProducts, setFavoritsProducts]= useState({img8});
-  const[product,setProducts]=useState([
+  const product=[
     {image:'img1',name:'لب تاب',filter:"خانه و آشپزخانه",description:'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  ',oldPrice:'6,500,000' ,newPrice:'4,200,000 تومان',discount:'30%'}
-
-  ])
-  const[proTable,setProTable]=useState([
+  ]
+  const proTable=[
     {glassesImg1:'glasses1',glassesImg2:'glasses2',glassesImg3:'glasses3',glassesImg4:'glasses4',glassesImg5:'glasses5',glassesImg6:'glasses6',glassesImg7:'glasses7',glassesImg8:'glasses8',glassesImg9:'glasses9'}
-  ])
+  ]
   var setting = {
     dots: true,
     infinite: true,

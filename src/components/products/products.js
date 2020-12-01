@@ -1,6 +1,5 @@
 import React from 'react';
 import Product from './product/product';
-import img1 from '../../assets/images/Mask Group 193.png';
 const Products=(props)=>{
 
     return(

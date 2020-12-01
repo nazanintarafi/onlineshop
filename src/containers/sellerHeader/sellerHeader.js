@@ -1,14 +1,9 @@
-import React,{useState} from 'react';
+import React from 'react';
 import backImg from '../../../src/assets/images/sellerHeader.png';
 import proImg from '../../../src/assets/images/download.png';
 import './sellerHeader.css';
-import BtnSeller from '../../components/UI/button/btnRight/btnSeller/btnSeller';
 
 const SellerHeader=(props)=>{
-    const [openMenu,setOpenMenu] = useState(false);
-    const MenuToggle=(props)=>{
-        setOpenMenu(!openMenu)
-    }
     return(
         <header className="profileHeader SellerHeader"  style={{
             position:props.rightToggle?'fixed':'fixed',right:props.rightToggle?'50%':'10px',left:props.rightToggle?'0':null,

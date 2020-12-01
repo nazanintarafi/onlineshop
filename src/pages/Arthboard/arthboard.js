@@ -2,8 +2,6 @@ import React from 'react';
 import './arthboard.css';
 import Body from '../../components/ProfilePagesBody/profilePagesBody';
 import SearchBar from '../../components/searchBar/searchBar';
-import {Link} from 'react-router-dom';
-import {BrowserRouter,Route} from 'react-router-dom';
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import Slider from '../../components/slider/productSlider/productSlider';
 const Arthboard=()=>{

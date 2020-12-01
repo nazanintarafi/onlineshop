@@ -4,7 +4,6 @@ import SlidShow from 'react-slick';
 import ProductSlider from './productSlider/productSlider';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Product from '../../components/products/product/product';
 
 const Slider=(props)=>{
     return(

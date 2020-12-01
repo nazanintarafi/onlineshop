@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./seller.css";
-import Button from '../../components/UI/button/button';
 import Body from '../../components/ProfilePagesBody/profilePagesBody';
 import Slider from '../../components/slider/productSlider/productSlider';
 

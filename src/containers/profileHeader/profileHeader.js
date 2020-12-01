@@ -1,7 +1,6 @@
 import React from 'react';
 import './profileHeader.css';
 import backImg from '../../assets/images/back_profile.png';
-import { buildQueries } from '@testing-library/react';
 const ProfileHeader=(props)=>{
     return(
         <header className="profileHeader"  style={{
