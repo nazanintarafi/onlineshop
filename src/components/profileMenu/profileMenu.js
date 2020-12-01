@@ -1,7 +1,6 @@
 import React from 'react';
 import './profileMenu.css';
 import {Link} from 'react-router-dom';
-import {BrowserRouter,Route} from 'react-router-dom';
 const ProfileMenu=(props)=>{
     return(
         <ul className="ProfileMenu"  style={{display:props.rightToggle?'block':'none'}}>

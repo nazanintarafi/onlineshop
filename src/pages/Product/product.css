@@ -12,3 +12,41 @@
 .Product .detail h2{
     font-size: 21px;
 }
+.testProduct{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.MainProduct{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F36B07;
+    position: absolute;
+    z-index: 6;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    box-sizing: border-box;
+    display: block;
+    top:140px;
+}
+.ProductContent{
+    text-align: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #F36B07;
+}
+.ProductContent h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 23px;
+    color: white;
+}

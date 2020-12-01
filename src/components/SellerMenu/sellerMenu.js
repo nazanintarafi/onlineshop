@@ -1,10 +1,6 @@
 import React from 'react';
 import './sellerMenu.css';
-import {Link} from 'react-router-dom';
-import {BrowserRouter,Route} from 'react-router-dom';
 import down from '../../assets/images/Group 6.png';
-import main from '../mainMenu/mainMenu';
-import chevronLeft from '../../assets/images/Group 1569.png';
 import left from '../../assets/images/down-arrowx.png';
 const SellerMenu=(props)=>{
     return(

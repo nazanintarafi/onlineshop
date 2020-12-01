@@ -1,6 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
-import Discount from '../../components/discount/discount';
-import SlidShow from 'react-slick';
+import React from 'react';
 import ProductSlider from './productSlider/productSlider';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

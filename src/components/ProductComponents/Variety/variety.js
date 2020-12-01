@@ -23,6 +23,7 @@ const Variety=(props)=>{
     switch(props.changeButton){
         case true:
             select.push("openProductSelection");
+            break;
         default:
             break; 
     }
@@ -32,6 +33,7 @@ const Variety=(props)=>{
     switch(openColor){
         case true:
             color.push("colorAnimation");
+            break;
         default:
             break; 
     }

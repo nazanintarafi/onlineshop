@@ -25,6 +25,7 @@ const ProductContent=(props)=>{
     switch(changeButton){
         case true:
             classes.push("CloseAnimation");
+            break;
         default:
             break; 
     }
@@ -33,6 +34,7 @@ const ProductContent=(props)=>{
     switch(changeButton){
         case true:
             variety.push("VarietyAnimation");
+            break;
         default:
             break; 
     }

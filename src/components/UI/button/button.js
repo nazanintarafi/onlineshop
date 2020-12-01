@@ -5,18 +5,25 @@ const Button =(props)=>{
     switch(props.btnType){
         case "seeAll":
             classes.push("seeAll");
+            break;
         case "submit":
             classes.push("submit");
+            break;
         case "changePass":
             classes.push("changePass");
+            break;
         case "cancel":
             classes.push("cancel");
+            break;
         case "signUp":
             classes.push("signUp");
+            break;
         case "login":
             classes.push("login");
+            break;
         case "top":
             classes.push("top");
+            break;
         default:
             break; 
     }
@@ -27,6 +34,6 @@ const Button =(props)=>{
     )
 }
 export default Button;
-{/*harja sedash kardi :
+/*harja sedash kardi :
 <Button btnType="seeAll" clicked={props.deleted}>حذف</Button>
-*/}
+*/

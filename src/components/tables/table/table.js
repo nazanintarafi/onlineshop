@@ -1,6 +1,5 @@
 import React from 'react';
 import './table.css';
-import {BrowserRouter,Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 const Table=(props)=>{
     return(

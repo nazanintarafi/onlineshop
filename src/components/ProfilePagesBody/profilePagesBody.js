@@ -7,7 +7,6 @@ import Header from '../../containers/profileHeader/profileHeader';
 import SellerHeader from '../../containers/sellerHeader/sellerHeader';
 import BtnRight from '../UI/button/btnRight/btnRight';
 import BtnSeller from '../UI/button/btnRight/btnSeller/btnSeller';
-import Button from '../UI/button/button';
 import Logo from '../logo/logo';
 const ProfilePagesBody=(props)=>{
     const [openMenu,setOpenMenu] = useState(false);

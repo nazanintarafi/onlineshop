@@ -10,6 +10,7 @@ const Colors=(props)=>{
     switch(openVariety){
         case true:
             opnVariety.push("showVariety");
+            break;
         default:
             break; 
     }

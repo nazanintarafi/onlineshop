@@ -48,9 +48,9 @@ const MainMenu=(props)=>{
                                                 </div>
                                             </div>
                                             <ul>
-                                                <li><a>گوشی موبایل</a></li>
-                                                <li><a>شارژر</a></li>
-                                                <li><a>قاب و محافظ</a></li>
+                                                <li><Link to="#">گوشی موبایل</Link></li>
+                                                <li><Link to="#">شارژر</Link></li>
+                                                <li><Link to="#">قاب و محافظ</Link></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -65,9 +65,9 @@ const MainMenu=(props)=>{
                                                 </div>
                                             </div>
                                             <ul>
-                                                <li><a>گوشی موبایل</a></li>
-                                                <li><a>شارژر</a></li>
-                                                <li><a>قاب و محافظ</a></li>
+                                                <li><Link to="#">گوشی موبایل</Link></li>
+                                                <li><Link to="#">شارژر</Link></li>
+                                                <li><Link to="#">قاب و محافظ</Link></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -112,24 +112,24 @@ const MainMenu=(props)=>{
                                     <div className="container">
                                         <div className="row subMenu">
                                             <span className="col-md-8 col-xs-8 col-8 p-0">خانه و آشپزخانه</span>
-                                            <span className="col-md-4 col-xs-4 col-4 p-0"><img src={chevronLeft} /></span>
+                                            <span className="col-md-4 col-xs-4 col-4 p-0"><img src={chevronLeft} alt="online shop"/></span>
                                         </div>
                                     </div>
                                     <ul>
                                         <li>
                                             <span>موبایل</span>
                                             <ul>
-                                                <li><a>گوشی موبایل</a></li>
-                                                <li><a>شارژر</a></li>
-                                                <li><a>قاب و محافظ</a></li>
+                                                <li><Link to="#">گوشی موبایل</Link></li>
+                                                <li><Link to="#">شارژر</Link></li>
+                                                <li><Link to="#">قاب و محافظ</Link></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <span>لپ تاپ</span>
                                             <ul>
-                                                <li><a>گوشی موبایل</a></li>
-                                                <li><a>شارژر</a></li>
-                                                <li><a>قاب و محافظ</a></li>
+                                                <li><Link to="#">گوشی موبایل</Link></li>
+                                                <li><Link to="#">شارژر</Link></li>
+                                                <li><Link to="#">قاب و محافظ</Link></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -155,17 +155,17 @@ const MainMenu=(props)=>{
                                         <li>
                                             <span>موبایل</span>
                                             <ul>
-                                                <li><a>گوشی موبایل</a></li>
-                                                <li><a>شارژر</a></li>
-                                                <li><a>قاب و محافظ</a></li>
+                                                <li><Link to="#">گوشی موبایل</Link></li>
+                                                <li><Link to="#">شارژر</Link></li>
+                                                <li><Link to="#">قاب و محافظ</Link></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <span>لپ تاپ</span>
                                             <ul>
-                                                <li><a>گوشی موبایل</a></li>
-                                                <li><a>شارژر</a></li>
-                                                <li><a>قاب و محافظ</a></li>
+                                                <li><Link to="#">گوشی موبایل</Link></li>
+                                                <li><Link to="#">شارژر</Link></li>
+                                                <li><Link to="#">قاب و محافظ</Link></li>
                                             </ul>
                                         </li>
                                         <li>

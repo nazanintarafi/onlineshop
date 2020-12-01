@@ -14,8 +14,10 @@ const BtnSeller=(props)=>{
     switch(props.btnType){
         case "sellerBtn":
             classes.push("sellerBtn");
+            break;
         case "arthBtn":
             classes.push("arthBtn");
+            break;
         default:
             break; 
     }
