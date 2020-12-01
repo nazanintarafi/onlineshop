@@ -52,9 +52,6 @@ const ProductContent=(props)=>{
                         </div>
                     </div>
                 </div>
-                <div className="in the middle">
-                    <Stars />
-                </div>
                 <div className="productImage">
                     <ul className="productItems">
                         <li onClick={Like}>

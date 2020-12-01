@@ -1,8 +1,13 @@
 
 .ProductContent div{
-    width: 88%;
     text-align: center;
     margin: auto;
+}
+.productTitre{
+    width: 88%;
+}
+.productImage{
+    width: 88%;
 }
 .ProductContent .productImage{
     position: relative;
@@ -87,11 +92,7 @@
     margin: auto;
     width: 100%;
 }
-<<<<<<< HEAD
-.VarietyStyle .Variety{
-    width: 65%;
-}
-=======
+
 .CloseAnimation Button span{
     display: none;
     transition: 0.1s;
@@ -124,4 +125,3 @@
         opacity: 1;
     }
 }
->>>>>>> parent of 36b2bcf... Revert "gh"

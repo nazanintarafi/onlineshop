@@ -1,0 +1,95 @@
+.Variety {
+    position: relative;
+    top: -38px;
+    border: 1px #D1E5F0 solid; 
+    padding: 18px 0px;
+    border-radius: 18px;
+    box-shadow: #becfd8bf 1px 1px 7px 1px;
+    width: 50%;
+    padding-top: 3px;
+    background-color: white;
+    font-size: 11px;
+ }
+ .Variety .varietyBtn Button{
+     box-shadow: none;
+     width: 70%;
+     height: 27px;
+     font-weight: 400;
+ }
+ .Variety .VarietyContent{
+     margin-top: 15px;
+     color: #707070;
+     font-weight: bold;
+     width: 100%;
+ }
+ .Variety .BorderRightV{
+     border-right:#D1E5F0 1px solid;
+     width: 100%;
+ }
+ .Variety .BorderRightV span{
+     width: 100%;
+ }
+ .VarietyWarranty{
+     display: none;
+ }
+ .VarietyAnimation{
+     animation-name: variety;
+     animation-duration: 0.1s;  
+     animation-fill-mode: forwards;
+ }
+ @keyframes variety {
+     from {
+         width: 20%;
+         font-size: 5px;
+         height: 20px;
+     }
+     to {
+         border: 1px #D1E5F0 solid; 
+         font-size: 11px;
+         padding: 18px 0px;
+         border-radius: 18px;
+         box-shadow: #becfd8bf 1px 1px 7px 1px;
+         width: 50%;
+         padding-top: 3px;
+     }
+ }
+ .VarietyColors{
+     width: 0;
+     height: 0;
+     opacity: 0;
+ }
+ .colorAnimation {
+     animation-name: colorAnimation;
+     animation-duration: 0.2s;  
+     animation-fill-mode: forwards;
+ }
+ @keyframes colorAnimation{
+     from{
+         width: 0;
+         height: 0;
+         opacity: 0;
+     }
+     to{
+         width: 100%;
+         height: 100%;
+         padding: 0;
+         opacity: 1;
+         margin-top: -30px;
+     }
+ }
+
+ .VarietyStyle .closeVariety{
+    animation-name: closeVariety;
+    animation-duration: 0.2s;  
+    animation-fill-mode: forwards;
+ }
+ @keyframes closeVariety{
+     from{
+        opacity: 1; 
+     }
+     to{
+        opacity: 0;
+        height: 0;
+        width: 0;
+     }
+ }

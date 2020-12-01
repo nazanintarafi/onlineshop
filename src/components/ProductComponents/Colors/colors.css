@@ -1,0 +1,29 @@
+.Colors{
+    border: 1px solid #D1E5F0;
+    border-radius: 10px;
+    box-shadow: #e4ebef 1px 1px 3px 1px;
+    background-color: white;
+}
+.Colors label{
+    margin: 4px auto 10px auto;
+    align-items: center;
+}
+.Colors label input{
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.Colors label .colorName{
+    color: #707070;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 5px;
+    border-right: 1px solid #D1E5F0 ;
+    padding-top: 0;
+}
+.Colors label:first-child .colorName{
+    border-right: none;
+}
+.Colors label input:checked ~ .colorName{
+    color: #F36B07;
+}

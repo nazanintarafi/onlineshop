@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import Input from '../../../components/Forms/Form/form';
 import "./orders.css";
-import Button from '../../../components/UI/button/button';
 import Body from '../../../components/ProfilePagesBody/profilePagesBody';
 import Table from '../../../components/Table/table';
 const Orders=()=>{
