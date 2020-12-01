@@ -26,7 +26,7 @@ const ProfilePagesBody=(props)=>{
                     <SellerMenu  rightToggle={openMenu}/>
                 </div>
                 <div  className="homeHeader arthHeader" style={{opacity:props.arthPage?'1':'0',top:openMenu?'90px':'0px',
-                    left:openMenu?'-47%':null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                    left:openMenu?'-47%':null,transition:openMenu?'all 0.2s':'all 0.2s'}}>
                         <Logo />
                 </div>
                 
@@ -34,7 +34,7 @@ const ProfilePagesBody=(props)=>{
                     position:openMenu?'fixed':'relative',right:openMenu?'50%':'10px',
                     top:openMenu?'90px':'0px',height:openMenu?'390px':'100%',width:openMenu?'100%':'100%',
                     overflowX:openMenu?'hidden':'hidden',overflowY:openMenu?'hidden':'hidden',
-                    transition:openMenu?'all 0.5s':'all 0.5s',zIndex:openMenu?'100':"null"}}
+                    transition:openMenu?'all 0.2s':'all 0.2s',zIndex:openMenu?'100':"null"}}
                 >
                     <div style={{opacity:props.profilePage?'1':'0'}}>
                         <Header rightToggle={openMenu} titre={props.titre} profile={props.profile}/>
@@ -46,13 +46,16 @@ const ProfilePagesBody=(props)=>{
                         {props.children}
                     </div>
                     <div></div>
-                    <div className="btnRight" style={{opacity:props.profilePage?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"300px":null,transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                    <div className="btnRight" style={{opacity:props.profilePage?'1':'0',right:openMenu?"50.5%":"12px",
+                    top:openMenu?"300px":null,transition:openMenu?'all 0.2s':'all 0.2s'}}>
                         <BtnRight clicked={MenuToggle}/>
                     </div>
-                    <div className="btnRight btnSeller" style={{opacity:props.sellerBtn?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"160px":null,zIndex:openMenu?"200":"200",transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                    <div className="btnRight btnSeller" style={{opacity:props.sellerBtn?'1':'0',right:openMenu?"50.5%":"12px",
+                    top:openMenu?"160px":null,zIndex:openMenu?"200":"200",transition:openMenu?'all 0.2s':'all 0.2s'}}>
                         <BtnSeller clicked={MenuToggle} btnType="sellerBtn"/>
                     </div>
-                    <div className="btnRight btnSeller" style={{opacity:props.arthBtn?'1':'0',right:openMenu?"50.5%":"12px",top:openMenu?"160px":"100px",zIndex:openMenu?"200":"200",transition:openMenu?'all 0.5s':'all 0.5s'}}>
+                    <div className="btnRight btnSeller" style={{opacity:props.arthBtn?'1':'0',right:openMenu?"50.5%":"12px",
+                    top:openMenu?"160px":"100px",zIndex:openMenu?"200":"200",transition:openMenu?'all 0.2s':'all 0.2s'}}>
                         <BtnSeller clicked={MenuToggle} btnType="arthBtn"/>
                     </div>
                 </section>

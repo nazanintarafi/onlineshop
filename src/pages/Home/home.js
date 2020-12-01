@@ -28,6 +28,14 @@ import img17 from '../../assets/images/Group 413.png';
 import img18 from '../../assets/images/mail.png';
 import img19 from '../../assets/images/phone-call.png';
 import img20 from '../../assets/images/logo.png';
+import glasses1 from '../../assets/images/Fashion (1).png';
+import glasses2 from '../../assets/images/Fashion (5).png';
+import glasses3 from '../../assets/images/Fashion (3).png';
+import glasses4 from '../../assets/images/Fashion (11).png';
+import glasses5 from '../../assets/images/Fashion (4).png';
+import glasses6 from '../../assets/images/Fashion (2).png';
+import glasses7 from '../../assets/images/Fashion (12).png';
+import glasses8 from '../../assets/images/Fashion (13).png';
 import power from '../../assets/images/onlineshop_anker_2.png';
 import {Link} from 'react-router-dom';
 import Button from '../../components/UI/button/button';
@@ -37,7 +45,8 @@ const Home=(props) =>{
     {image:'img1',name:'لب تاب',filter:"خانه و آشپزخانه",description:'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  ',oldPrice:'6,500,000' ,newPrice:'4,200,000 تومان',discount:'30%'}
   ]
   const proTable=[
-    {glassesImg1:'glasses1',glassesImg2:'glasses2',glassesImg3:'glasses3',glassesImg4:'glasses4',glassesImg5:'glasses5',glassesImg6:'glasses6',glassesImg7:'glasses7',glassesImg8:'glasses8',glassesImg9:'glasses9'}
+    {glassesImg1:{glasses1},glassesImg2:{glasses2},glassesImg3:{glasses3},glassesImg4:{glasses4},glassesImg5:{glasses5},
+    glassesImg6:{glasses6},glassesImg7:{glasses7},glassesImg8:{glasses8},glassesImg9:{glasses2}}
   ]
   var setting = {
     dots: true,

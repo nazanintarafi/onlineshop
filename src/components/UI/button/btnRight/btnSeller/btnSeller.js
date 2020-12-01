@@ -25,7 +25,7 @@ const BtnSeller=(props)=>{
         <div className="rightBackgroundButton sellerBackBtn">
             <button onClick={props.clicked}  className={classes.join(' ')}>
                 <img src={right} alt="right" className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                transition:rightToggle?"all 0.5s":"all 0.5s"}} />
+                transition:rightToggle?"all 0.2s":"all 0.2s"}} />
             </button>
         </div>
         
