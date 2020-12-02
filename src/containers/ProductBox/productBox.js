@@ -15,7 +15,7 @@ const ProductBox=(props)=>{
     return(
             <div className={classes.join(' ')} >
                <div className="ProductBoxPadding">
-                    <div className="productDiscount">
+                    <div className="productDiscount" style={{opacity:props.isDiscount?"0":"1"}}>
                         <Discount isDiscount={props.isDiscount} discount={props.discount} />
                     </div>
                     <div className="ProductBoxImg">

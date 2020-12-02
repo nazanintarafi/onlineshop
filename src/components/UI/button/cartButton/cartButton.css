@@ -1,5 +1,5 @@
 
-.BtnClose .backgroundButton{
+.addressBtn .backgroundButton{
     background-color: white;
     height: 40px;
     width: 73px;
@@ -7,7 +7,7 @@
     top:-20px;
     left: -97px;
 }
-.BtnClose .button{
+.addressBtn .button{
     background-color: #FF6D02;
     padding: 1px 10px 6px 10px;
     color: white;
@@ -19,14 +19,14 @@
     margin-top: 16px;
 
 }
-.BtnClose .button img{
+.addressBtn .button img{
     align-items: center;
     margin: auto;
 }
-.BtnClose .button:focus{
+.addressBtn .button:focus{
     outline: none;
 }
-.BtnClose  .button::after{
+.addressBtn  .button::after{
     content: "";
     background-color: white;
     position: absolute;
@@ -39,7 +39,7 @@
     border-bottom: 3px solid #f36b07;
     border-radius: 20px 0px 8px 9px;
 }
-.BtnClose  .button::before{
+.addressBtn  .button::before{
     content: "";
     background-color: white;
     position: absolute;

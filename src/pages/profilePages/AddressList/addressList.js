@@ -25,7 +25,7 @@ const AddressList=(props)=>{
                     />
                     
                     <Link to="/add-address" className="addAddress">
-                        <Button btnType="seeAll">افزودن آدرس جدید</Button>
+                        <Button btnType="signUp">افزودن آدرس جدید</Button>
                     </Link>
             </Body>
         </>

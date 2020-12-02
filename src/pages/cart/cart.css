@@ -1,0 +1,11 @@
+.firstPage{
+    background-color:#F36B07 ;
+    text-align: center;
+    margin: auto;
+    margin-top: 1px;
+    position: relative;
+}
+.firstPageContent{
+    margin-top: 30px;
+}
+

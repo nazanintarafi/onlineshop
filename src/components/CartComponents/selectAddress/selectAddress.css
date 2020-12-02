@@ -1,0 +1,14 @@
+.SelectAddress {
+    background-color: white;
+}
+.SelectAddress .AddressBox label{
+    z-index: 100;
+}
+.SelectAddress .AddressBox .edit {
+    z-index: 1;
+}
+.SelectAddress h2{
+    font-size: 12px;
+    padding: 12px;
+    padding-bottom: 30px;
+}
