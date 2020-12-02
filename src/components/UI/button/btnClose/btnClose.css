@@ -1,5 +1,5 @@
 
-.BtnClose .backgroundButton{
+.backgroundButton{
     background-color: white;
     height: 40px;
     width: 70px;
@@ -7,7 +7,7 @@
     top:-20px;
     left: 10px;
 }
-.BtnClose .button{
+.button{
     background-color: #FF6D02;
     padding: 5px 10px 5px 10px;
     color: white;
@@ -17,14 +17,18 @@
     box-shadow: #f36b07 0px 14px 0px 1px;
 
 }
-.BtnClose .button img{
+.button img{
     align-items: center;
     margin: auto;
 }
-.BtnClose .button:focus{
+.button:focus{
     outline: none;
 }
-.BtnClose  .button::after{
+.Rotate{
+    transform:rotate(180deg);
+    padding-top: 10px;
+}
+.button::after{
     content: "";
     background-color: white;
     position: absolute;
@@ -37,7 +41,7 @@
     border-bottom: 3px solid #f36b07;
     border-radius: 20px 0px 8px 9px;
 }
-.BtnClose  .button::before{
+.button::before{
     content: "";
     background-color: white;
     position: absolute;

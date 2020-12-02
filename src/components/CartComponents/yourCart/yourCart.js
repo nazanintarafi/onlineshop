@@ -3,7 +3,9 @@ import './yourCart.css';
 const YourCart=(props)=>{
     return(
         <>
-            <span>hi</span>
+            <div className="YourCart">
+                <h1>hi</h1>
+            </div>
         </>
     )
 }

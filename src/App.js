@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Product from './pages/Product/product';
+import Cart from './pages/cart/cart';
 import Arthboard from './pages/Arthboard/arthboard';
 import Seller from './pages/Seller/seller';
 import Profile from './pages/profilePages/Profile/profile';
@@ -16,17 +17,17 @@ const App=() =>{
   return(
     <BrowserRouter>
       <Route path="/product" exact component={Product} />
-        <Route path="/arthboard" exact component={Arthboard} />
-        <Route path="/" exact component={HomePage} />
-        <Route path="/profile" exact component={Profile}/>
-        <Route path="/orders" exact component={Orders} />
-        <Route path="/favorits" exact component={Favorits} />
-        <Route path="/address-list" exact component={AddressList} />
-        <Route path="/add-address" exact component={AddAddress} />
-        <Route path="/change-password" exact component={ChangePassword} />
-        <Route path="/login" exact component={LogIn} />
-        <Route path="/seller" exact component={Seller} />
-
+      <Route path="/cart" exact component={Cart} />
+      <Route path="/arthboard" exact component={Arthboard} />
+      <Route path="/" exact component={HomePage} />
+      <Route path="/profile" exact component={Profile}/>
+      <Route path="/orders" exact component={Orders} />
+      <Route path="/favorits" exact component={Favorits} />
+      <Route path="/address-list" exact component={AddressList} />
+      <Route path="/add-address" exact component={AddAddress} />
+      <Route path="/change-password" exact component={ChangePassword} />
+      <Route path="/login" exact component={LogIn} />
+      <Route path="/seller" exact component={Seller} />
     </BrowserRouter>
     
   )
