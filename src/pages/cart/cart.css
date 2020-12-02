@@ -1,11 +1,25 @@
+.Cart{
+    overflow-y: hidden;
+}
 .firstPage{
     background-color:#F36B07 ;
     text-align: center;
     margin: auto;
     margin-top: 1px;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 .firstPageContent{
     margin-top: 30px;
 }
-
+.secondPageContent{
+    position: absolute;
+    top: 82%;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    z-index: 2;
+}

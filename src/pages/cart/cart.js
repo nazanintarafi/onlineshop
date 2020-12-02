@@ -8,11 +8,12 @@ const Cart=(props)=>{
         <>
             <div className="Cart">
                 <div className="firstPage">
-                <YourCart />
-                    {/*<div className="firstPageContent">
-                        <SelectAddress />
-                    </div>*/}
-                    
+                    <div className="firstPageContent">
+                        <YourCart />
+                    </div>
+                </div>
+                <div className="secondPageContent">
+                    <SelectAddress />
                 </div>
             </div>
         </>

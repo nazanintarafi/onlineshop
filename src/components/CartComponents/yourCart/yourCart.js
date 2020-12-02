@@ -25,28 +25,33 @@ const YourCart=(props)=>{
                         number="1"
                     />
                     <div className="prices">
-                        <p className="cartPrice">
-                            <span>مجموع قیمت ها</span>
-                            <span>12,250,000</span>
-                        </p>
-                        <p className="cartPrice">
-                            <span>قیمت ارسال</span>
-                            <span>0</span>
-                        </p>
-                        <p className="borderBotton">
-                            <span>کد تخفیف</span>
-                        </p>
-                        <p className="borderBotton">
-                            <span>کارت هدیه</span>
-                        </p>
-                        <p className="borderBotton boldDiscount">
-                            <span>مجموع تخفیف ها</span>
-                            <span>650,000</span>
-                        </p>
-                        <p className="cartPrice">
-                            <span>مبلغ قابل پرداخت</span>
-                            <span>11,600,000</span>
-                        </p>
+                        <div style={{display:"none"}}>
+                            <p className="cartPrice">
+                                <span>مجموع قیمت ها</span>
+                                <span>12,250,000</span>
+                            </p>
+                            <p className="cartPrice">
+                                <span>قیمت ارسال</span>
+                                <span>0</span>
+                            </p>
+                            <p className="borderBotton">
+                                <span>کد تخفیف</span>
+                            </p>
+                            <p className="borderBotton">
+                                <span>کارت هدیه</span>
+                            </p>
+                            <p className="borderBotton boldDiscount">
+                                <span>مجموع تخفیف ها</span>
+                                <span>650,000</span>
+                            </p>
+                            <p className="cartPrice">
+                                <span>مبلغ قابل پرداخت</span>
+                                <span>11,600,000</span>
+                            </p>
+                        </div>
+                        <div>
+                            
+                        </div>
                     </div>
                 </div>
 
