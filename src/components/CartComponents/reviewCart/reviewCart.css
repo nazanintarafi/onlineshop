@@ -1,0 +1,13 @@
+
+.reviewGoBack{
+    text-align: right;
+}
+.reviewGoBack h3{
+    font-size:12px;
+    background-color: #DBDBEB;
+    height: 50px;
+    padding-top: 8px;
+    text-align: right;
+    margin: auto;
+    padding-right: 25%;
+}

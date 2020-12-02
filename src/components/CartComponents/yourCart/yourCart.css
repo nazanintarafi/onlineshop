@@ -56,3 +56,13 @@
     text-align: left;
     margin: auto;
 }
+.emptyImg{
+    text-align: center;
+    margin: 20px auto;
+}
+.emptyImg p{
+    padding-top: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}

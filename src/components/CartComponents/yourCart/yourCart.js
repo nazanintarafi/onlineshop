@@ -4,6 +4,8 @@ import CartBox from '../../../containers/ProductBox/cartBox/cartBox';
 import image01 from '../../../assets/images/Cosmetics (3).png';
 import CloseButton from '../../UI/button/btnClose/btnClose';
 import {Link} from 'react-router-dom';
+import emptyCart from '../../../assets/images/Group 1728.png';
+import Button from '../../UI/button/button';
 const YourCart=(props)=>{
     return(
         <>
@@ -25,7 +27,7 @@ const YourCart=(props)=>{
                         number="1"
                     />
                     <div className="prices">
-                        <div style={{display:"none"}}>
+                        <div>
                             <p className="cartPrice">
                                 <span>مجموع قیمت ها</span>
                                 <span>12,250,000</span>
@@ -49,8 +51,14 @@ const YourCart=(props)=>{
                                 <span>11,600,000</span>
                             </p>
                         </div>
-                        <div>
-                            
+                        <div style={{display:"none"}}>
+                            <div className="emptyImg">
+                                <img src={emptyCart} alt="online shop" />
+                                <p>سبد خرید شما خالی است</p>
+                            </div>
+                            <Link to="/" className="emptyBtn">
+                                <Button btnType="seeAll">خرید کنید</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
