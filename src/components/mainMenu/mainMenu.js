@@ -182,9 +182,9 @@ const MainMenu=(props)=>{
                     </nav>
                     <hr />
                     <ul className="aboutUs">
-                        <li><Link to="/questions">سوالی دارید</Link></li>
-                        <li><Link to="/about-us">درباره ما</Link></li>
-                        <li><Link to="/contact-us">تماس با ما</Link></li>
+                        <li><Link to="/">سوالی دارید</Link></li>
+                        <li><Link to="/">درباره ما</Link></li>
+                        <li><Link to="/">تماس با ما</Link></li>
                     </ul>
                     <hr />
                     <div className="row profile">

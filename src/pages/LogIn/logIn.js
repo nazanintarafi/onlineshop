@@ -4,6 +4,7 @@ import Button from '../../components/UI/button/button';
 import BtnTop from '../../components/UI/button/btnTop/btnTop';
 import Input from '../../components/Forms/Form/form';
 import down from '../../assets/images/down-arrow.png';
+import {Link} from 'react-router-dom';
 const LogIn=(props)=>{
     const[goTop,setGoTop]=useState(false);
     const GoTop=(props)=>{
@@ -18,12 +19,17 @@ const LogIn=(props)=>{
                         <form>
                                 <Input type="text" placeholder="شماره همراه" />
                                 <Input type="text" placeholder="سوال امنیتی" />
+                                <label>
+                                    <input type="checkbox" name="NewsLetter"/>
+                                    <span className="loginRadio loginRadio1"></span>
+                                    <span className="LoginMark">خبرنامه آنلاین شاپ را برای من ارسال کنید</span>
+                                </label>
                                 <div className="buttonSubmit">
                                     <Button btnType="signUp">ثبت نام مشتری</Button>
                                 </div>
                         </form>
                     </div>
-                    <div className="logIn" style={{height:goTop?'30%':'100%',top:goTop?'550px':'180px',bottom:goTop?'0px':'-150px',
+                    <div className="logIn" style={{height:goTop?'30%':'100%',top:goTop?'550px':'328px',bottom:goTop?'0px':'0px',
                         transition:goTop?'all 0.2s':'all 0.2s'}}>
                         <div className="logInContent">
                             <h2>ورود</h2>
@@ -32,8 +38,16 @@ const LogIn=(props)=>{
                             }}>
                                 <Input type="text" placeholder="شماره همراه" />
                                 <Input type="text" placeholder="رمز عبور" />
+                                <label>
+                                    <input type="checkbox" name="NewsLetter"/>
+                                    <span className="loginRadio loginRadio2"></span>
+                                    <span className="LoginMark">مرا به خاطر بسپار</span>
+                                </label>
                                 <div className="buttonSubmit">
                                     <Button btnType="login">ورود</Button>
+                                    <div className="forgetPassword">
+                                        <Link to="/"><span>رمز عبور خود را فراموش کرده اید؟</span></Link>
+                                    </div>
                                 </div>
                             </form>
                             <div className="test">

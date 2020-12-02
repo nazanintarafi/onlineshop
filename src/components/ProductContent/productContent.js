@@ -30,7 +30,6 @@ const ProductContent=(props)=>{
         default:
             break; 
     }
-
     let variety=["VarietyStyle"];
     switch(changeButton){
         case true:

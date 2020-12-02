@@ -13,6 +13,7 @@ const Slider=(props)=>{
                 oldPrice={product.oldPrice}
                 newPrice={product.newPrice}
                 discount={product.discount}
+                isDiscount={props.isDiscount}
             />
         )
     
