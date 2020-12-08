@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import './profilePagesBody.css';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import ProfileMenu from '../profileMenu/profileMenu';
@@ -8,11 +8,15 @@ import SellerHeader from '../../containers/sellerHeader/sellerHeader';
 import BtnRight from '../UI/button/btnRight/btnRight';
 import BtnSeller from '../UI/button/btnRight/btnSeller/btnSeller';
 import Logo from '../logo/logo';
+import {MenuContext} from '../../context/MenuContext/MenuContext';
+
 const ProfilePagesBody=(props)=>{
     const [openMenu,setOpenMenu] = useState(false);
     const MenuToggle=(props)=>{
         setOpenMenu(!openMenu)
     }
+
+    const {show} = useContext(MenuContext);
     return(
         <>
             <div className="Profile" style={{backgroundColor:"#bfbfcf"}}>

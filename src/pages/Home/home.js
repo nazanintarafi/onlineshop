@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './home.css';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import SlidShow from 'react-slick';
@@ -40,6 +40,8 @@ import power from '../../assets/images/onlineshop_anker_2.png';
 import {Link} from 'react-router-dom';
 import Button from '../../components/UI/button/button';
 import Tables from '../../components/tables/tables';
+import {MenuContext} from '../../context/MenuContext/MenuContext';
+
 const Home=(props) =>{
   const product=[
     {image:'img1',name:'لب تاب',filter:"خانه و آشپزخانه",description:'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  ',oldPrice:'6,500,000' ,newPrice:'4,200,000 تومان',discount:'30%'}
@@ -55,17 +57,20 @@ const Home=(props) =>{
     slidesToShow: 1,
     slidesToScroll: 1
   };
+  const {show} = useContext(MenuContext);
   
   return(
     <>
       <div className="Home">
-        <section className="menuToggle"  style={{
-                    position:props.show?'relative':'relative',right:props.show?'150px':'0px',
-                    top:props.show?'110px':'0px',height:props.show?'350px':'100%',overflow:props.show?'hidden':'auto',
-                    transition:props.show?'all 2s':'all 2s',zIndex:props.show?'100':"null"}}
-        >
-          <Toolbar />
-          <header className="homeHeader">
+        <section className="menuToggle" style={{
+                    position:show?'fixed':'relative',right:show?'50%':'10px',
+                    top:show?'90px':'0px',height:show?'390px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
+                    transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
+          
+          <header className="homeHeader" style={{
+                    position:show?'fixed':'relative',right:show?'50%':'10px',
+                    top:show?'70px':'0px',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
+                    transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
             <Logo />
           </header>
           <div className="question">

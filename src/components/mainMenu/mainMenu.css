@@ -2,11 +2,11 @@
     direction: rtl;
     text-align: right;
     margin: auto;
-    position: fixed;
+    position: relative;
     z-index: 2;
     top: 0;
     right: 0%;
-    background-color: red;
+    background-color: #B6B6CC;
     width: 100%;
     color: #080957;
     height: 100%;
@@ -17,7 +17,8 @@
 }
 .menuWidth{
     width: 55%;
-    background-color: pink;
+    background-color: #B6B6CC;
+    height: 100%;
 }
 .menuTitre{
     align-items: center;
@@ -78,7 +79,7 @@
     list-style: none;
     padding-right: 15px;
     font-size: 13px;
-    line-height: 25px;
+    line-height: 35px;
 }
 .aboutUs li a{
     color: #080957;
