@@ -6,7 +6,7 @@
     z-index: 2;
     top: 0;
     right: 0%;
-    background-color: #B6B6CC;
+    background-color: #bfbfcf;
     width: 100%;
     color: #080957;
     height: 100%;
@@ -17,7 +17,7 @@
 }
 .menuWidth{
     width: 55%;
-    background-color: #B6B6CC;
+    background-color: #bfbfcf;
     height: 100%;
 }
 .menuTitre{

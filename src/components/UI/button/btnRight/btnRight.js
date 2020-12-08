@@ -5,22 +5,24 @@ import {MenuContext} from '../../../../context/MenuContext/MenuContext';
 
 
 const BtnRight=(props)=>{
-    const[rightToggle,setRight]=useState(false);
-    const Right=(props)=>{
-        setRight(!rightToggle)
+
+    const profileContext= useContext(MenuContext);
+    const {show} =  profileContext ;
+
+    const ProfileShow=()=>{
+        profileContext.Show();
     }
+
     let classes=["btnImg"];
-    if (rightToggle){
+    if (show){
         classes.push("rotate");
     }
 
-    const {show} = useContext(MenuContext); 
-
     return(
-        <div className="rightBackgroundButton" style={{display:show?"none":"block"}}>
+        <div className="rightBackgroundButton">
             <button onClick={props.clicked} className="rightButton">
-                <img src={right} alt="right" onClick={Right} className={classes.join(' ')} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                transition:rightToggle?"all 0.1s":"all 0.1s"}} />
+                <img src={right} alt="right" onClick={ProfileShow} className={classes.join(' ')} style={{transform:show?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                transition:show?"all 0.1s":"all 0.1s"}} />
             </button>
         </div>
     )
