@@ -3,6 +3,7 @@ import './cart.css';
 import YourCart from "../../components/CartComponents/yourCart/yourCart";
 import SelectAddress from "../../components/CartComponents/selectAddress/selectAddress";
 import ReviewCart from "../../components/CartComponents/reviewCart/reviewCart";
+import Successful from "../../components/CartComponents/successful/successful";
 const Cart=(props)=>{
     return(
         <>
@@ -18,8 +19,11 @@ const Cart=(props)=>{
                 <div className="secondPageContent" style={{display:"none"}}>
                     <SelectAddress />
                 </div>
-                <div className="thirdPageContent">
+                <div className="thirdPageContent" style={{display:"none"}}>
                     <ReviewCart />
+                </div>
+                <div className="forthPageContent" style={{display:"block"}}>
+                    <Successful />
                 </div>
             </div>
         </>

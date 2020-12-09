@@ -2,12 +2,71 @@
 .reviewGoBack{
     text-align: right;
 }
-.reviewGoBack h3{
+.ReviewCart{
+    background-color: #DBDBEB;
+    margin-top: 30px;
+    text-align: center;
+    margin: auto;
+}
+.ReviewCart .reviewGoBack h3{
     font-size:12px;
     background-color: #DBDBEB;
     height: 50px;
-    padding-top: 8px;
+    padding-top: 0px;
     text-align: right;
     margin: auto;
     padding-right: 25%;
+    margin-top: -24px;
+    font-weight: 800;
+    font-size: 17px;
 }
+
+.ReviewCart .CartBoxReview{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.ReviewCart .CartBoxReview .CartBox{
+    margin-top: 10px;
+}
+.reviewPriceBox{
+    background-color: #F5F5FF;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.reviewPriceBox p{
+    display: flex;
+    width: 100%;
+}
+.OrangePrice{
+    color: #FF6D02;
+}
+.reviewPriceBox p span:last-child{
+    text-align: left;
+    margin: auto;
+    width: 50%;
+}
+.finallReview{
+    font-size: 12px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.confirm{
+    padding-bottom: 80px;
+}
+.confirm .signUp{
+    width: 65%;
+    height: 30px;
+}
+.ReviewCart hr{
+    width: 90%;
+    background-color: #080819;
+    opacity: 0.2;
+}
+

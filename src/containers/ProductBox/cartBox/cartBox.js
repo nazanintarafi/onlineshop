@@ -27,7 +27,8 @@ const CartBox=(props)=>{
                             <h3>ماشین اصلاح صورت فیلیپس مدل<span> S5370/26</span></h3>
                             <p>رنگ:<span>{props.color}</span></p>
                             <p>گارانتی:<span>{props.warranty}</span></p>
-                            <p>نام فروشگاه:<span>{props.storeName}</span></p>
+                            <p style={{display:props.review?"none":"block"}}>نام فروشگاه:<span>{props.storeName}</span></p>
+                            <p style={{display:props.review?"block":"none",color:"#FF6D02",fontWeight:"bold"}}>تخفیف:<span>6,000,000 تومان</span></p>
                         </div>
                         <div className="closeSvg" onClick={Close}>
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +55,7 @@ const CartBox=(props)=>{
                             </div>
                         </div>
                         <div className="Price">
-                            <div><del>{props.oldPrice}</del></div>
+                            <div style={{display:props.review?"none":"block"}}><del>{props.oldPrice}</del></div>
                             <span>{props.newPrice}</span>
                         </div>
                     </div>
