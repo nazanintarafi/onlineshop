@@ -1,10 +1,15 @@
-import React from 'react';
+import React , {useContext} from 'react';
 import './sellerMenu.css';
 import down from '../../assets/images/Group 6.png';
 import left from '../../assets/images/down-arrowx.png';
+import {MenuContext} from '../../context/MenuContext/MenuContext';
+
 const SellerMenu=(props)=>{
+
+    const {showSellerMenu , show} = useContext(MenuContext);
+
     return(
-        <ul className="SellerMenu"  style={{display:props.rightToggle?'block':'none'}}>
+        <ul className="SellerMenu"  style={{display:show?'block':'none',zIndex:showSellerMenu?"99":"0"}}>
             <main/>
             <li>
                 <h4>

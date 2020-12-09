@@ -2,14 +2,18 @@
     text-align: center;
     margin: auto;
 }
+.UserName{
+    text-align: center;
+    margin: auto;
+}
 .userNameRadioBtn{
     width: 100%;
-    text-align: left;
-    padding-left: 21%;
-    font-size: 12px;
+    text-align: center;
+    padding-right: 0px;
+    font-size: 11px;
     opacity: 0.6;
     position: relative;
-    z-index: -1!important;
+    z-index: 1;
     cursor: pointer;
 }
 .userNameRadioBtn span{
@@ -31,4 +35,90 @@
 .submitBtn{
     text-align: center;
     margin: 30px auto;
+}
+.UserName label{
+    display: block;
+    line-height: 17px;
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+    width: 100%%;
+}
+.userNameRadioBtn input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.newslettersLabel input:checked ~ .share{
+    opacity: 1;
+    background-color: transparent;
+    height: 9px;
+    width: 8px;
+}
+.newslettersLabel input:checked ~ .share::after{
+    position: absolute;
+    content: "";
+    top: 1px;
+    right: 1px;
+    opacity: 1;
+    background-color: #FF6D02;
+    height:0.3rem;
+    width: 0.4rem;
+}
+.newslettersLabel .share{
+    position: absolute;
+    top: 5px;
+    height: 9px;
+    width: 8px;
+    border: 1px solid #A5A5B2;
+    background: transparent;
+}
+.foreignerLabel{
+    text-align: left;
+    margin: auto;
+}
+.foreignerLabel input:checked ~ .foreigner{
+    opacity: 1;
+    background-color: transparent;
+    height: 9px;
+    width: 9px;
+}
+.foreignerLabel input:checked ~ .foreigner::after{
+    position: absolute;
+    content: "";
+    top: 1px;
+    right: 1px;
+    opacity: 1;
+    background-color: #FF6D02;
+    height: 0.3rem;
+    width: 0.4rem;
+    border-radius: 50%;
+}
+.foreignerLabel .foreigner{
+    position: absolute;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #A5A5B2;
+    background: transparent;
+    border-radius: 50%;
+}
+.UserName .submitBtn Button{
+    width: 65%;
+    height: 30px;
+    font-size: 11px;
+}
+.UserNameLabelStyle{
+    width: 65%;
+    text-align: center;
+    margin: auto;
+}
+.foreignerName{
+    margin-right: 5px;
+}
+.shareName{
+    margin-right: 12px;
+    font-size: 11px;
 }

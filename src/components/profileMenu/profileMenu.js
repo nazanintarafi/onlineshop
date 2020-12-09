@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './profileMenu.css';
 import {Link} from 'react-router-dom';
+import {MenuContext} from '../../context/MenuContext/MenuContext';
+
 const ProfileMenu=(props)=>{
+
+    const {showSellerMenu ,show} = useContext(MenuContext);
+
     return(
-        <ul className="ProfileMenu"  style={{display:props.rightToggle?'block':'none'}}>
+        <ul className="ProfileMenu"  style={{display:show?'block':'none',opacity:showSellerMenu?"0":"1",zIndex:show?"98":null}}>
             <li>
                 <Link to="/profile">پروفایل</Link>
             </li>

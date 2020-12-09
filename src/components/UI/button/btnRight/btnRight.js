@@ -7,11 +7,16 @@ import {MenuContext} from '../../../../context/MenuContext/MenuContext';
 const BtnRight=(props)=>{
 
     const profileContext= useContext(MenuContext);
-    const {show} =  profileContext ;
+    const {show , showProfileMenu} =  profileContext ;
 
-    const ProfileShow=()=>{
+    const ShowProfileMenu=()=>{
+        profileContext.ShowProfileMenu();
+    }
+    const Show=()=>{
         profileContext.Show();
     }
+
+    
 
     let classes=["btnImg"];
     if (show){
@@ -19,9 +24,9 @@ const BtnRight=(props)=>{
     }
 
     return(
-        <div className="rightBackgroundButton">
+        <div className="rightBackgroundButton"  onClick={ShowProfileMenu}>
             <button onClick={props.clicked} className="rightButton">
-                <img src={right} alt="right" onClick={ProfileShow} className={classes.join(' ')} style={{transform:show?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                <img src={right} alt="right" onClick={Show} className={classes.join(' ')} style={{transform:show?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
                 transition:show?"all 0.1s":"all 0.1s"}} />
             </button>
         </div>

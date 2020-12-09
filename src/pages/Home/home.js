@@ -63,12 +63,12 @@ const Home=(props) =>{
     <>
       <div className="Home">
         <section className="menuToggle" style={{
-                    position:show?'fixed':'relative',right:show?'50%':'10px',
+                    position:show?'fixed':'relative',right:show?'65%':'10px',
                     top:show?'90px':'0px',height:show?'390px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
           
           <header className="homeHeader" style={{
-                    position:show?'fixed':'relative',right:show?'50%':'10px',
+                    position:show?'fixed':'relative',right:show?'65%':'10px',
                     top:show?'70px':'0px',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
             <Logo />

@@ -12,14 +12,14 @@ import {MenuContext} from '../../context/MenuContext/MenuContext';
 
 const ProfilePagesBody=(props)=>{
 
-    const {show} = useContext(MenuContext);
+    const {show, showProfileMenu} = useContext(MenuContext);
     return(
         <>
             <div className="Profile" style={{backgroundColor:"#bfbfcf"}}>
                 <div className="profileToolbar">
                     <Toolbar minWidth="true"/>
                 </div>
-                <div style={{opacity:props.profilePage?'1':'0'}}>
+                <div style={{opacity:show?'1':'0'}}>
                     <ProfileMenu  rightToggle={show}/>
                 </div>
                 <div style={{opacity:props.sellerMenu?'1':'0'}}>
@@ -32,7 +32,7 @@ const ProfilePagesBody=(props)=>{
 
                 
                 <div className="bodyToggle" style={{
-                        position:show?'fixed':'relative',right:show?'50%':null,
+                        position:show?'fixed':'relative',right:show?'65%':null,
                         top:show?'90px':'0px',height:show?'390px':'100%',width:show?'100%':'100%',
                         overflowX:show?'hidden':'hidden',overflowY:show?'hidden':'hidden',
                         transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
@@ -46,11 +46,11 @@ const ProfilePagesBody=(props)=>{
                             {props.children}
                         </div>
                         <div></div>
-                        <div className="btnRight" style={{opacity:props.profilePage?'1':'0',right:show?"50.5%":"12px",
+                        <div className="btnRight" style={{opacity:props.profilePage?'1':'0',right:show?"65.5%":"12px",
                         top:show?"300px":null,transition:show?'all 0.2s':'all 0.2s'}}>
                             <BtnRight/>
                         </div>
-                        <div className="btnRight btnSeller" style={{opacity:props.sellerBtn?'1':'0',right:show?"50.5%":"12px",
+                        <div className="btnRight btnSeller" style={{opacity:props.sellerBtn?'1':'0',right:show?"65.5%":"12px",
                         top:show?"160px":null,zIndex:show?"200":"200",transition:show?'all 0.2s':'all 0.2s'}}>
                             <BtnSeller btnType="sellerBtn"/>
                         </div>

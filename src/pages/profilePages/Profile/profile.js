@@ -12,17 +12,23 @@ const Profile=()=>{
                     <Input type="text" placeholder="نام خانوادگی" />
                     <Input type="number" placeholder="تاریخ تولد" />
                     <Input type="number" placeholder="کد ملی" />
-                    <label className="userNameRadioBtn foreigner">
-                        <input type="radio" value="Foreigner" name="Fareiner" checked="checked" />
-                        <span className="checkmark">تبعه خارجی</span>
-                    </label>
+                    <div className="UserNameLabelStyle">
+                        <label className="userNameRadioBtn foreignerLabel">
+                            <input type="checkbox" name="selector"/>
+                            <span className="foreigner"></span>
+                            <span className="foreignerName">تبعه خارجی</span>
+                        </label>
+                    </div>
                     <Input type="number" placeholder="شماره موبایل" />
                     <Input type="email" placeholder="آدرس ایمیل" />
                     <Input type="number" placeholder="شماره کارت" />
-                    <label className="userNameRadioBtn newsletters">
-                        <input type="checkbox" value="share" name="newsletters" checked="checked"/>
-                        <span className="checkmark">اشتراک در خبرنامه آنلاین شاپ</span>
-                    </label>
+                    <div className="UserNameLabelStyle">
+                        <label className="userNameRadioBtn newslettersLabel">
+                            <input type="checkbox" value="share" name="newsletters"/>
+                            <span className="share"></span>
+                            <span className="shareName">اشتراک در خبرنامه آنلاین شاپ</span>
+                        </label>
+                    </div>
                     <div className="submitBtn">
                         <Button btnType="submit">ثبت اطلاعات</Button>
                     </div>
