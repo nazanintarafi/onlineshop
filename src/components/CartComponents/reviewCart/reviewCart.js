@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React from 'react';
 import './reviewCart.css';
 import ReviewButton from '../../UI/button/reviewButton/reviewButton';
 import CartBox from '../../../containers/ProductBox/cartBox/cartBox';
@@ -8,10 +8,6 @@ import Button from '../../UI/button/button';
 const ReviewCart=(props)=>{
 
 
-    const[loader,setLoader]=useState(false);
-    const Loader=()=>{
-        setLoader(!loader)
-    }
 
 
 
@@ -71,12 +67,9 @@ const ReviewCart=(props)=>{
                     <p>این سفارش به آرین رئیسی به آدرس پاسداران، کوچه 
                         نارنجستان دوم،  شماره تماس 09197149088 تحویل می گردد</p>
                 </div>
-                <div className="confirm" onClick="Loader">
+                <div className="confirm">
                     <Button btnType="signUp">تایید و پرداخت</Button>
                 </div>
-            </div>
-            <div className="loader" style={{display:loader?"block":"none",marginBottom:"90px"}}>
-                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div>
         </>
     )

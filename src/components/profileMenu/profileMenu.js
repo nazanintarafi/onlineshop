@@ -25,7 +25,7 @@ const ProfileMenu=(props)=>{
                 <Link to="/change-password">تغییر رمز عبور</Link>
             </li>
             <li>
-                <Link to="/home">خروج</Link>
+                <Link to="/">خروج</Link>
             </li>
         </ul>
     )

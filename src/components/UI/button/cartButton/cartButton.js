@@ -15,7 +15,7 @@ const CartButton=(props)=>{
             <div className="addressBtn">
                 <div className="backgroundButton">
                     <button className="button">
-                        <img src={Close} alt="close" className="btnImg"  className={cart.join(' ')} onClick={ChangeCart} style={{
+                        <img src={Close} alt="close" className={cart.join(' ')} onClick={ChangeCart} style={{
                             paddingTop:changeCart?"5px":"0",transition:changeCart?"0.1s":"0.1s"}} 
                         />
                     </button>

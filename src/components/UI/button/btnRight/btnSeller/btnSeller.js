@@ -12,7 +12,6 @@ const BtnSeller=(props)=>{
 
 
     const profileContext= useContext(MenuContext);
-    const {show , showSellerMenu} =  profileContext ;
 
     const ShowSellerMenu=()=>{
         profileContext.ShowSellerMenu();

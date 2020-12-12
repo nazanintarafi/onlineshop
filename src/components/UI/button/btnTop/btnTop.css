@@ -1,15 +1,15 @@
 
-.backgroundButton{
+.BtnTop .backgroundButton{
     background-color: white;
-    height: 40px;
-    width: 70px;
+    height: 21px;
+    width: 72px;
     position: relative;
-    width: 100%;
     text-align: left;
     margin:auto;
-    padding-left: 30px;
+    padding-left: 11px;
+    right: -22px;
 }
-.button{
+.BtnTop .button{
     background-color: #FF6D02;
     padding: 5px 10px 5px 10px;
     color: white;
@@ -19,37 +19,37 @@
     box-shadow: #f36b07 0px 14px 0px 1px;
 
 }
-.button img{
+.BtnTop .button img{
     align-items: center;
     margin: auto;
 }
-.button:focus{
+.BtnTop .button:focus{
     outline: none;
 }
-.Rotate{
+.BtnTop .Rotate{
     transform:rotate(180deg);
     padding-top: 10px;
 }
-.button::after{
+.BtnTop .button::after{
     content: "";
     background-color: white;
     position: absolute;
     z-index: 300;
-    right: -10px;
-    top: 19.5px;
+    right: -9px;
+    top: -0.5px;
     border-top: 22px solid #f36b07;
     border-left: #f36b07 solid 10px;
     border-right: #f36b07 solid 11px;
     border-bottom: 3px solid #f36b07;
     border-radius: 20px 0px 8px 9px;
 }
-.button::before{
+.BtnTop .button::before{
     content: "";
     background-color: white;
     position: absolute;
     z-index: 300;
     left: -9px;
-    top: 20px;
+    top: -0.5px;
     border-top: 22px solid #f36b07;
     border-right:#f36b07 solid 10px;
     border-left: #f36b07 solid 10px;

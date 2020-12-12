@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useContext} from 'react';
 import './profilePagesBody.css';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import ProfileMenu from '../profileMenu/profileMenu';
@@ -12,7 +12,7 @@ import {MenuContext} from '../../context/MenuContext/MenuContext';
 
 const ProfilePagesBody=(props)=>{
 
-    const {show, showProfileMenu} = useContext(MenuContext);
+    const {show} = useContext(MenuContext);
     return(
         <>
             <div className="Profile" style={{backgroundColor:"#bfbfcf"}}>
@@ -34,7 +34,7 @@ const ProfilePagesBody=(props)=>{
                 <div className="bodyToggle" style={{
                         position:show?'fixed':'relative',right:show?'65%':null,
                         top:show?'90px':'0px',height:show?'390px':'100%',width:show?'100%':'100%',
-                        overflowX:show?'hidden':'hidden',overflowY:show?'hidden':'hidden',
+                        overflowX:show?'hidden':'hidden',overflowY:show?'hidden':'auto',
                         transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
                         <div style={{opacity:props.profilePage?'1':'0'}}>
                             <Header rightToggle={show} titre={props.titre} profile={props.profile}/>

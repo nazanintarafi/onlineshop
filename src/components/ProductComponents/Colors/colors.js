@@ -45,7 +45,7 @@ const Colors=(props)=>{
                 </div>
             </div>
             <div className={opnVariety.join(' ')}>
-                <Variety />
+                
             </div>
         </>
     )

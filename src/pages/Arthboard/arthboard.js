@@ -4,11 +4,13 @@ import Body from '../../components/ProfilePagesBody/profilePagesBody';
 import SearchBar from '../../components/searchBar/searchBar';
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import Slider from '../../components/slider/productSlider/productSlider';
+import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 const Arthboard=()=>{
     const breadcrumbs = useBreadcrumbs();
     return(
         <>
             <div className="Arthboard">
+                <Toolbar />
                 <Body arthBtn="true" arthPage="true" sellerMenu="true">
                     <div className="search">
                         <SearchBar />

@@ -5,10 +5,12 @@ import SelectAddress from "../../components/CartComponents/selectAddress/selectA
 import ReviewCart from "../../components/CartComponents/reviewCart/reviewCart";
 import Successful from "../../components/CartComponents/successful/successful";
 import EmptyCart from "../../components/CartComponents/emtyCart/emptyCart";
+import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 const Cart=(props)=>{
     return(
         <>
             <div className="Cart">
+                <Toolbar />
                 <div className="firstPage" style={{display:"none"}}>
                     <div className="firstPageContent">
                         <YourCart />

@@ -10,13 +10,15 @@ const BtnTop =(props)=>{
         classes.push("Rotate");
     }
     return(
-        <div className="backgroundButton">
-            <button onClick={props.clicked} className="button">
-                <img src={props.imgName} alt="down" className={classes.join(' ')} onClick={Top} style={{
-                    paddingBottom:props.paddingProduct?"6px":null,
-                    paddingTop:props.paddingProduct?"0px 0":null,transform:top?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                    transition:top?"all 0.2s":"all 0.2s"}} />
-            </button>
+        <div className="BtnTop">
+            <div className="backgroundButton">
+                <button onClick={props.clicked} className="button">
+                    <img src={props.imgName} alt="down" className={classes.join(' ')} onClick={Top} style={{
+                        paddingBottom:props.paddingProduct?"6px":null,
+                        paddingTop:props.paddingProduct?"0px 0":null,transform:top?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                        transition:top?"all 0.2s":"all 0.2s"}} />
+                </button>
+            </div>
         </div>
     )
 }

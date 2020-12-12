@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 export const MenuContext = React.createContext();
 const MenuContextProvider=(props)=>{
     const[show,setShow]=useState(false);
-    const[showProfileMenu,setShowProfileMenu]=useState(false);
+    const[showProfileMenu]=useState(false);
     const[showMainMenu,setShowMainMenu]=useState(false);
     const[showSellerMenu,setShowSellerMenu]=useState(false);
     

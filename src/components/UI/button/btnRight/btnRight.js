@@ -1,4 +1,4 @@
-import React, { useState, useContext} from 'react';
+import React, { useContext} from 'react';
 import './btnRight.css';
 import right from '../../../../assets/images/Group 1569.png';
 import {MenuContext} from '../../../../context/MenuContext/MenuContext';
@@ -7,7 +7,7 @@ import {MenuContext} from '../../../../context/MenuContext/MenuContext';
 const BtnRight=(props)=>{
 
     const profileContext= useContext(MenuContext);
-    const {show , showProfileMenu} =  profileContext ;
+    const {show } =  profileContext ;
 
     const ShowProfileMenu=()=>{
         profileContext.ShowProfileMenu();

@@ -9,7 +9,7 @@ const ProfileHeader=(props)=>{
 
     return(
         <header className="profileHeader"  style={{
-            position:show?'fixed':'fixed',position:show?'fixed':'fixed',right:show?'65%':'10px',left:show?'0':null,
+            position:show?'fixed':'fixed',right:show?'65%':'10px',left:show?'0':null,
             top:show?'90px':'0px',height:show?'20%':null,
             transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
             <div className="backgroundImg">

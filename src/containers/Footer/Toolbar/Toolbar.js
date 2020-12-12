@@ -1,4 +1,4 @@
-import React, {useState , useContext} from 'react';
+import React, { useContext} from 'react';
 import './Toolbar.css';
 import home from '../../../assets/images/Path 146.png';
 import cart from '../../../assets/images/Group 1287.png';
@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 import {MenuContext} from '../../../context/MenuContext/MenuContext';
 const Toolbar=(props)=>{
     const menuContext = useContext(MenuContext);
-    const { show , showMainMenu} = menuContext ;
+    const { show } = menuContext ;
 
     const ShowMainMenu=()=>{
         menuContext.ShowMainMenu();

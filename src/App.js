@@ -12,7 +12,6 @@ import ChangePassword from './pages/profilePages/ChangePassword/changePassword';
 import AddAddress from './pages/profilePages/AddAddress/addAddress';
 import HomePage from './pages/Home/home';
 import LogIn from './pages/LogIn/logIn';
-import Toolbar from './containers/Footer/Toolbar/Toolbar';
 import {BrowserRouter,Route} from 'react-router-dom';
 import MenuContextProvider from './context/MenuContext/MenuContext';
 import MainMenu from './components/mainMenu/mainMenu';
@@ -20,7 +19,6 @@ const App=() =>{
   return(
     <BrowserRouter>
       <MenuContextProvider>
-        <Toolbar />
         <MainMenu />
         <Route path="/product" exact component={Product} />
         <Route path="/cart" exact component={Cart} />

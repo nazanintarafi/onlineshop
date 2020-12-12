@@ -1,7 +1,6 @@
 import React ,{useContext} from 'react';
 import Logo from '../logo/logo';
 import './mainMenu.css';
-import chevronLeft from '../../assets/images/Group 1569.png';
 import {Link} from 'react-router-dom';
 import {MenuContext} from '../../context/MenuContext/MenuContext';
 

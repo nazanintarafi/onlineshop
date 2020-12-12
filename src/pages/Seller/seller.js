@@ -2,6 +2,7 @@ import React from 'react';
 import "./seller.css";
 import Body from '../../components/ProfilePagesBody/profilePagesBody';
 import Slider from '../../components/slider/productSlider/productSlider';
+import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 
 const Seller=(props)=>{
     return(

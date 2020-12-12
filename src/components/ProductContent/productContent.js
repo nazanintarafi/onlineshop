@@ -18,8 +18,9 @@ const ProductContent=(props)=>{
     const Like=(props)=>{
         setLike(!like)
     }
+    
     const[changeButton,setButton]=useState(false);
-    const ChangeButton=(props)=>{
+    const ChangeButtonX=(props)=>{
         setButton(!changeButton)
     }
     let classes=["productSelection"];
@@ -83,7 +84,7 @@ const ProductContent=(props)=>{
                         <section className={variety.join(' ')}>
                             <Variety changeButton={changeButton}/>
                         </section>
-                        <span className={classes.join(' ')} onClick={ChangeButton}>
+                        <span className={classes.join(' ')} onClick={ChangeButtonX}>
                             <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
                         </span>
 

@@ -5,6 +5,7 @@ import BtnTop from '../../components/UI/button/btnTop/btnTop';
 import Input from '../../components/Forms/Form/form';
 import down from '../../assets/images/down-arrow.png';
 import {Link} from 'react-router-dom';
+import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 const LogIn=(props)=>{
     const[goTop,setGoTop]=useState(false);
     const GoTop=(props)=>{
@@ -13,7 +14,8 @@ const LogIn=(props)=>{
     return(
         <>
             <div className="Login">
-                <div className="signIn">
+                <Toolbar />
+                <div className="signIn" >
                     <div className="signInContent">
                         <h2>ثبت نام</h2>
                         <form>

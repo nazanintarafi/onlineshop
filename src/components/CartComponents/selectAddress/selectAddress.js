@@ -6,11 +6,6 @@ import {Link} from 'react-router-dom';
 import CartButton from "../../UI/button/cartButton/cartButton";
 
 const SelectAddress=(props)=>{
-    const address =[
-        "تهران، تهران، پاسداران، بهارستان یکم،کوچه نوربخش اول، پلاک 5، طبقه اول",
-        "تهران، تهران، پاسداران، بهارستان یکم،کوچه نوربخش اول، پلاک 5، طبقه اول",
-        "تهران، تهران، پاسداران، بهارستان یکم،کوچه نوربخش اول، پلاک 5، طبقه اول"
-    ]
     return(
         <>
             <div className="SelectAddress">
