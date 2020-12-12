@@ -6,6 +6,7 @@ import Input from '../../components/Forms/Form/form';
 import down from '../../assets/images/down-arrow.png';
 import {Link} from 'react-router-dom';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
+
 const LogIn=(props)=>{
     const[goTop,setGoTop]=useState(false);
     const GoTop=(props)=>{
@@ -31,7 +32,7 @@ const LogIn=(props)=>{
                                 </div>
                         </form>
                     </div>
-                    <div className="logIn" style={{height:goTop?'30%':'100%',top:goTop?'550px':'328px',bottom:goTop?'0px':'0px',
+                    <div className="logIn" style={{height:goTop?'60%':'100%',top:goTop?'550px':'328px',bottom:goTop?'0px':'0px',
                         transition:goTop?'all 0.2s':'all 0.2s'}}>
                         <div className="logInContent">
                             <h2>ورود</h2>

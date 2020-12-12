@@ -4,6 +4,7 @@
 .specifications{
     position: absolute ;
     top: 10%;
+    background-color: white;
 }
 .Product .detail {
     text-align: right;
@@ -43,6 +44,7 @@
     margin: 10px auto;
     box-sizing: border-box;
     align-items: center;
+    background-color: white;
 }
 .ProductContents h2{
     margin-top: 50px;
