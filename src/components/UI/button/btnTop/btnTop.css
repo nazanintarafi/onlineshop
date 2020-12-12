@@ -35,10 +35,10 @@
     background-color: white;
     position: absolute;
     z-index: 300;
-    right: -9px;
-    top: -0.5px;
+    right: -11px;
+    top: 0px;
     border-top: 22px solid #f36b07;
-    border-left: #f36b07 solid 10px;
+    border-left: #f36b07 solid 11px;
     border-right: #f36b07 solid 11px;
     border-bottom: 3px solid #f36b07;
     border-radius: 20px 0px 8px 9px;
@@ -48,10 +48,10 @@
     background-color: white;
     position: absolute;
     z-index: 300;
-    left: -9px;
-    top: -0.5px;
-    border-top: 22px solid #f36b07;
-    border-right:#f36b07 solid 10px;
+    left: -11px;
+    top: 0px;
+    border-top: 24px solid #f36b07;
+    border-right:#f36b07 solid 12px;
     border-left: #f36b07 solid 10px;
     border-radius: 2px 20px 6px 19px;
 }

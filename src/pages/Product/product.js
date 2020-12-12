@@ -14,21 +14,21 @@ const Product=(props)=>{
     //kojas ?bzan
     return(
         <>
-            <div className="Product">
+            <div className="Product" style={{height:"100vh"}}>
                 <Toolbar />
                 <div className="First">
-                    <div style={{opacity:topProduct?"0":"1",transition:topProduct?'all 0.3s':'all 0.3s'}}>
+                    <div style={{opacity:topProduct?"0":"1",width:topProduct?"0":"100%",height:topProduct?"0":"100%",transition:topProduct?'all 0.1s':'all 0.1s'}}>
                         <ProductContent />
                     </div>
-                    <div className="specifications" style={{opacity:topProduct?"1":"0",width:"100%",height:"100%",
-                        transition:topProduct?'all 0.3s':'all 0.3s'}}>
+                    <div className="specifications" style={{opacity:topProduct?"1":"0",width:topProduct?"100%":"0",height:topProduct?"100%":"0",
+                        transition:topProduct?'all 0.1s':'all 0.1s'}}>
                         <Specifications />
                     </div>
-                    <div className="MainProduct" style={{height:topProduct?'14%':'40%',position:topProduct?'absolute':null,
-                        top:topProduct?'15px':null,transition:topProduct?'all 0.3s':'all 0.3s'}}>
-                        <div className="ProductContent">
+                    <div className="MainProduct" style={{marginTop:topProduct?"0":null,height:topProduct?'12%':'36%',position:topProduct?'absolute':null,
+                        bottom:topProduct?null:'0',top:topProduct?'0':null,transition:topProduct?'all 0.1s':'all 0.1s'}}>
+                        <div className="ProductContents">
                             <div className="detail">
-                                <h2 style={{marginTop:topProduct?'-20px':'50px',width:"100%"}}>مشخصات محصول</h2>
+                                <h2 style={{marginTop:topProduct?'20px':'17px',width:"100%",paddingRight:"10%"}}>مشخصات محصول</h2>
                             </div>
                             <div className="testProduct" onClick={TopProduct}>
                                 <Btntop  imgName={topArrow} paddingProduct="true"/>

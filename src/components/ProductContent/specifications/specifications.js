@@ -6,7 +6,7 @@ const Specifications=(props)=>{
 
     return(
         <>
-            <div className="Specifications">
+            <div className="container Specifications">
                 <div className="row">
                     <div className="col">
                         <div className="tabs">
@@ -58,7 +58,7 @@ const Specifications=(props)=>{
                                         <img src={Left} alt="open" />
                                     </div>
                                 </label>
-                                <div className="tabContent" > <h1>hi</h1></div>
+                                <div className="tabContent" > </div>
                             </div>
                         </div>
                     </div>
