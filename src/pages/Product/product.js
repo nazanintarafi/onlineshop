@@ -6,19 +6,44 @@ import ProductContent from '../../components/ProductContent/productContent';
 import topArrow from '../../assets/images/top-arrow (2).png';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import {MenuContext} from '../../context/MenuContext/MenuContext';
+import {ProductContext} from '../../context/productContext/productContext';
 
 const Product=(props)=>{
+    const productContext = useContext (ProductContext);
+    const { variety } = productContext;
+
     const[topProduct,setTopProduct]=useState(false);
     const TopProduct=(props)=>{
         setTopProduct(!topProduct)
     }
     const {show} = useContext(MenuContext);
+
+
+    let classes=["MainProduct"];
+    switch(variety){
+        case true:
+            classes.push("MainProductHeight");
+            break;
+        default:
+            break; 
+    }
+
+    let topClasses=["Product"];
+    switch(show){
+        case true:
+            topClasses.push("ProductUp");
+            break;
+        case false:
+            topClasses.push("ProductDown");
+            break;
+        default:
+            break; 
+    }
+
+
     return(
-        <>
-            <div className="Product" style={{
-                    position:show?'fixed':'relative',right:show?'65%':'0',
-                    top:show?'90px':'0px',height:show?'390px':'100vh',overflowX:show?'hidden':'auto',overflowY:topProduct?'auto':'hidden',width:show?'100%':'100%',
-                    transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
+        <> 
+            <div  className={topClasses.join(' ')}>
                 <Toolbar />
                 <div className="First">
                     <div style={{display:topProduct?"none":"block",width:topProduct?"0":"100%",height:topProduct?"0":"100%",transition:topProduct?'all 0.1s':'all 0.1s'}}>
@@ -28,11 +53,17 @@ const Product=(props)=>{
                         transition:topProduct?'all 0.1s':'all 0.1s'}}>
                         <Specifications />
                     </div>
-                    <div className="MainProduct" style={{marginTop:topProduct?"0":null,height:topProduct?'12%':'30%',position:topProduct?'absolute':'absolute',
+                    <div className={classes.join(' ')} style={{marginTop:topProduct?"0":null,height:topProduct?'12%':'30%',position:topProduct?'absolute':'absolute',
                         bottom:topProduct?null:'0',top:topProduct?'5px':null,transition:topProduct?'all 0.1s':'all 0.1s'}}>
                         <div className="ProductContents">
                             <div className="detail">
                                 <h2 style={{marginTop:topProduct?'20px':'17px',width:"100%",paddingRight:"10%"}}>مشخصات محصول</h2>
+                                <div className="priceProductPage">
+                                    <div>
+                                        <del>8,300,000</del>
+                                        <p>7,300,000<span>تومان</span></p>
+                                    </div>
+                                </div>
                             </div>
                             <div className="testProduct" onClick={TopProduct}>
                                 <Btntop  imgName={topArrow} paddingProduct="true"/>

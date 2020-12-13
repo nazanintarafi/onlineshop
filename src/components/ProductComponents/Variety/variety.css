@@ -33,26 +33,50 @@
      display: none;
  }
  .VarietyAnimation{
-     animation-name: variety;
-     animation-duration: 0.1s;  
-     animation-fill-mode: forwards;
+    animation-name: variety;
+    animation-duration: 0.1s;  
+    animation-fill-mode: forwards;
  }
  @keyframes variety {
-     from {
-         width: 20%;
-         font-size: 5px;
-         height: 20px;
-     }
-     to {
-         border: 1px #D1E5F0 solid; 
-         font-size: 11px;
-         padding: 18px 0px;
-         border-radius: 18px;
-         box-shadow: #becfd8bf 1px 1px 7px 1px;
-         width: 50%;
-         padding-top: 3px;
-     }
+    from {
+        width: 20%;
+        font-size: 5px;
+        height: 20px;
+    }
+    to {
+        border: 1px #D1E5F0 solid; 
+        font-size: 11px;
+        padding: 18px 0px;
+        border-radius: 18px;
+        box-shadow: #becfd8bf 1px 1px 7px 1px;
+        width: 50%;
+        padding-top: 3px;
+    }
  }
+.VarietyCloseAnimation{
+    animation-name: VarietyCloseAnimation;
+    animation-duration: 0.1s;  
+    animation-fill-mode: forwards;
+}
+@keyframes VarietyCloseAnimation {
+    from {
+        border: 1px #D1E5F0 solid; 
+        font-size: 11px;
+        padding: 18px 0px;
+        border-radius: 18px;
+        box-shadow: #becfd8bf 1px 1px 7px 1px;
+        width: 50%;
+        padding-top: 3px;
+    }
+    to {
+        width: 20%;
+        font-size: 5px;
+        height: 20px;
+    }
+}
+
+
+
  .VarietyColors{
      width: 0;
      height: 0;
@@ -78,6 +102,9 @@
      }
  }
 
+
+
+
  .VarietyStyle .closeVariety{
     animation-name: closeVariety;
     animation-duration: 0.2s;  
@@ -100,6 +127,7 @@
     width: 0;
     height: 0;
     opacity: 0;
+    
 }
 .warrantyAnimation {
     animation-name: warrantyAnimation;

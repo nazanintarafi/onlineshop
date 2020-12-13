@@ -1,0 +1,12 @@
+.Warranty {
+    border: #D1E5F0 1px solid;
+    box-shadow: 2px 2px 12px 2px #D1E5F0;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+.Warranty h3{
+    font-size: 11px;
+    color: #FF6D02;
+}

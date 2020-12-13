@@ -28,22 +28,25 @@ const ProductContent=(props)=>{
         productContext.ShowVariety()
     }
     
-    {/*const[changeButton,setButton]=useState(false);
-    const ChangeButtonX=(props)=>{
-        setButton(!changeButton)
-    }*/}
     let classes=["productSelection"];
     switch(variety){
         case true:
             classes.push("CloseAnimation");
             break;
+        case false:
+            classes.push("openAnimation");
+            break;
         default:
             break; 
     }
+
     let variiety=["VarietyStyle"];
     switch(variety){
         case true:
             variiety.push("VarietyAnimation");
+            break;
+        case false:
+            variiety.push("CloseVarietyAnimation");
             break;
         default:
             break; 
@@ -100,7 +103,7 @@ const ProductContent=(props)=>{
                         <Button btnType="submit" >افزودن به سبد خرید</Button>
                     </div>
                     
-                    <section>
+                    <section style={{display:"none"}}>
                         <ul>
                             <li>
                                 <div>

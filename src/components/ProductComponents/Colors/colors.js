@@ -1,22 +1,23 @@
-import React,{useState , useContext} from 'react';
+import React,{ useContext} from 'react';
 import Variety from '../Variety/variety';
 import './colors.css';
 import {ProductContext} from '../../../context/productContext/productContext';
+import product from '../../../pages/Product/product';
 
 const Colors=(props)=>{
 
     const productContext = useContext (ProductContext);
-    const {  color } = productContext;
+    const {  color , variety } = productContext;
 
 
     const HideColor=()=>{
-        productContext.ShowColor()
+        productContext.ShowColor();
     }
 
 
     return(
         <>
-            <div className="Colors">
+            <div className="Colors" style={{display:color?"block":"none"}}>
                 <div>
                     <label onClick={HideColor} >
                         <input type="radio" name="colors"/>

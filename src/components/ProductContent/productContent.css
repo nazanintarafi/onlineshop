@@ -92,7 +92,6 @@
     margin: auto;
     width: 100%;
 }
-
 .CloseAnimation Button span{
     display: none;
     transition: all 0.1s;
@@ -104,6 +103,35 @@
     box-shadow: 1px 1px 10px 1px #D1E5F0;
     transition: all 0.1s;  
 }
+.openAnimation Button span{
+    display: block;
+    transition: all 0.1s;
+}
+
+
+.openAnimation Button{
+    animation-name: openAnimation;
+    animation-duration: 0.2s;  
+    animation-fill-mode: forwards;
+}
+@keyframes openAnimation{
+    from{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    to{
+        text-align: center;
+        box-shadow: none;
+        margin: 8px auto;
+        width: 45%;
+        display: block;
+        height: 23px;
+        border: 1px solid #FF6D02;
+        color: #FF6D02;
+        background-color: white;
+    }
+}
 .btnProduct .VarietyStyle{
     width: 0;
     height: 0;
@@ -113,6 +141,7 @@
     animation-name: varAnimation;
     animation-duration: 0.1s;  
     animation-fill-mode: forwards;
+    animation-delay: 0.2s;
 }
 @keyframes varAnimation{
     from{
@@ -123,5 +152,27 @@
     to{
         width: 77%;
         opacity: 1;
+    }
+}
+.btnProduct .CloseVarietyAnimation{
+    animation-name: CloseVarietyAnimation;
+    animation-duration: 0.1s;  
+    animation-fill-mode: forwards;
+}
+.btnProduct .CloseVarietyAnimation{
+    animation-name: CloseVarietyAnimation;
+    animation-duration: 0.1s;  
+    animation-fill-mode: forwards;
+}
+@keyframes CloseVarietyAnimation{
+    from{
+        width: 77%;
+        opacity: 1;
+
+    }
+    to{
+        width: 0;
+        height: 0;
+        opacity: 0;
     }
 }

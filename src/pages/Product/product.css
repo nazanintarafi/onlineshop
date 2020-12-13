@@ -52,3 +52,37 @@
     font-size: 23px;
     color: white;
 }
+.priceProductPage {
+    text-align: left;
+    padding-left: 30px;
+}
+.priceProductPage del {
+    color: white;
+    padding-left: 35px;
+
+}
+
+.MainProductHeight{
+    height:20%;
+}
+.ProductUp{
+    position: fixed;
+    right: 65%;
+    top: 90px;
+    height: 390px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    transition: all 0.2s;
+    z-index: 100;
+}
+.ProductDown{
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 100%;
+    transition: all 0.2s;
+}
