@@ -1,5 +1,8 @@
 .Specifications{
     text-align: center;
+    padding: 0;
+    background-color: white;
+    padding-bottom: 40px;
 }
 .Specifications .row{
     display: flex;
@@ -81,7 +84,7 @@
         transform: rotate(-90deg);
     }
 }
-.
+
 .technicalS::-webkit-scrollbar {
     width: 10px;
 

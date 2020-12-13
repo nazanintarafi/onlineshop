@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useContext } from 'react';
 import './productContent.css';
 import Stars from '../stars/stars';
 import share from '../../assets/images/Group 1513.png';
@@ -12,29 +12,38 @@ import img2 from '../../assets/images/Group 599.png';
 import img3 from '../../assets/images/Group 600.png';
 import Variety from '../ProductComponents/Variety/variety';
 import Button from '../UI/button/button';
+import {ProductContext} from '../../context/productContext/productContext';
+
 
 const ProductContent=(props)=>{
     const[like,setLike]=useState(false);
     const Like=(props)=>{
         setLike(!like)
     }
+
+    const productContext = useContext (ProductContext);
+    const { variety } = productContext;
+
+    const ShowVariety=()=>{
+        productContext.ShowVariety()
+    }
     
-    const[changeButton,setButton]=useState(false);
+    {/*const[changeButton,setButton]=useState(false);
     const ChangeButtonX=(props)=>{
         setButton(!changeButton)
-    }
+    }*/}
     let classes=["productSelection"];
-    switch(changeButton){
+    switch(variety){
         case true:
             classes.push("CloseAnimation");
             break;
         default:
             break; 
     }
-    let variety=["VarietyStyle"];
-    switch(changeButton){
+    let variiety=["VarietyStyle"];
+    switch(variety){
         case true:
-            variety.push("VarietyAnimation");
+            variiety.push("VarietyAnimation");
             break;
         default:
             break; 
@@ -81,10 +90,10 @@ const ProductContent=(props)=>{
                     
                     <div className="btnProduct">
                         {/*variety*/}
-                        <section className={variety.join(' ')}>
-                            <Variety changeButton={changeButton}/>
+                        <section className={variiety.join(' ')}>
+                            <Variety />
                         </section>
-                        <span className={classes.join(' ')} onClick={ChangeButtonX}>
+                        <span className={classes.join(' ')} onClick={ShowVariety}>
                             <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
                         </span>
 

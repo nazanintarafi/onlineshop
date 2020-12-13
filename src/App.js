@@ -14,13 +14,16 @@ import HomePage from './pages/Home/home';
 import LogIn from './pages/LogIn/logIn';
 import {BrowserRouter,Route} from 'react-router-dom';
 import MenuContextProvider from './context/MenuContext/MenuContext';
+import ProductContextProvider from './context/productContext/productContext';
 import MainMenu from './components/mainMenu/mainMenu';
 const App=() =>{
   return(
     <BrowserRouter>
       <MenuContextProvider>
         <MainMenu />
-        <Route path="/product" exact component={Product} />
+        <ProductContextProvider>
+          <Route path="/product" exact component={Product} />
+        </ProductContextProvider>
         <Route path="/cart" exact component={Cart} />
         <Route path="/arthboard" exact component={Arthboard} />
         <Route path="/" exact component={HomePage} />

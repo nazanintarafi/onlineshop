@@ -1,51 +1,48 @@
-import React,{useState} from 'react';
+import React,{useState , useContext} from 'react';
 import Variety from '../Variety/variety';
 import './colors.css';
+import {ProductContext} from '../../../context/productContext/productContext';
+
 const Colors=(props)=>{
-    const[openVariety,setOpenVariety]=useState(false);
-    const OpenVariety=()=>{
-        setOpenVariety(!openVariety)
+
+    const productContext = useContext (ProductContext);
+    const {  color } = productContext;
+
+
+    const HideColor=()=>{
+        productContext.ShowColor()
     }
-    let opnVariety=["opnVariety"];
-    switch(openVariety){
-        case true:
-            opnVariety.push("showVariety");
-            break;
-        default:
-            break; 
-    }
+
+
     return(
         <>
             <div className="Colors">
                 <div>
-                    <label onClick={OpenVariety} >
+                    <label onClick={HideColor} >
                         <input type="radio" name="colors"/>
                         <span className="colorName" >مشکی</span>
                     </label>
-                    <label onClick={OpenVariety} >
+                    <label onClick={HideColor} >
                         <input type="radio" name="colors"/>
                         <span className="colorName">نقره ای</span>
                     </label>
-                    <label onClick={OpenVariety} >
+                    <label onClick={HideColor} >
                         <input type="radio" name="colors"/>
                         <span className="colorName" >سفید</span>
                     </label>
-                    <label onClick={OpenVariety} >
+                    <label onClick={HideColor} >
                         <input type="radio" name="colors"/>
                         <span className="colorName" >طلایی</span>
                     </label>
-                    <label onClick={OpenVariety} >
+                    <label onClick={HideColor} >
                         <input type="radio" name="colors"/>
                         <span className="colorName" >رزگلد</span>
                     </label>
-                    <label onClick={OpenVariety} >
+                    <label onClick={HideColor} >
                         <input type="radio" name="colors"/>
                         <span className="colorName" >سرمه ای</span>
                     </label>
                 </div>
-            </div>
-            <div className={opnVariety.join(' ')}>
-                
             </div>
         </>
     )

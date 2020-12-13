@@ -1,26 +1,36 @@
-import React , {useState} from 'react';
+import React , {useState , useContext} from 'react';
 import Button from '../../UI/button/button';
 import './variety.css';
 import Colors from '../Colors/colors';
 import Warranty from '../Warranty/warranty';
+import {ProductContext} from '../../../context/productContext/productContext';
 
 const Variety=(props)=>{
-    const[openColor,setOpenColor]=useState(false);
+    const productContext = useContext (ProductContext);
+    const { variety , color , warranty } = productContext;
 
-    const OpenColor=()=>{
-        setOpenColor(!openColor)
+    const HideVariety=()=>{
+        productContext.ShowVariety()
+    }
+
+    const ShowColor=()=>{
+        productContext.ShowColor()
+    }
+
+    const ShowWarranty=()=>{
+        productContext.ShowWarranty()
     }
 
     let classes=["Variety"];
-    if(props.changeButton){
+    if(props.variety){
         classes.push("VarietyAnimation");
     }
-    if(openColor){
+    if(color){
         classes.push("closeVariety")
     }
 
     let select=["ProductSelection"];
-    switch(props.changeButton){
+    switch(props.variety){
         case true:
             select.push("openProductSelection");
             break;
@@ -29,39 +39,52 @@ const Variety=(props)=>{
     }
 
 
-    let color=["VarietyColors"];
-    switch(openColor){
+    let colors=["VarietyColors"];
+    switch(color){
         case true:
-            color.push("colorAnimation");
+            colors.push("colorAnimation");
             break;
         default:
             break; 
     }
 
+    let warranties=["VarietyWarranty"];
+    switch(warranty){
+        case true:
+            warranties.push("warrantyAnimation");
+            break;
+        default:
+            break; 
+    }
+
+
+
+
     return(
         <>
             <div  className={classes.join(' ')}>
                 <div className={select.join(' ')}>
-                    <div className="varietyBtn">
+                    <div className="varietyBtn"  onClick={HideVariety}>
                         <Button btnType="submit" >ثبت تنوع</Button>
                     </div>
                     <div className="row VarietyContent">
                         <div className="col-3 col-xs-4 col-md-4 varifyColor p-0">
-                            <span onClick={OpenColor}>نقره ای</span>
+                            <span onClick={ShowColor}>نقره ای</span>
                         </div>
-                        <div className="col-9 col-xs-8 col-md-8 BorderRightV">
+                        <div className="col-9 col-xs-8 col-md-8 BorderRightV" onClick={ShowWarranty}>
                             <span>گارانتی ضمانت سلامت تحویل کالا آنلاین شاپ</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className={color.join(' ')}>
+            <div className={colors.join(' ')}>
                 <Colors />
             </div>
 
-            <div className="VarietyWarranty">
+            <div  className={warranties.join(' ')}>
                 <Warranty />
             </div>
+            <Warranty />
         </>
     )
 }
