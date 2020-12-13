@@ -7,28 +7,29 @@
     text-align: center;
     position: relative;
 }
-.ratingStar{
+.ProductBOX .ratingStar{
     text-align: right;
     margin: auto;
 }
-.wide .ratingStar{
+.wide .ProductBOX .ratingStar{
     text-align: left;
     margin: auto;
 }
-.ProductBoxPadding{
+.ProductBOX .ProductBoxPadding{
     padding: 2px 10px;
+    width: 100%;
 }
 .ProductBox:hover{
     border: 2px solid #ff6d02;
     transition: all 0.01s;
 }
-.star svg path{
+.ProductBOX .star svg path{
     color: #A5A5B2;
 }
-.checked svg path{
+.ProductBOX .checked svg path{
     color: #FFC107;
 }
-.ProductBoxImg{
+.ProductBOX .ProductBoxImg{
     text-align: center;
     margin: auto;
     align-items: center;
@@ -36,28 +37,28 @@
     padding-bottom: 0;
     width: 100%;
 }
-.ProductBoxImg{
+.ProductBOX .ProductBoxImg{
     width: 100%;
 }
-.wide .slideImg{
+.wide .ProductBOX .slideImg{
     width: 100%;
 }
-.wide.slider {
-    width: 94%!important;
+.wide .ProductBOX .slider {
+    width: 94%;
 }
-.ratingStar{
+.ProductBOX .ratingStar{
     text-align: right;
     font-size: 8px;
     padding : 5px;
 }
-.description{
+.ProductBOX .description{
     max-height: 60px;
     width: 100px;
     text-align: center;
     margin: auto;
     overflow: hidden;
 }
-.description p{
+.ProductBOX .description p{
     text-align: justify;
     font-size: 9px;
     color: black;
@@ -67,7 +68,7 @@
     margin-left: 14px;
     margin-bottom: 6px;
 }
-.price{
+.ProductBOX .price{
     text-align: left;
     padding: 3px;
     padding-top: 0;
@@ -75,14 +76,44 @@
     font-size: 10px;
     color: #ff6d02;
 }
-.price div{
+.ProductBOX .price div{
     font-size: 9px;
     color: #A5A5B2;
 }
-.wide {
+.wide .ProductBOX {
     width: 90%;
+    display: flex;
 }
-.wide .sliderPadding{
+.ProductBox .wide .ProductBOX .sliderPadding{
     display: flex;
     margin: auto;
+}
+.wide .wideDisplay{
+    display: flex;
+    width: 100%;
+}
+.wide .ProductBoxPadding{
+    padding: 2px 0px;
+    width: 100%;
+}
+.wideDisplay .price{
+    position: absolute;
+    bottom: 5px;
+     left: 7px;
+}
+.wideDisplay .ratingStar{
+    position: absolute;
+    top: 0px;
+    left: 7px;
+    font-size: 12px;
+}
+.sliderContent .description{
+    position: absolute;
+    top: 30px;
+    left: 7px;
+    font-size: 12px;
+    width: 50%;
+}
+.sliderContent .description p{
+    font-weight: bold;
 }

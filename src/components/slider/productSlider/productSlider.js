@@ -25,6 +25,7 @@ const ProductSlider=(props)=>{
                         newPrice={props.newPrice}
                         isDiscount={props.isDiscount}
                         discount={props.discount}
+                        sliderType={props.sliderType}
                     />
                 </div>
             </SlidShow>

@@ -72,7 +72,9 @@ const Specifications=(props)=>{
                         </h3>
                     </div>
                     <div>
-                        <Slider  sliderType="wide" description="لب تاب 15 اینچی ایسوس" oldPrice="8,300,000تومان" newPrice="7,300,000تومان"/>
+                        <Slider  sliderType="wide" description="لب تاب 15 اینچی ایسوس" oldPrice="8,300,000تومان" newPrice="7,300,000تومان" discount="10%"/>
+                        <Slider  sliderType="wide" description="لب تاب 15 اینچی ایسوس" oldPrice="8,300,000تومان" newPrice="7,300,000تومان" discount="40%"/>
+                        <Slider  sliderType="wide" description="لب تاب 15 اینچی ایسوس" oldPrice="8,300,000تومان" newPrice="7,300,000تومان" isDiscount="false"/>
                     </div>
                 </div>
             </div>
