@@ -9,7 +9,7 @@ const Variety=(props)=>{
     const productContext = useContext (ProductContext);
     const { variety , color , warranty } = productContext;
 
-    const HideVariety=()=>{
+    const ShowVariety=()=>{
         productContext.ShowVariety()
     }
 
@@ -22,7 +22,7 @@ const Variety=(props)=>{
     }
 
 
-    let classes=["Variety"];
+    let classes=["VarietyAnime"];
     switch(variety){
         case true:
             classes.push("VarietyAnimation");
@@ -67,33 +67,35 @@ const Variety=(props)=>{
 
     return(
         <>
-            <div className={classes.join(' ')}>
-                <div className={select.join(' ')}>
-                    <div className="varietyBtn"  onClick={HideVariety}>
-                        <Button btnType="submit" >ثبت تنوع</Button>
-                    </div>
-                    <div className="row VarietyContent">
-                        <div className="col-3 col-xs-4 col-md-4 varifyColor p-0" onClick={ShowColor}>
-                            <div onClick={HideVariety}>
-                                <span>نقره ای</span>
-                            </div>
+            <div className="Variety">
+                <div className={classes.join(' ')}>
+                    <div className={select.join(' ')}>
+                        <div className="varietyBtn"  onClick={ShowVariety}>
+                            <Button btnType="submit" >ثبت تنوع</Button>
                         </div>
-                        <div className="col-9 col-xs-8 col-md-8 BorderRightV" onClick={ShowWarranty}>
-                            <div onClick={HideVariety}>
-                                <span>گارانتی ضمانت سلامت تحویل کالا آنلاین شاپ</span>
+                        <div className="row VarietyContent">
+                            <div className="col-3 col-xs-4 col-md-4 varifyColor p-0">
+                                <div onClick={ShowVariety}>
+                                    <span onClick={ShowColor}>نقره ای</span>
+                                </div>
+                            </div>
+                            <div className="col-9 col-xs-8 col-md-8 BorderRightV">
+                                <div onClick={ShowVariety}>
+                                    <span onClick={ShowWarranty}>گارانتی ضمانت سلامت تحویل کالا آنلاین شاپ</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div className={colors.join(' ')}>
-                <Colors />
-            </div>
+                <div className={colors.join(' ')}>
+                    <Colors />
+                </div>
 
-            <div  className={warranties.join(' ')}>
-                <Warranty />
+                <div  className={warranties.join(' ')}>
+                    <Warranty />
+                </div>
             </div>
         </>
     )

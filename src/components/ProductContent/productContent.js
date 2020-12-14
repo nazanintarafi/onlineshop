@@ -90,7 +90,6 @@ const ProductContent=(props)=>{
                     <div className="ProductIMG">
                         <img src={product1} alt="online shop"/>
                     </div>
-                    
                     <div className="btnProduct">
                         {/*variety*/}
                         <section className={variiety.join(' ')}>

@@ -6,6 +6,9 @@ import CloseButton from '../../UI/button/btnClose/btnClose';
 import {Link} from 'react-router-dom';
 import emptyCart from '../../../assets/images/Group 1728.png';
 import Button from '../../UI/button/button';
+
+
+
 const YourCart=(props)=>{
     return(
         <>
@@ -62,7 +65,14 @@ const YourCart=(props)=>{
                         </div>
                     </div>
                 </div>
+                <div className="emptyChooseAddress">
+                    <div className="chooseBTN">
 
+                    </div>
+                    <div className="chooseTitre">
+                        <h2>انتخاب آدرس</h2>
+                    </div>
+                </div>
             </div>
         </>
     )

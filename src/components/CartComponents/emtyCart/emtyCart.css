@@ -1,0 +1,40 @@
+.EmptyCart{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    background-image: linear-gradient( to left ,#F99E37 , #F36B07 ,#F36B07 );
+    height: 100vh;
+}
+.EmptyCart .emptyBox{
+    background-image: linear-gradient(#FFA547 10%, #FF8520 ,#FF8520,#FF8520);
+    border: 1px solid #F57817;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    width: 70%;
+    margin: auto;
+    padding: 13% 0;
+    padding-bottom: 6%;
+    margin-top: 30%;
+}
+.completion .Button{
+    width: 60%;
+    font-size: 10px;
+    height: 25px;
+}
+.EmptyCart .emptyBox p{
+    padding-top: 10%;
+}
+.EmptyCloseBtn .BtnClose .backgroundButton{
+    top: -20px;
+}
+.emptyCartTitre h2{
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    font-weight: 400;
+    top: 5px;
+    right: 30%;
+}
