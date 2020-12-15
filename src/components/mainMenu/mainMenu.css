@@ -1,3 +1,8 @@
+.MainMenuu{
+    background-image: url(../../assets//images/Mask\ Group\ 8.png);
+    
+    width: 100%;
+}
 .mainMenu{
     direction: rtl;
     text-align: right;
@@ -6,10 +11,8 @@
     z-index: 2;
     top: 0;
     right: 0%;
-    background-color: #bfbfcf;
     width: 100%;
     color: #080957;
-    height: 100%;
     overflow: hidden;
 }
 .Logo{
@@ -17,7 +20,6 @@
 }
 .menuWidth{
     width: 55%;
-    background-color: #bfbfcf;
     height: 100%;
     text-align: right;
 }

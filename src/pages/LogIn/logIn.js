@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState , useContext} from 'react';
 import './logIn.css';
 import Button from '../../components/UI/button/button';
 import BtnTop from '../../components/UI/button/btnTop/btnTop';
@@ -6,15 +6,22 @@ import Input from '../../components/Forms/Form/form';
 import down from '../../assets/images/down-arrow.png';
 import {Link} from 'react-router-dom';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
-
+import {MenuContext} from '../../context/MenuContext/MenuContext';
 const LogIn=(props)=>{
     const[goTop,setGoTop]=useState(false);
     const GoTop=(props)=>{
         setGoTop(!goTop)
     }
+
+    const {show} = useContext(MenuContext);
+
+
     return(
         <>
-            <div className="Login">
+            <div className="Login" style={{
+                    position:show?'fixed':'relative',right:show?'65%':'0px',
+                    top:show?'90px':'0px',height:show?'390px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
+                    transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
                 <Toolbar />
                 <div className="signIn" >
                     <div className="signInContent">

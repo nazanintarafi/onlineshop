@@ -15,12 +15,13 @@ const Cart=(props)=>{
 
     return(
         <>
+            <Toolbar />
             <div className="Cart"style={{
-                    position:show?'fixed':'relative',right:show?'65%':'10px',
+                    position:show?'fixed':'relative',right:show?'65%':'0px',
                     top:show?'90px':'0px',height:show?'390px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
-                <Toolbar />
-                <div className="firstPage" style={{display:"none"}}>
+                
+                <div className="firstPage" style={{display:"block"}}>
                     <div className="firstPageContent">
                         <YourCart />
                     </div>
@@ -40,7 +41,7 @@ const Cart=(props)=>{
                         <Successful />
                     </div>
                 </div>
-                <div className="fifthPageContent" style={{display:"block"}}>
+                <div className="fifthPageContent" style={{display:"none"}}>
                     <div className="fifthPage">
                         <EmptyCart />
                     </div>

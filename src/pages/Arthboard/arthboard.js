@@ -3,7 +3,7 @@ import './arthboard.css';
 import Body from '../../components/ProfilePagesBody/profilePagesBody';
 import SearchBar from '../../components/searchBar/searchBar';
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
-import Slider from '../../components/slider/productSlider/productSlider';
+import Slider from '../../containers/ProductBox/productBox';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 const Arthboard=()=>{
     const breadcrumbs = useBreadcrumbs();

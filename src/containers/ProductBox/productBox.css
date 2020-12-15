@@ -1,7 +1,7 @@
 .ProductBox{
     direction: rtl;
     background-color: white;
-    box-shadow: 3px 2px 6px 1px #D4D3E3;
+    box-shadow: 1px 1px 4px 1px #D4D3E3;
     border-radius: 10px;
     margin: 20px auto;
     text-align: center;
@@ -40,6 +40,7 @@
 .ProductBOX .ProductBoxImg{
     width: 100%;
 }
+
 .wide .ProductBOX .slideImg{
     width: 100%;
 }
@@ -96,18 +97,22 @@
     padding: 2px 0px;
     width: 100%;
 }
-.wideDisplay .price{
+.wide .wideDisplay .price{
     position: absolute;
     bottom: 5px;
      left: 7px;
 }
-.wideDisplay .ratingStar{
+.wide .wideDisplay .ratingStar{
     position: absolute;
     top: 0px;
     left: 7px;
     font-size: 12px;
 }
 .sliderContent .description{
+    font-size: 12px;
+    width: 100%;
+}
+.wide .sliderContent .description{
     position: absolute;
     top: 30px;
     left: 7px;
@@ -116,4 +121,7 @@
 }
 .sliderContent .description p{
     font-weight: bold;
+}
+.wide .ProductBOX .ProductBoxImg{
+    text-align: right;
 }

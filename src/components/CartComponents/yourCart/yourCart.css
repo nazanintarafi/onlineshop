@@ -4,6 +4,7 @@
     width: 100%;
     text-align: center;
     margin: auto;
+    margin-right: 0;
 }
 .yourOrder{
     width: 90%;
@@ -65,4 +66,24 @@
     color: white;
     font-weight: bold;
     font-size: 12px;
+}
+
+.emptyChooseAddress{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 17%;
+    right: 0;
+    padding-top: 11px;
+}
+.emptyChooseAddress h2{
+    font-size: 11px;
+    text-align: right;
+    padding-right: 30%;
+}
+.chooseBTN{
+    position: absolute;
+    top: 0;
+    left: 0;
 }

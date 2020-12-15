@@ -6,6 +6,8 @@ import CloseButton from '../../UI/button/btnClose/btnClose';
 import {Link} from 'react-router-dom';
 import emptyCart from '../../../assets/images/Group 1728.png';
 import Button from '../../UI/button/button';
+import CartUp from '../../UI/button/CartUp/cartUp';
+import CartTop from '../../../assets/images/top.png';
 
 
 
@@ -67,7 +69,7 @@ const YourCart=(props)=>{
                 </div>
                 <div className="emptyChooseAddress">
                     <div className="chooseBTN">
-
+                        <CartUp imgName={CartTop} />
                     </div>
                     <div className="chooseTitre">
                         <h2>انتخاب آدرس</h2>

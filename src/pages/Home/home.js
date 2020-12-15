@@ -43,9 +43,6 @@ import Tables from '../../components/tables/tables';
 import {MenuContext} from '../../context/MenuContext/MenuContext';
 
 const Home=(props) =>{
-  const product=[
-    {image:'img1',name:'لب تاب',filter:"خانه و آشپزخانه",description:'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  ',oldPrice:'6,500,000' ,newPrice:'4,200,000 تومان',discount:'30%'}
-  ]
   const proTable=[
     {glassesImg1:{glasses1},glassesImg2:{glasses2},glassesImg3:{glasses3},glassesImg4:{glasses4},glassesImg5:{glasses5},
     glassesImg6:{glasses6},glassesImg7:{glasses7},glassesImg8:{glasses8},glassesImg9:{glasses2}}
@@ -64,12 +61,12 @@ const Home=(props) =>{
       <div className="Home">
         <Toolbar />
         <section className="menuToggle" style={{
-                    position:show?'fixed':'relative',right:show?'65%':'10px',
-                    top:show?'90px':'0px',height:show?'390px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
+                    position:show?'fixed':'relative',right:show?'65%':'0px',
+                    top:show?'90px':'0px',height:show?'390px':'100vh',overflowX:show?'hidden':'auto',width:show?'100%':'100vw',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
           
           <header className="homeHeader" style={{
-                    position:show?'fixed':'relative',right:show?'65%':'10px',
+                    position:show?'fixed':'relative',right:show?'65%':'0px',
                     top:show?'70px':'0px',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
             <Logo />
@@ -95,8 +92,8 @@ const Home=(props) =>{
                       </svg>
                     </Button>
                 </div>
-                <div className="col-md-7 col-xs-7 col-7">
-                  <Slider productsList={product} slideDesign="sliderWidth" />
+                <div className="col-md-7 col-xs-7 col-7 p-0">
+                  <Slider slideDesign="sliderWidth" />
                 </div>
               </div>
             </div>
@@ -118,8 +115,8 @@ const Home=(props) =>{
                       </svg>
                     </Button>
                 </div>
-                <div className="col-md-7 col-xs-7 col-7">
-                  <Slider productsList={product} slideDesign="sliderWidth" />
+                <div className="col-md-7 col-xs-7 col-7 p-0">
+                  <Slider slideDesign="sliderWidth" />
                 </div>
               </div>
             </div>
@@ -150,8 +147,8 @@ const Home=(props) =>{
                       </svg>
                     </Button>
                 </div>
-                <div className="col-md-7 col-xs-7 col-7">
-                  <Slider productsList={product} slideDesign="sliderWidth" />
+                <div className="col-md-7 col-xs-7 col-7 p-0">
+                  <Slider slideDesign="sliderWidth" />
                 </div>
               </div>
             </div>
@@ -189,8 +186,8 @@ const Home=(props) =>{
                       </svg>
                     </Button>
                 </div>
-                <div className="col-md-7 col-xs-7 col-7">
-                  <Slider productsList={product} slideDesign="sliderWidth" />
+                <div className="col-md-7 col-xs-7 col-7 p-0">
+                  <Slider slideDesign="sliderWidth" />
                 </div>
               </div>
             </div>
@@ -240,7 +237,7 @@ const Home=(props) =>{
             </div>
           </div>
           {/*آرایشی ، بهداشتی و سلامت*/}
-          <div className="container table">
+          <div className="container table changeWidth">
               <Tables tablesList={proTable} titre="آرایشی ، بهداشتی و سلامت"/>
               <Button>مشاهده همه
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

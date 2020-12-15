@@ -6,18 +6,20 @@ import {MenuContext} from '../../context/MenuContext/MenuContext';
 
 
 const MainMenu=(props)=>{
-
-    const {showMainMenu} = useContext(MenuContext);
-
+    const menuContext = useContext(MenuContext);
+    const {closeBtn,showMainMenu} = useContext(MenuContext);
+    const hideMainMenu=()=>{
+        menuContext.hideMainMenu();
+    }
     return(
         <>
-            <div style={{backgroundColor:"#bfbfcf",width:"100%",overflowY:"hidden"}}>
+            <div style={{width:"100%",overflowY:"hidden"}} className="MainMenuu">
                 <div className="menuWidth"  style={{display:showMainMenu?'block':'none',zIndex:showMainMenu?'1000':'null'}}>
                     <div className="Logo">
                         <Logo />
                     </div>
                     <div className="row">
-                        <div className="col-md-2 col-xs-2 col-2 List">
+                        <div className="col-md-2 col-xs-2 col-2 List closeBtn"  onClick={hideMainMenu} >
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                             </svg>

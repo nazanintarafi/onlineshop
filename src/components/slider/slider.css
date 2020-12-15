@@ -1,0 +1,11 @@
+.SliderContent{
+    padding: 0px 7px;
+}
+.slick-slide img {
+    display: block;
+    width: 100%;
+}
+.ProductSlider .slick-prev:before, .slick-next:before {
+    position: absolute;
+    right: 20px;
+}

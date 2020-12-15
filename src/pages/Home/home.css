@@ -4,7 +4,6 @@
     position: relative;
     z-index: 3;
     width: 100%;
-    margin-top: 40px;
 }
 .menuToggle{
     background-color: white;
@@ -218,4 +217,7 @@
     width: 100%;
     text-align: 100%;
     margin: auto;
+}
+.changeWidth .glassesTitle::after{
+    width: 46%;
 }
