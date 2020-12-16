@@ -1,0 +1,129 @@
+.groups img{
+    width: 100%;
+}
+.condition{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items:center;
+    box-sizing: border-box;
+    height: 100px;
+    opacity: 0.8;
+}
+.condition div{
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+.img_condition{
+    width: 31px;
+}
+.img_condition img{
+    width: 100%;
+}
+.condition p{
+   font-size: 7px;
+   padding-top: 5px;
+}
+.condition p:first-child{
+    font-size: 1px;
+ }
+ .call{
+     text-align: right;
+ }
+ .call h4{
+     font-size: 10px;
+ }
+ .callFooter{
+     text-align: center;
+ }
+ .callFooter a{
+     color: black;
+     font-size: 12px;
+     width: 100%;
+ }
+ .callFooter a img{
+    padding-left: 4px;
+}
+.call span{
+    width: 100%;
+    line-height: 30px;
+}
+.answer{
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    width: 80%;
+}
+.answer h4{
+    font-size: 17px;
+    margin-bottom: 17px;
+}
+.email{
+    display: flex;
+    align-items: center;
+}
+.email div{
+    padding-left: 5px;
+    padding-right: 15%;
+}
+.email span{
+    margin: 0;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+}
+.enamad{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.enamad img{
+    width: 100%;
+    margin-top: 12px;
+}
+.answer p{
+    font-size: 10px;
+    line-height: 19px;
+    margin-top: 12px;
+    margin-bottom: 100px;
+}
+.titreFooter{
+    font-size: 17px;
+}
+.eamilBox{
+    text-align: right;
+    margin: auto;
+}
+.eamilBox p{
+    color: #080819;
+    font-size: 12px;
+}
+.eamilBox form input{
+    position: relative;
+    width: 90%;
+    background-color: #F3F3F9;
+    border: 1px solid #A5A5B2;
+    border-radius: 0px 10px 10px 0px;
+    height: 35px;
+}
+.eamilBox form input::placeholder{
+    padding-right: 12px;
+    font-size: 12px;
+}
+.eamilBox button{
+    position: absolute;
+    height: 35px;
+    background-color:#F36B07 ;
+    border: #A5A5B2 solid 1px;
+    color: white;
+    width: 60px;
+    border-radius: 10px;
+    left: 10%;
+    font-size: 13px;
+}
+.eamilBox form input:focus{
+    outline: none;
+}

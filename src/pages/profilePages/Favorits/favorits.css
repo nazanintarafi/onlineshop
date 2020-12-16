@@ -1,0 +1,23 @@
+.favoritMargin{
+    margin-top: 100px;
+}
+.Favorits .rightBackgroundButton {
+    top: -22px;
+}
+@media only screen and (min-width: 338px) {
+    .Favorits .rightBackgroundButton {
+        top: -31px;
+    }
+    .favoritMargin{
+        margin-top: 142px;
+    }
+  }
+  @media only screen and (min-width: 427px) {
+    .Favorits .rightBackgroundButton {
+        top: -31px;
+    }
+    .favoritMargin{
+        margin-top: 142px;
+    }
+  }
+

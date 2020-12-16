@@ -1,0 +1,106 @@
+.Questions{
+    text-align: center;
+    margin: auto;
+    background-color: white;
+}
+.QuestionBox{
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 10vh;
+}
+.boxContains{
+    text-align: right;
+    font-weight: bold;
+    font-size: 11px;
+    border: 1px solid #7577cd2b;
+    width: 80%;
+    margin: 9px auto;
+    border-radius: 6px;
+    align-items: center;
+    box-sizing:content-box;
+    box-shadow:1px 1px 2px 1px #7577cd2b ;
+    color: #080819;
+    font-weight: 500;
+    overflow: hidden;
+}
+.boxContains span{
+    color: #080819;
+}
+.orangeTitre{
+    background-image: linear-gradient(to bottom left ,#EAA668, #F06C0F, #F06C0F);
+    height: 8vh;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.orangeTitre h1{
+    font-size: 14px;
+    color: white;
+    padding-top: 3vh;
+}
+.boxContains input{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+.QuestionBox{
+    overflow: hidden;
+}
+.QuestionBoxLabel{
+    display: flex;
+    justify-content: space-between;
+    line-height: 34px;
+}
+.QuestionBoxContent{
+    max-height: 0;
+    padding: 0;
+    
+}
+.boxContains input:checked ~ .QuestionBoxContent{
+    max-height: 100%;
+    transition: all 0.9s;
+}
+.QuestionIcon {
+    margin-right: 18px;
+    width: 13%;
+    
+}
+.QuestionIcon img {
+    width: 100%;
+}
+.QuestionBoxLabel span:last-child{
+    width: 100%;
+    margin-right: 7px;
+}
+.descriptionsQ{
+    font-size: 10px;
+    line-height: 24px;
+    padding: 3px 10px;
+    padding-left: 14px;
+    text-align: justify;
+}
+.optionsQ{
+    font-size: 10px;
+    line-height: 20px;
+    position: relative;
+    width: 95%;
+    border-bottom: 1px solid #a5a5b245;
+    margin: auto 5px;
+    padding-bottom: 5px;
+}
+.optionsQ.last{
+    border: none;
+}
+.boxContains input:checked + .QuestionBoxLabel.mainQ{
+    border-bottom: 1px solid #08081978;
+    margin: auto 6px;
+    margin-bottom: 12px;
+    transition: all 0.2s;
+}
+.boxContains input:checked + .QuestionBoxLabel.mainQ{
+    font-size: 10px;
+    transition: all 0.2s;
+}

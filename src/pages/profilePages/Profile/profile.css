@@ -5,6 +5,7 @@
 .UserName{
     text-align: center;
     margin: auto;
+    margin-top: 80px;
 }
 .userNameRadioBtn{
     width: 100%;
@@ -122,3 +123,9 @@
     margin-right: 12px;
     font-size: 11px;
 }
+
+@media only screen and (min-width: 450) {
+    .UserName{
+        margin-top: 180px;
+    }
+  }

@@ -1,0 +1,52 @@
+.MediaVideo{
+    box-sizing: border-box;
+    padding: 12px;
+}
+.MediaVideo .activeLike{
+    color: red;
+}
+.MediaVideoContent{
+    background-color: white;
+    box-shadow: 1px 1px 8px 2px #70707047;
+    border-radius: 13px;
+    display: flex;
+    direction: rtl;
+    padding: 10px;
+    align-items: center;
+    padding-right: 3px;
+}
+.videoImg img{
+    width: 100%;
+}
+.videoContent p{
+    font-weight: bold;
+    color: #707070;
+    font-size: 12px;
+    text-align: justify;
+    height: 100%;
+    padding: 0;
+    padding-top: 13px;
+    margin-bottom: 0;
+}
+.withDetail span{
+    font-size: 10px;
+    padding: 0 2px;
+}
+.MediaVideo hr{
+    margin: 7px;
+}
+.withOutDetail{
+    padding-right: 5px;
+    padding-top: 13px;
+}
+.withOutDetail h4{
+    font-size: 13px;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 0;
+    
+}
+.withOutDetail p{
+    font-weight: normal;
+    font-size: 11px;
+}

@@ -10,7 +10,7 @@ const PurpleBody=(props)=>{
                     top:show?'90px':'0px',height:show?'390px':'100vh',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
                 <div style={{display:props.titre?"block":"none",marginTop:props.titre?"0px":"60px"}} className="purpleTitre">
-                    <h1>حریم خصوصی سامانه آنلاین شاپ</h1>
+                    <h1>{props.title}</h1>
                     <p>کاربر گرامی لطفاً موارد زیر را جهت استفاده بهینه از خدمات کاربردی آنلاین شاپ به دقت ملاحظه فرمایید.</p>
                 </div>
                 <div className="purpleBox" style={{marginTop:props.titre?"0px":"60px"}}>

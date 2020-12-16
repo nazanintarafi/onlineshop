@@ -9,7 +9,7 @@ const ChangePassword=()=>{
         <>
             <div className="orders">
                 <Body titre="تغییر پسورد" profilePage="true">
-                    <form>
+                    <form className="passwordsContent">
                         <Input type="text" placeholder="رمز عبور فعلی" />
                         <Input type="text" placeholder="رمز عبور جدید" />
                         <Input type="number" placeholder="تکرار رمز عبور جدید" />

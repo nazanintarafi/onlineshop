@@ -6,6 +6,5 @@ const Form=(props)=>{
             <input type={props.type} placeholder={props.placeholder} className="Input"/>
         </div>
     )
-
 }
 export default Form;

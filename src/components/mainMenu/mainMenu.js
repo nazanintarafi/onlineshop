@@ -14,7 +14,7 @@ const MainMenu=(props)=>{
     return(
         <>
             <div style={{width:"100%",overflowY:"hidden"}} className="MainMenuu">
-                <div className="menuWidth"  style={{display:showMainMenu?'block':'none',zIndex:showMainMenu?'1000':'null'}}>
+                <div className="menuWidth"  style={{display:showMainMenu?'block':'none',zIndex:showMainMenu?'1000':'null',height:showMainMenu?'100vh':'null'}}>
                     <div className="Logo">
                         <Logo />
                     </div>

@@ -8,11 +8,11 @@ import ProductBox from '../../containers/ProductBox/productBox';
 const Slider=(props)=>{
     var settings = {
             display:true,
-            dots: true,
+            dots: false ,
             infinite: true,
             loop:true,
             speed: 500,
-            slidesToShow:1.5,
+            slidesToShow:props.number,
             slidesToScroll: 1
     };
     return(

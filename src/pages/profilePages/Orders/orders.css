@@ -1,0 +1,16 @@
+.orders .Table{
+    margin-top: 110px;
+    width: 95%;
+}
+
+
+@media only screen and (min-width: 343px) {
+    .orders .rightBackgroundButton {
+        top:-34px;
+    }
+  }
+  @media only screen and (min-width: 430px) {
+    .orders .rightBackgroundButton {
+        top:-24px;
+    }
+  }

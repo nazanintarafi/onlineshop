@@ -1,30 +1,32 @@
-import React, {useContext} from 'react';
+import React, {useContext, menuContext} from 'react';
 import './profileMenu.css';
 import {Link} from 'react-router-dom';
 import {MenuContext} from '../../context/MenuContext/MenuContext';
 
 const ProfileMenu=(props)=>{
-
-    const {showSellerMenu ,show} = useContext(MenuContext);
-
+    const menuContext = useContext(MenuContext);
+    const { show , showSellerMenu} = menuContext ;
+    const Show=()=>{
+        menuContext.Show();
+    }
     return(
         <ul className="ProfileMenu"  style={{display:show?'block':'none',opacity:showSellerMenu?"0":"1",zIndex:show?"98":null}}>
-            <li>
+            <li onClick={Show} >
                 <Link to="/profile">پروفایل</Link>
             </li>
-            <li>
+            <li onClick={Show} >
                 <Link to="/orders">سفارش ها</Link>
             </li>
-            <li>
+            <li onClick={Show} >
                 <Link to="/favorits">مورد علاقه ها</Link>
             </li>
-            <li>
+            <li onClick={Show} >
                 <Link to="/address-list">آدرس ها</Link>
             </li>
-            <li>
+            <li onClick={Show} >
                 <Link to="/change-password">تغییر رمز عبور</Link>
             </li>
-            <li>
+            <li onClick={Show} >
                 <Link to="/">خروج</Link>
             </li>
         </ul>

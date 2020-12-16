@@ -7,7 +7,7 @@ const Privacy=(props)=>{
     return(
         <>
             <div className="Privacy">
-                <Body titre={true}>
+                <Body titre={true} title="حریم خصوصی سامانه آنلاین شاپ">
                     <Toolbar />
                         <p className="boxP">
                         آنلاین  شاپ  تابع قوانین و مقررات جمهوری اسلامی ایران است و 

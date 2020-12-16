@@ -1,7 +1,7 @@
 .SliderContent{
     padding: 0px 7px;
 }
-.slick-slide img {
+.ProductSlider .slick-slide img {
     display: block;
     width: 100%;
 }

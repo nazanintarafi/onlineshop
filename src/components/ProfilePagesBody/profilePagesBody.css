@@ -24,7 +24,6 @@
     top: 40px;
 }
 .Content{
-    margin-top: 200px;
     margin-bottom: 150px;
     overflow: auto;
 }
@@ -41,9 +40,6 @@
     }
     .btnSeller{
         top: 40px;
-    }
-    .Content{
-        margin-top: 300px;
     }
 }
 @media only screen and (min-width: 440px){
@@ -73,9 +69,6 @@
 @media only screen and (min-width: 647px){
     .btnRight{
         top: 430px;
-    }
-    .Content{
-        margin-top: 450px;
     }
     .btnSeller{
         top: 180px;

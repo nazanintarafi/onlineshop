@@ -1,0 +1,111 @@
+.Contacts{
+    background-color: white;
+}
+.ContactsContain{
+    padding: 40px 30px;
+    text-align: right;
+    margin: auto;
+}
+.ContactsContain h2{
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+}
+.ContactsContain p{
+    padding: 8px 0;
+    font-size: 11px;
+    line-height: 20px;
+}
+.Media{
+    font-weight: bold;
+
+}
+.Media span{
+    padding: 0 5px;
+}
+.Media span img{
+    width: 7%;
+}
+.changebck{
+    background-color: white;
+}
+.SendMessageContent h2{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    color: white;
+    height: 100%;
+}
+.SendMessage{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F36B07;
+    position: absolute;
+    z-index: 6;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    box-sizing: border-box;
+    display: block;
+    top:140px;
+}
+.SendMessageContent{
+    text-align: center;
+    margin: 30px auto;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #F36B07;
+    text-align : center;
+    margin: auto;
+    box-sizing: border-box;
+    align-items: center;
+    position: relative;
+}
+.SendMessageContent form Input::placeholder{
+    color: black;
+}
+.SendMessageContent form Input{
+    border-bottom: 1px solid #0000004d;
+}
+.SendMessage .test{
+    top: -15px;
+}
+.SendMessageContent form{
+    padding-top: 19px;
+}
+.buttonSubmitContacts{
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 30px;
+    
+}
+.buttonSubmitContacts .Button{
+    font-weight: normal;
+    font-size: 11px;
+    height: 26px;
+}
+.SendMessageContent .Form input::placeholder{
+    width: 70%;
+    color: #707070;
+    font-size: 12px;
+}
+.messageText .Form .Input{
+    border-radius: 12px;
+    box-shadow: 0px 0px 6px 0px#a5a5b259;
+    border: none;
+    height: 25vh;
+    margin-top: 29px;
+    position: relative;
+    width: 75%;
+}
+.messageText .Form input::placeholder{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}

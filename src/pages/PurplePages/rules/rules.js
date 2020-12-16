@@ -7,7 +7,7 @@ const Rules=(props)=>{
     return(
         <>
             <div className="Rules">
-                <Body titre={true}>
+                <Body titre={true} title="قوانین استفاده از خدمات سامانه آنلاین شاپ">
                     <Toolbar />
                         <p className="boxP">
                         آنلاین  شاپ  تابع قوانین و مقررات جمهوری اسلامی ایران است و 

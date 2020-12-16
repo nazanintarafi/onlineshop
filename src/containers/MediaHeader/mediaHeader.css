@@ -1,0 +1,51 @@
+
+.searchMedia input{
+    border: white 1px solid;
+    width: 90%;
+    border-radius: 30px;
+    background-color: transparent;
+    margin: 12px auto;
+    align-items: center;
+    
+}
+.searchMedia input:focus{
+    outline: none;
+}
+.searchMedia input::placeholder{
+    color: white;
+    font-size: 11px;
+    padding-right: 35px;
+    align-items: center;
+}
+.searchMedia{
+    position: relative;
+}
+.searchIconMedia svg {
+    position: absolute;
+    top: 17px;
+    right: 35px;
+    color: white;
+    width: 12px;
+    font-weight: bold;
+}
+.media1Hedear{
+    background-color:#2F4858 ;
+    background-position: top;
+}
+.backMedia{
+    text-align: left;
+}
+.backMedia a{
+    color: white;
+    font-size: 10px;
+}
+.logoMedia{
+    display: flex;
+    padding-top: 30px;
+}
+.logoMedia h1{
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-right: 10px;
+}

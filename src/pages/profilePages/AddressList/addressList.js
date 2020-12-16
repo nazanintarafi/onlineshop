@@ -14,6 +14,7 @@ const AddressList=(props)=>{
     return(
         <>
             <Body titre="آدرس های ثبت شده" className="Favorits" profilePage="true">
+                <div className="addressListContent">
                     <AddressBox 
                         address={address[0]}
                     />
@@ -27,6 +28,7 @@ const AddressList=(props)=>{
                     <Link to="/add-address" className="addAddress">
                         <Button btnType="signUp">افزودن آدرس جدید</Button>
                     </Link>
+                </div>
             </Body>
         </>
     )

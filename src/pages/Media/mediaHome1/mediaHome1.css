@@ -1,0 +1,70 @@
+.MediaHome1{
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+.mediaBanner img{
+    width: 100%;
+}
+.mediaBanner .ProductSlider .slick-prev:before, .slick-next:before {
+    display: none;
+}
+.fixedBanner img{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+.newVideos{
+    background-color: #86BBD8 ;
+    margin: 12px auto;
+}
+.newVideosTitre{
+    display: flex;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+.newVideosTitre h3{
+    color: white;
+    font-size: 15px;
+}
+.newVideosTitre .Button{
+    margin-left: 0;
+}
+.newVideos .slick-prev:before, .slick-next:before {
+    display: none;
+}
+.fixedBanner2{
+    display: flex;
+    box-sizing: border-box;
+}
+.fixedBanner2 img{
+    width: 100%;
+}
+.mediaFooter .HomeFooter form input{
+    background-color: #D1E5F0;
+    border: #86BBD8 1px solid;
+}
+.mediaFooter .HomeFooter form input::placeholder{
+    color: #33658A;
+}
+.mediaFooter .HomeFooter form button{
+    background-color: #33658A;
+    border: #A5A5B2 1px solid;
+    color: white;
+}
+.mediaFooter{
+    margin-top: 32px;
+}
+.videoItemsTitre {
+    text-align: right;
+    margin-top: 19px;
+}
+.videoItemsTitre h3{
+    font-size: 15px;
+}
+.videoItemsTitre hr{
+    margin: 11px auto;
+}

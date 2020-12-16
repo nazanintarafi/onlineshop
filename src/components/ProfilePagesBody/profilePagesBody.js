@@ -4,6 +4,7 @@ import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import ProfileMenu from '../profileMenu/profileMenu';
 import SellerMenu from '../SellerMenu/sellerMenu';
 import Header from '../../containers/profileHeader/profileHeader';
+import MediaHeader from '../../containers/MediaHeader/mediaHeader';
 import SellerHeader from '../../containers/sellerHeader/sellerHeader';
 import BtnRight from '../UI/button/btnRight/btnRight';
 import BtnSeller from '../UI/button/btnRight/btnSeller/btnSeller';
@@ -26,9 +27,11 @@ const ProfilePagesBody=(props)=>{
                     <SellerMenu  rightToggle={show}/>
                 </div>
                 <div  className="homeHeader arthHeader" style={{opacity:props.arthPage?'1':'0',top:show?'90px':'0px',
-                    left:show?'-47%':null,transition:show?'all 0.2s':'all 0.2s'}}>
+                    left:show?'-62%':null,transition:show?'all 0.2s':'all 0.2s'}}>
                         <Logo />
                 </div>
+                
+
 
                 
                 <div className="bodyToggle" style={{
@@ -42,7 +45,10 @@ const ProfilePagesBody=(props)=>{
                         <div style={{opacity:props.sellerPage?'1':'0'}}>
                             <SellerHeader rightToggle={show} titre={props.titre} profile={props.profile}/>
                         </div>
-                        <div className="Content" style={{marginTop:props.arthPage?'60px':'200px'}}>
+                        <div style={{opacity:props.mediaPage?'1':'0'}}>
+                            <MediaHeader rightToggle={show}/>
+                        </div>
+                        <div className="Content" style={{marginTop:props.arthPage?'60px':null}}>
                             {props.children}
                         </div>
                         <div></div>
@@ -54,8 +60,8 @@ const ProfilePagesBody=(props)=>{
                         top:show?"160px":null,zIndex:show?"200":"200",transition:show?'all 0.2s':'all 0.2s'}}>
                             <BtnSeller btnType="sellerBtn"/>
                         </div>
-                        <div className="btnRight btnSeller" style={{opacity:props.arthBtn?'1':'0',right:show?"50.5%":"12px",
-                        top:show?"160px":"100px",zIndex:show?"200":"200",transition:show?'all 0.2s':'all 0.2s'}}>
+                        <div className="btnRight btnSeller" style={{opacity:props.arthBtn?'1':'0',right:show?"65.5%":"12px",
+                        top:show?"194px":"100px",zIndex:show?"200":"200",transition:show?'all 0.2s':'all 0.2s'}}>
                             <BtnSeller btnType="arthBtn"/>
                         </div>
                 </div>
