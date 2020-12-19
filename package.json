@@ -15,12 +15,15 @@
     "react": "^17.0.1",
     "react-breadcrumbs": "^2.1.7",
     "react-dom": "^17.0.1",
+    "react-player": "^2.7.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-slick": "^0.27.12",
     "react-typography": "^0.16.19",
+    "redux": "^4.0.5",
     "slick-carousel": "^1.8.1",
+    "video-react": "^0.14.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

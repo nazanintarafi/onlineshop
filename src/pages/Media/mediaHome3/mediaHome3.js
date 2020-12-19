@@ -16,7 +16,9 @@ import whatsapp from "../../../assets/images/Icon simple-whatsapp.png";
 import {Link} from 'react-router-dom';
 import Footer from "../../../containers/Footer/HomeFooter/homeFooter";
 import Button from "../../../components/UI/button/button";
-
+import videoBack from "../../../assets/images/795x400-201805-DigitalDesign-header-SEU.png";
+import ReactPlayer from 'react-player';
+import { Player } from 'video-react';
 
 const MediaHome3=(props)=>{
     const {show} = useContext(MenuContext);
@@ -30,6 +32,19 @@ const MediaHome3=(props)=>{
                 <Toolbar />
 
                 <div className="container videoDescription">
+                    <div className="Video">
+                        <button >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                            </svg>
+                        </button>
+                        <div><Player
+                                playsInline
+                                poster={videoBack}
+                                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                            />
+                        </div>
+                    </div>
                     <h5>لورم ایپسوم متن ساختگی با تولید سادگی</h5>
                     <div className="descriptionBorder">
                         <p>لورم   ایپسوم  متن  ساختگی  با  تولید  سادگی  نامفهوم  از  صنعت  چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون  بلکه  روزنامه  و  مجله  در ستون و سطرآنچنان که لازم است  و  برای  شرایط  فعلی تکنولوژی مورد نیاز و کاربردهای متنوع  با  هدف  بهبود  ابزارهای  کاربردی  می باشد. کتابهای زیادی  در  شصت  و  سه درصد</p>

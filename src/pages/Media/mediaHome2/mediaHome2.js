@@ -1,7 +1,6 @@
 import React from 'react';
 import './mediaHome2.css';
 import Body from '../../../components/ProfilePagesBody/profilePagesBody';
-import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import Toolbar from '../../../containers/Footer/Toolbar/Toolbar';
 import VideoBox from '../../../components/mediaVideos/mediaVideos';
 import img1 from "../../../assets/images/photo-album-logo_7688-145.png";
@@ -9,7 +8,6 @@ import img2 from "../../../assets/images/14.png";
 import Footer from "../../../containers/Footer/HomeFooter/homeFooter";
 
 const MediaHome2=()=>{
-    const breadcrumbs = useBreadcrumbs();
     return(
         <>
             <div className="MediaHome2">

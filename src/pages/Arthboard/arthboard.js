@@ -2,11 +2,9 @@ import React from 'react';
 import './arthboard.css';
 import Body from '../../components/ProfilePagesBody/profilePagesBody';
 import SearchBar from '../../components/searchBar/searchBar';
-import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import Slider from '../../containers/ProductBox/productBox';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 const Arthboard=()=>{
-    const breadcrumbs = useBreadcrumbs();
     return(
         <>
             <div className="Arthboard">
@@ -15,7 +13,6 @@ const Arthboard=()=>{
                     <div className="search">
                         <SearchBar />
                     </div>
-                    {breadcrumbs.map(({ breadcrumb }) => breadcrumb)}
                     <div className="grouping container">
                         <div>
                             <span>دسته بندی 1</span>

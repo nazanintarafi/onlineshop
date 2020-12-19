@@ -104,3 +104,6 @@
 .mediaComments input:focus{
     outline: none;
 }
+video{
+    width: 100vw;
+}
