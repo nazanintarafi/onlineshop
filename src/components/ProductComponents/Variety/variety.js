@@ -75,28 +75,28 @@ const Variety=(props)=>{
                         </div>
                         <div className="row VarietyContent">
                             <div className="col-3 col-xs-4 col-md-4 varifyColor p-0">
-                                <div onClick={ShowVariety}>
+                                <div>
                                     <span onClick={ShowColor}>نقره ای</span>
                                 </div>
                             </div>
                             <div className="col-9 col-xs-8 col-md-8 BorderRightV">
-                                <div onClick={ShowVariety}>
+                                <div>
                                     <span onClick={ShowWarranty}>گارانتی ضمانت سلامت تحویل کالا آنلاین شاپ</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div className={colors.join(' ')}>
-                    <Colors />
-                </div>
-
-                <div  className={warranties.join(' ')}>
-                    <Warranty />
-                </div>
             </div>
+
+            <div className={colors.join(' ')}>
+                <Colors />
+            </div>
+
+            <div  className={warranties.join(' ')}>
+                <Warranty />
+            </div>
+            
         </>
     )
 }

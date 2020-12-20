@@ -51,6 +51,16 @@ const ProductContent=(props)=>{
         default:
             break; 
     }
+
+
+    let add=["add"];
+    switch(variety){
+        case true:
+            add.push("addMargin");
+            break;
+        default:
+            break; 
+    }
   
     return(
         <>
@@ -98,11 +108,13 @@ const ProductContent=(props)=>{
                         <span className={classes.join(' ')} onClick={ShowVariety}>
                             <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
                         </span>
-
-                        <Button btnType="submit" >افزودن به سبد خرید</Button>
+                        <span className={add.join(' ')} style={{marginTop:variety?"101px":null,display:variety?"block":null,transition:"0.2s"}}>
+                            <Button btnType="submit" >افزودن به سبد خرید</Button>
+                        </span>
+                        
                     </div>
                     
-                    <section style={{display:"none"}}>
+                    <section>
                         <ul>
                             <li>
                                 <div>

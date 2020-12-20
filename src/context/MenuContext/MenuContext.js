@@ -7,7 +7,14 @@ const MenuContextProvider=(props)=>{
     const[showMainMenu,setShowMainMenu]=useState(false);
     const[showSellerMenu,setShowSellerMenu]=useState(false);
     const[closeBtn,setCloseBtn]=useState(false);
+    const[mediaMenu,setMediaMenu]=useState(false);
     
+
+    const MediaMenu=()=>{
+        setMediaMenu(true);
+        setShowMainMenu(false);
+    }
+
     const hideMainMenu=()=>{
         setShowMainMenu(false);
         setShow(false)

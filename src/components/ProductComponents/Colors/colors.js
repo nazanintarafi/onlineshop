@@ -1,13 +1,11 @@
 import React,{ useContext} from 'react';
-import Variety from '../Variety/variety';
 import './colors.css';
 import {ProductContext} from '../../../context/productContext/productContext';
-import product from '../../../pages/Product/product';
 
 const Colors=(props)=>{
 
     const productContext = useContext (ProductContext);
-    const {  color , variety } = productContext;
+    const {  color } = productContext;
 
 
     const HideColor=()=>{
@@ -19,29 +17,29 @@ const Colors=(props)=>{
         <>
             <div className="Colors" style={{display:color?"block":"none"}}>
                 <div>
-                    <label onClick={HideColor} >
+                    <label >
                         <input type="radio" name="colors"/>
-                        <span className="colorName" >مشکی</span>
+                        <span className="colorName" onClick={HideColor}>مشکی</span>
                     </label>
-                    <label onClick={HideColor} >
+                    <label  >
                         <input type="radio" name="colors"/>
-                        <span className="colorName">نقره ای</span>
+                        <span className="colorName" onClick={HideColor} >نقره ای</span>
                     </label>
-                    <label onClick={HideColor} >
+                    <label  >
                         <input type="radio" name="colors"/>
-                        <span className="colorName" >سفید</span>
+                        <span className="colorName" onClick={HideColor} >سفید</span>
                     </label>
-                    <label onClick={HideColor} >
+                    <label  >
                         <input type="radio" name="colors"/>
-                        <span className="colorName" >طلایی</span>
+                        <span className="colorName" onClick={HideColor} >طلایی</span>
                     </label>
-                    <label onClick={HideColor} >
+                    <label  >
                         <input type="radio" name="colors"/>
-                        <span className="colorName" >رزگلد</span>
+                        <span className="colorName" onClick={HideColor} >رزگلد</span>
                     </label>
-                    <label onClick={HideColor} >
+                    <label  >
                         <input type="radio" name="colors"/>
-                        <span className="colorName" >سرمه ای</span>
+                        <span className="colorName" onClick={HideColor} >سرمه ای</span>
                     </label>
                 </div>
             </div>

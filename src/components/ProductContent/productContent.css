@@ -176,3 +176,9 @@
         opacity: 0;
     }
 }
+
+.addMargin .Button{
+    background-color: #A5A5B2;
+    border: #A5A5B2;
+    transition: 0.2s;
+}

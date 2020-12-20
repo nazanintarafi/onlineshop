@@ -58,7 +58,7 @@ const Product=(props)=>{
                         <div className="ProductContents">
                             <div className="detail">
                                 <h2 style={{marginTop:topProduct?'20px':'17px',width:"100%",paddingRight:"10%"}}>مشخصات محصول</h2>
-                                <div className="priceProductPage">
+                                <div className="priceProductPage" style={{display:topProduct?"none":"block"}}>
                                     <div>
                                         <del>8,300,000</del>
                                         <p>7,300,000<span>تومان</span></p>

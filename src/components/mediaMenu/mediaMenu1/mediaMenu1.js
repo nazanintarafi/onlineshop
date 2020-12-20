@@ -1,20 +1,23 @@
 import React ,{useContext} from 'react';
 import Logo from '../logo/logo';
-import './mainMenu.css';
+import './mediaMenu1.css';
 import {Link} from 'react-router-dom';
-import {MenuContext} from '../../context/MenuContext/MenuContext';
+import {MenuContext} from '../../../context/MenuContext/MenuContext';
 
 const MainMenu=(props)=>{
     const menuContext = useContext(MenuContext);
-    const {closeBtn,showMainMenu} = useContext(MenuContext);
+    const {closeBtn,showMainMenu,mediaMenu} = useContext(MenuContext);
     const hideMainMenu=()=>{
         menuContext.hideMainMenu();
+    }
+    const MediaMenu=()=>{
+        menuContext.MediaMenu();
     }
 
     return(
         <>
             <div style={{width:"100%",overflowY:"hidden"}} className="MainMenuu">
-                <div className="menuWidth"  style={{display:showMainMenu?'block':'none',zIndex:showMainMenu?'1000':'null',height:showMainMenu?'100vh':'null'}}>
+                <div className="menuWidth"  style={{display:mediaMenu?'block':'none',zIndex:mediaMenu?'1000':'null',height:mediaMenu?'100vh':'null'}}>
                     <div className="Logo">
                         <Logo />
                     </div>
@@ -45,88 +48,31 @@ const MainMenu=(props)=>{
                                                 </svg>
                                             </span>
                                         </label>
-                                        {/*زیرمنواول*/}
-                                        <div className="mainMenuItems-content ">
-                                            <div>
-                                                <input type="checkbox" id="item001"/>
-                                                <label className="mainMenuItems-label" for="item001">
-                                                    <span>موبایل</span>
-                                                    <span className="svgMenu">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
-                                                            <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
-                                                        </svg>
-                                                    </span>
-                                                </label>
-                                                {/*زیرمنوی دوم*/}
-                                                <div className="mainMenuItems-content">
-                                                    <input type="checkbox" id="item0001"/>
-                                                    <label className="mainMenuItems-label" for="item0001"><Link to="/">گوشی موبایل</Link></label>
-                                                    <input type="checkbox" id="item0001"/>
-                                                    <label className="mainMenuItems-label" for="item0001"><Link to="/">شارژر</Link></label>
-                                                    <input type="checkbox" id="item0001"/>
-                                                    <label className="mainMenuItems-label" for="item0001"><Link to="/">قاب و محافظ</Link></label>
-                                                </div>
-                                            </div>
-
-                                            {/*زیرمنواول*/}
-                                            <div>
-                                                <input type="checkbox" id="item0022"/>
-                                                <label className="mainMenuItems-label" for="item0022">
-                                                    <span>لپ تاپ</span>
-                                                    <span className="svgMenu">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
-                                                            <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
-                                                        </svg>
-                                                    </span>
-                                                </label>
-                                            </div>
-
-                                        </div>
                                     </div>
 
-                                    {/*زیرمنواول*/}
                                     <div className="mainMenuItems">
-                                        <input type="checkbox" id="item02"/>
-                                        <label className="mainMenuItems-label" for="item02">
-                                            <span>مد و پوشاک</span>
+                                        <input type="checkbox" id="item01"/>
+                                        <label className="mainMenuItems-label" for="item01">
+                                            <span>بازی ها</span>
                                             <span className="svgMenu">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
                                                 </svg>
                                             </span>
                                         </label>
-                                        {/*زیرمنواول*/}
-                                        <div className="mainMenuItems-content">
-                                            <input type="checkbox" id="item002"/>
-                                            <label className="mainMenuItems-label" for="item002">موبایل</label>
-                                            {/*زیرمنوی دوم*/}
-                                            <div className="mainMenuItems-content">
-                                                <input type="checkbox" id="item0002"/>
-                                                <label className="mainMenuItems-label" for="item0002">گوشی موبایل</label>
-                                            </div>
-                                        </div>
                                     </div>
+
 
                                     <div className="mainMenuItems">
                                         <input type="checkbox" id="item03"/>
                                         <label className="mainMenuItems-label" for="item03">
-                                            <span>خانه و آشپزخانه</span>
+                                            <span>فیلم</span>
                                             <span className="svgMenu">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
                                                     <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
                                                 </svg>
                                             </span>
                                         </label>
-                                        {/*زیرمنواول*/}
-                                        <div className="mainMenuItems-content">
-                                            <input type="checkbox" id="item003"/>
-                                            <label className="mainMenuItems-label" for="item003">موبایل</label>
-                                            {/*زیرمنوی دوم*/}
-                                            <div className="mainMenuItems-content">
-                                                <input type="checkbox" id="item0003"/>
-                                                <label className="mainMenuItems-label" for="item0003">گوشی موبایل</label>
-                                            </div>
-                                        </div>
                                     </div>
 
                                     {/*زیرمنواول*/}
@@ -140,16 +86,6 @@ const MainMenu=(props)=>{
                                                 </svg>
                                             </span>
                                         </label>
-                                        {/*زیرمنواول*/}
-                                        <div className="mainMenuItems-content">
-                                            <input type="checkbox" id="item004"/>
-                                            <label className="mainMenuItems-label" for="item004">موبایل</label>
-                                            {/*زیرمنوی دوم*/}
-                                            <div className="mainMenuItems-content">
-                                                <input type="checkbox" id="item0004"/>
-                                                <label className="mainMenuItems-label" for="item0004">گوشی موبایل</label>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -17,7 +17,6 @@ import img1 from "../../../assets/images/photo-album-logo_7688-145.png";
 import img2 from "../../../assets/images/14.png";
 import Footer from "../../../containers/Footer/HomeFooter/homeFooter";
 
-
 const MediaHome1=(props)=>{
     var settings = {
         display:true,
