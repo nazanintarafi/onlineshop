@@ -10,7 +10,7 @@ import {ProductContext} from '../../context/productContext/productContext';
 
 const Product=(props)=>{
     const productContext = useContext (ProductContext);
-    const { variety } = productContext;
+    const { variety , price} = productContext;
 
     const[topProduct,setTopProduct]=useState(false);
     const TopProduct=(props)=>{
@@ -19,10 +19,18 @@ const Product=(props)=>{
     const {show} = useContext(MenuContext);
 
 
+
     let classes=["MainProduct"];
-    switch(variety){
+    switch(topProduct){
         case true:
-            classes.push("MainProductHeight");
+            classes.push("MainTopProduct");
+            break;
+        default:
+            break; 
+    }
+    switch(price){
+        case true:
+            classes.push("MainOrangeHeight");
             break;
         default:
             break; 
@@ -41,6 +49,7 @@ const Product=(props)=>{
     }
 
 
+
     return(
         <> 
             <div  className={topClasses.join(' ')}>
@@ -53,13 +62,12 @@ const Product=(props)=>{
                         transition:topProduct?'all 0.1s':'all 0.1s'}}>
                         <Specifications />
                     </div>
-                    <div className={classes.join(' ')} style={{marginTop:topProduct?"0":null,height:topProduct?'12%':'30%',position:topProduct?'absolute':'absolute',
-                        bottom:topProduct?null:'0',top:topProduct?'5px':null,transition:topProduct?'all 0.1s':'all 0.1s'}}>
+                    <div className={classes.join(' ')}>
                         <div className="ProductContents">
                             <div className="detail">
                                 <h2 style={{marginTop:topProduct?'20px':'17px',width:"100%",paddingRight:"10%"}}>مشخصات محصول</h2>
                                 <div className="priceProductPage" style={{display:topProduct?"none":"block"}}>
-                                    <div>
+                                    <div style={{display:price?"none":"block"}}>
                                         <del>8,300,000</del>
                                         <p>7,300,000<span>تومان</span></p>
                                     </div>

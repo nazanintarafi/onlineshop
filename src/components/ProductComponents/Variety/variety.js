@@ -7,7 +7,7 @@ import {ProductContext} from '../../../context/productContext/productContext';
 
 const Variety=(props)=>{
     const productContext = useContext (ProductContext);
-    const { variety , color , warranty } = productContext;
+    const { variety , color , warranty , price} = productContext;
 
     const ShowVariety=()=>{
         productContext.ShowVariety()
@@ -22,6 +22,10 @@ const Variety=(props)=>{
     }
 
 
+    const HidePrice=()=>{
+        productContext.HidePrice()
+    }
+
     let classes=["VarietyAnime"];
     switch(variety){
         case true:
@@ -33,6 +37,8 @@ const Variety=(props)=>{
         default:
             break; 
     }
+
+
 
     let select=["ProductSelection"];
     switch(variety){
@@ -68,10 +74,12 @@ const Variety=(props)=>{
     return(
         <>
             <div className="Variety">
-                <div className={classes.join(' ')}>
+                <div className={classes.join(' ')} style={{display:color?"none":"block"}}>
                     <div className={select.join(' ')}>
                         <div className="varietyBtn"  onClick={ShowVariety}>
-                            <Button btnType="submit" >ثبت تنوع</Button>
+                            <span onClick={HidePrice}>
+                                <Button btnType="submit" >ثبت تنوع</Button>
+                            </span>
                         </div>
                         <div className="row VarietyContent">
                             <div className="col-3 col-xs-4 col-md-4 varifyColor p-0">
@@ -87,16 +95,16 @@ const Variety=(props)=>{
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className={colors.join(' ')}>
-                <Colors />
-            </div>
-
-            <div  className={warranties.join(' ')}>
-                <Warranty />
-            </div>
             
+
+                <div className={colors.join(' ')}>
+                    <Colors />
+                </div>
+
+                <div  className={warranties.join(' ')}>
+                    <Warranty />
+                </div>
+            </div>
         </>
     )
 }

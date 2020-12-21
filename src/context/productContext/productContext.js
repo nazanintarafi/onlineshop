@@ -5,6 +5,7 @@ const ProductContextProvider=(props)=>{
     const[variety,setVariety]=useState(false);
     const[color,setColor]=useState(false);
     const[warranty,setWarranty]=useState(false);
+    const[price,setPrice]=useState(false);
     
 
     const ShowWarranty=()=>{
@@ -19,10 +20,15 @@ const ProductContextProvider=(props)=>{
         setColor(!color);
     } 
 
+    const HidePrice=()=>{
+        setPrice(!price)
+    }
+
+
 
 
     return(
-        <ProductContext.Provider value={{variety,ShowVariety,color,ShowColor,warranty,ShowWarranty}}>
+        <ProductContext.Provider value={{HidePrice , price , variety,ShowVariety,color,ShowColor,warranty,ShowWarranty}}>
             {props.children}
         </ProductContext.Provider>
     )

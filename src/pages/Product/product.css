@@ -19,26 +19,7 @@
     left: 0;
 }
 
-.MainProduct{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #F36B07;
-    position: absolute;
-    z-index: 6;
-    background-position: bottom;
-    background-size: cover;
-    height: 100%;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    align-items: center;
-    box-sizing: border-box;
-    display: block;
-    bottom: 0;
 
-}
 .ProductContent{
     text-align: center;
     margin: 10px auto;
@@ -55,6 +36,7 @@
 .priceProductPage {
     text-align: left;
     padding-left: 30px;
+    margin-top: -12px;
 }
 .priceProductPage del {
     color: white;
@@ -62,9 +44,6 @@
 
 }
 
-.MainProductHeight{
-    height:20%;
-}
 .ProductUp{
     position: fixed;
     right: 65%;
@@ -86,3 +65,72 @@
     width: 100%;
     transition: all 0.2s;
 }
+
+.priceProductDisplay{
+    height: 100px;
+}
+.MainProduct{
+    height: 28%;
+    margin: 0;
+    padding: 0;
+    background-color: #F36B07;
+    background-image: linear-gradient(to left , #ED8120 , #EC912A ,#f36b07 ,#f36b07);
+    position: absolute;
+    z-index: 6;
+    background-position: bottom;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    box-sizing: border-box;
+    display: block;
+    bottom: 0;
+    transition: all 0.1s;
+
+}
+.MainOrangeHeight{
+    height: 19%;
+}
+ .MainTopProduct{
+    margin-top: 0;
+    height: 12%;
+    position: absolute;
+    bottom: 0;
+    top: 5px;
+    transition: all 0.1s;
+ }
+
+
+
+
+ @media only screen and (min-width: 340px) {
+    .MainProduct{
+        height: 30%;
+    }
+
+    .MainOrangeHeight{
+        height: 19%;
+    }
+    .MainTopProduct{
+        height: 12%;
+     }
+  }
+ @media only screen and (min-width: 380px) {
+    .MainProduct{
+        height: 40%;
+    }
+
+    .MainOrangeHeight{
+        height: 30%;
+    }
+    .MainTopProduct{
+        height: 10%;
+     }
+    .priceProductPage {
+        margin-top: 0px;
+        font-size: 16px;
+    }
+  }
+

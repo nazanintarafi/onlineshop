@@ -22,7 +22,14 @@ const ProductContent=(props)=>{
     }
 
     const productContext = useContext (ProductContext);
-    const { variety } = productContext;
+    const { variety , color , warranty , price} = productContext;
+
+    const HidePrice=()=>{
+        productContext.HidePrice()
+    }
+
+
+
 
     const ShowVariety=()=>{
         productContext.ShowVariety()
@@ -53,18 +60,82 @@ const ProductContent=(props)=>{
     }
 
 
-    let add=["add"];
+    let addButtonStyle=["add"];
     switch(variety){
         case true:
-            add.push("addMargin");
+            addButtonStyle.push("varietyMargin");
             break;
         default:
             break; 
     }
+    switch(color){
+        case true:
+            addButtonStyle.push("colorMargin");
+            break;
+        default:
+            break; 
+    }
+    switch(warranty){
+        case true:
+            addButtonStyle.push("warrantyMargin");
+            break;
+        default:
+            break; 
+    }
+
+
+
+    let paddingAnimationStyle=["topPadding"];
+    switch(variety){
+        case true:
+            paddingAnimationStyle.push("varietyPaddingAnimation");
+            break;
+        default:
+            break; 
+    }
+    switch(color){
+        case true:
+            paddingAnimationStyle.push("colorPaddingAnimation");
+            break;
+        default:
+            break; 
+    }
+    switch(warranty){
+        case true:
+            paddingAnimationStyle.push("warrantyPaddingAnimation");
+            break;
+        default:
+            break; 
+    }
+
+    let imgAnimation=["ProductIMG"];
+    switch(variety){
+        case true:
+            paddingAnimationStyle.push("varietyImgAnimation");
+            break;
+        default:
+            break; 
+    }
+    switch(color){
+        case true:
+            paddingAnimationStyle.push("colorImgAnimation");
+            break;
+        default:
+            break; 
+    }
+    switch(warranty){
+        case true:
+            paddingAnimationStyle.push("warrantyImgAnimation");
+            break;
+        default:
+            break; 
+    }
+    
   
     return(
         <>
             <div className="ProductContent">
+                <div className={paddingAnimationStyle.join(' ')}>
                 <div className="productTitre">
                     <h2>گوشی موبایل اپل مدل<pan>iPhone 11 A2223</pan></h2>
                     <div className="store">
@@ -78,27 +149,30 @@ const ProductContent=(props)=>{
                     </div>
                 </div>
                 <div className="productImage">
-                    <ul className="productItems">
-                        <li onClick={Like}>
-                            <div className="like" style={{display:like?"none":"block"}}>
-                                <img src={Likee} alt="like"/>
-                            </div>
-                            <div className="activeLike" style={{display:like?"block":"none"}}>
-                                <img src={activeLike} alt="like"/>
-                            </div>
-                        </li>
-                        <li>
-                            <img src={share} alt="share"/>
-                        </li>
-                        <li>
-                            <img src={ring} alt="ring"/>
-                        </li>
-                        <li>
-                            <img src={video} alt="video"/>
-                        </li>
-                    </ul>
-                    <div className="ProductIMG">
-                        <img src={product1} alt="online shop"/>
+                    <div className="First">
+                        <ul className="productItems">
+                            <li onClick={Like}>
+                                <div className="like" style={{display:like?"none":"block"}}>
+                                    <img src={Likee} alt="like"/>
+                                </div>
+                                <div className="activeLike" style={{display:like?"block":"none"}}>
+                                    <img src={activeLike} alt="like"/>
+                                </div>
+                            </li>
+                            <li>
+                                <img src={share} alt="share"/>
+                            </li>
+                            <li>
+                                <img src={ring} alt="ring"/>
+                            </li>
+                            <li>
+                                <img src={video} alt="video"/>
+                            </li>
+                        </ul>
+                        <div className={imgAnimation.join(' ')}>
+                            <img src={product1} alt="online shop" className="ProductImG"/>
+                        </div>
+                    </div>
                     </div>
                     <div className="btnProduct">
                         {/*variety*/}
@@ -106,9 +180,11 @@ const ProductContent=(props)=>{
                             <Variety />
                         </section>
                         <span className={classes.join(' ')} onClick={ShowVariety}>
-                            <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
+                            <span onClick={HidePrice}>
+                                <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
+                            </span>
                         </span>
-                        <span className={add.join(' ')} style={{marginTop:variety?"101px":null,display:variety?"block":null,transition:"0.2s"}}>
+                        <span className={addButtonStyle.join(' ')}>
                             <Button btnType="submit" >افزودن به سبد خرید</Button>
                         </span>
                         

@@ -177,8 +177,177 @@
     }
 }
 
-.addMargin .Button{
-    background-color: #A5A5B2;
-    border: #A5A5B2;
-    transition: 0.2s;
+
+.varietyMargin .Button{
+    animation-name: varietyMarginAnimation;
+    animation-duration: 0.2s;  
+    animation-fill-mode: forwards;
+}
+@keyframes varietyMarginAnimation{
+    0%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+    }
+    50%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+    }
+    80%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+    }
+    100%{
+        background-color: #A5A5B2;
+        border: #A5A5B2;
+        margin-top: 75px;
+        color: white;
+    }
+}
+
+.colorMargin .Button{
+    animation-name: colorMarginAnimation;
+    animation-duration: 0.1s;  
+    animation-fill-mode: forwards;
+}
+@keyframes colorMarginAnimation{
+    0%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+        margin-top: 0px;
+    }
+    50%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+        margin-top: 10px;
+    }
+    80%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+        margin-top: 15px;
+    }
+    100%{
+        background-color: #A5A5B2;
+        border: #A5A5B2;
+        margin-top: 25px;
+        color: white;
+        width: 30%;
+    }
+}
+
+
+.warrantyMargin .Button{
+    animation-name: warrantyMarginAnimation;
+    animation-duration: 0.1s;  
+    animation-fill-mode: forwards;
+}
+@keyframes warrantyMarginAnimation{
+    0%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+        margin-top: 70px;
+    }
+    50%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+        margin-top: 90px;
+    }
+    80%{
+        margin: 8px auto;
+        background-color: #D4D3E3;
+        border: #D4D3E3;
+        color: transparent;
+        margin-top: 95px;
+    }
+    100%{
+        background-color: #A5A5B2;
+        border: #A5A5B2;
+        margin-top: 100px;
+        color: white;
+        width: 35%;
+    }
+}
+
+
+.varietyPaddingAnimation{
+    animation-name: varietyPaddingAnimation;
+    animation-duration: 0.5s;  
+    animation-fill-mode: forwards;
+}
+@keyframes varietyPaddingAnimation{
+    0%{
+        padding: 0;
+    }
+    50%{
+        padding: 40px;
+    }
+    100%{
+        padding: 0;
+    }
+}
+
+.warrantyPaddingAnimation{
+    animation-name: warrantyPaddingAnimation;
+    animation-duration: 0.5s;  
+    animation-fill-mode: forwards;
+}
+@keyframes warrantyPaddingAnimation{
+    0%{
+        padding: 0;
+    }
+    50%{
+        padding: 40px;
+    }
+    100%{
+        padding: 0;
+    }
+}
+
+.colorPaddingAnimation{
+    animation-name: colorPaddingAnimation;
+    animation-duration: 0.5s;  
+    animation-fill-mode: forwards;
+}
+@keyframes colorPaddingAnimation{
+    0%{
+        padding: 0;
+    }
+    50%{
+        padding: 40px;
+    }
+    100%{
+        padding: 0;
+    }
+}
+
+.varietyImgAnimation .ProductImG{
+    animation-name: varietyImgAnimation;
+    animation-duration: 0.5s;  
+    animation-fill-mode: forwards;
+}
+@keyframes varietyImgAnimation{
+    0%{
+        width: 50%;
+    }
+    50%{
+        padding: 40px;
+    }
+    100%{
+        width: 45%;
+    }
 }
