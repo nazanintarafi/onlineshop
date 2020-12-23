@@ -74,27 +74,30 @@ const Variety=(props)=>{
     return(
         <>
             <div className="Variety">
-                <div className={classes.join(' ')} style={{display:color?"none":"block"}}>
-                    <div className={select.join(' ')}>
-                        <div className="varietyBtn"  onClick={ShowVariety}>
-                            <span onClick={HidePrice}>
-                                <Button btnType="submit" >ثبت تنوع</Button>
-                            </span>
-                        </div>
-                        <div className="row VarietyContent">
-                            <div className="col-3 col-xs-4 col-md-4 varifyColor p-0">
-                                <div>
-                                    <span onClick={ShowColor}>نقره ای</span>
-                                </div>
+                <div style={{display:warranty?"none":"block"}}>
+                    <div className={classes.join(' ')} style={{display:color?"none":"block"}}>
+                        <div className={select.join(' ')}>
+                            <div className="varietyBtn"  onClick={ShowVariety}>
+                                <span onClick={HidePrice}>
+                                    <Button btnType="submit" >ثبت تنوع</Button>
+                                </span>
                             </div>
-                            <div className="col-9 col-xs-8 col-md-8 BorderRightV">
-                                <div>
-                                    <span onClick={ShowWarranty}>گارانتی ضمانت سلامت تحویل کالا آنلاین شاپ</span>
+                            <div className="row VarietyContent">
+                                <div className="col-3 col-xs-4 col-md-4 varifyColor p-0">
+                                    <div>
+                                        <span onClick={ShowColor}>نقره ای</span>
+                                    </div>
+                                </div>
+                                <div className="col-9 col-xs-8 col-md-8 BorderRightV">
+                                    <div>
+                                        <span onClick={ShowWarranty}>گارانتی ضمانت سلامت تحویل کالا آنلاین شاپ</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             
 
                 <div className={colors.join(' ')}>

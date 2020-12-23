@@ -2,33 +2,21 @@ import React, {useState} from 'react';
 
 export const CartContext = React.createContext();
 const CartContextProvider=(props)=>{
-    const[show,setShow]=useState(false);
-    const[showProfileMenu]=useState(false);
-    const[showMainMenu,setShowMainMenu]=useState(false);
-    const[showSellerMenu,setShowSellerMenu]=useState(false);
-    
 
-    const ShowMainMenu=()=>{
-        setShowMainMenu(!showMainMenu);
+    const[showAddress,setShowAddress]=useState(false);
+    const[showReview,setShowReview]=useState(false);
+
+    const ShowAddress=()=>{
+        setShowAddress(!showAddress);
     }
 
-    const ShowSellerMenu=()=>{
-        setShowSellerMenu(!showSellerMenu);
-        setShowMainMenu(false)
-    }
-
-    const ShowProfileMenu=()=>{
-        setShowMainMenu(false);
-        setShowSellerMenu(false);
-    } 
-
-    const Show=()=>{
-        setShow(!show)
+    const ShowReview=()=>{
+        setShowReview(!showReview);
     }
 
 
     return(
-        <CartContext.Provider value={{showSellerMenu,show,showProfileMenu,showMainMenu,ShowSellerMenu,Show,ShowProfileMenu,ShowMainMenu}}>
+        <CartContext.Provider value={{showAddress,showReview,ShowAddress,ShowReview}}>
             {props.children}
         </CartContext.Provider>
     )

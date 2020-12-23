@@ -30,4 +30,26 @@
 .SelectAddress{
     text-align: center;
     margin: auto;
+    height: 100vh;
+}
+
+.reviewGoBack{
+    text-align: right;
+}
+.reviewGoBack h3{
+    background-color: #DBDBEB;
+    height: 57px;
+    padding-top: 0px;
+    text-align: right;
+    margin: auto;
+    padding-right: 29%;
+    margin-top: -24px;
+    font-size: 12px;
+    padding-top: 12px;
+}
+.reviewButtonPos{
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    z-index: 1;
 }

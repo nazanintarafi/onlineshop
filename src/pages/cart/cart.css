@@ -1,24 +1,18 @@
-.Cart{
-    overflow-y: hidden;
-}
+
 .firstPage{
-    background-color:#F36B07 ;
     text-align: center;
     margin: auto;
     margin-top: 1px;
-    position: fixed;
+    /*position: fixed;
     left: 0;
-    top: 0;
+    top: 0;*/
     width: 100%;
     z-index: 1;
     height: 100vh;
 }
-.firstPageContent{
-    margin-top: 30px;
-}
 .secondPageContent{
     position: absolute;
-    top: 82%;
+    top: 19%;
     left: 0;
     width: 100%;
     margin-top: 0;

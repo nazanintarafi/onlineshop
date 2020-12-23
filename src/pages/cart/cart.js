@@ -11,41 +11,49 @@ import {MenuContext} from '../../context/MenuContext/MenuContext';
 
 const Cart=(props)=>{
 
+
     const {show} = useContext(MenuContext);
 
     return(
         <>
-            <Toolbar />
-            <div className="Cart"style={{
+            
+            <div className="Cart" style={{
                     position:show?'fixed':'relative',right:show?'65%':'0px',
                     top:show?'90px':'0px',height:show?'390px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
-                    transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
-                
-                <div className="firstPage" style={{display:"block"}}>
+                    transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}
+            >
+                <Toolbar />
+                <div className="firstPage" >
                     <div className="firstPageContent">
                         <YourCart />
                     </div>
                 </div>
-                <div className="secondPage" style={{display:"none"}}>
+                <div className="secondPage" >
                     <div className="secondPageContent">
                         <SelectAddress />
                     </div>
                 </div>
-                <div className="thirdPageContent" style={{display:"none"}}>
+                <div className="thirdPageContent" >
                     <div className="thirdPage">
                         <ReviewCart />
                     </div>
                 </div>
+
+
                 <div className="forthPageContent" style={{display:"none"}}>
                     <div className="forthPage">
                         <Successful />
                     </div>
                 </div>
+
+
                 <div className="fifthPageContent" style={{display:"none"}}>
                     <div className="fifthPage">
                         <EmptyCart />
                     </div>
                 </div>
+
+                
             </div>
         </>
     )

@@ -1,7 +1,7 @@
 .YourCart{
     background-color: #F36B07;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
     margin: auto;
     margin-right: 0;
@@ -10,10 +10,14 @@
     width: 90%;
     text-align: center;
     margin: auto;
-    margin-top: 30px;
+    padding-top: 21px;
 }
 .yourOrder .ProductBox{
     box-shadow: none;
+}
+.BtnClose{
+    background-color:#F36B07 ;
+    width: 100vw;
 }
 .yourCartTitre h2{
     font-size: 12px;
@@ -22,6 +26,7 @@
     font-weight: 500;
     top: 5px;
     right: 30%;
+    background-color:#F36B07 ;
 }
 .borderBotton{
     color: white;
@@ -86,4 +91,15 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+.boldDiscount{
+    display: flex;
+}
+.boldDiscount span:first-child{
+    width: 50%;
+    text-align: right;
+}
+.boldDiscount span:last-child{
+    width: 50%;
+    text-align: left;
 }

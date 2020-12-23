@@ -116,28 +116,13 @@ const ProductContent=(props)=>{
         default:
             break; 
     }
-    switch(color){
-        case true:
-            paddingAnimationStyle.push("colorImgAnimation");
-            break;
-        default:
-            break; 
-    }
-    switch(warranty){
-        case true:
-            paddingAnimationStyle.push("warrantyImgAnimation");
-            break;
-        default:
-            break; 
-    }
-    
   
     return(
         <>
             <div className="ProductContent">
                 <div className={paddingAnimationStyle.join(' ')}>
                 <div className="productTitre">
-                    <h2>گوشی موبایل اپل مدل<pan>iPhone 11 A2223</pan></h2>
+                    <h2>گوشی موبایل اپل مدل<span>iPhone 11 A2223</span></h2>
                     <div className="store">
                         <div>
                             <span>فروشگاه :</span>
@@ -173,7 +158,7 @@ const ProductContent=(props)=>{
                             <img src={product1} alt="online shop" className="ProductImG"/>
                         </div>
                     </div>
-                    </div>
+                </div>
                     <div className="btnProduct">
                         {/*variety*/}
                         <section className={variiety.join(' ')}>
@@ -181,13 +166,12 @@ const ProductContent=(props)=>{
                         </section>
                         <span className={classes.join(' ')} onClick={ShowVariety}>
                             <span onClick={HidePrice}>
-                                <Button btnType="seeAll" ><span>انتخاب تنوع</span></Button>
+                                <Button btnType="seeAll"><span>انتخاب تنوع</span></Button>
                             </span>
                         </span>
                         <span className={addButtonStyle.join(' ')}>
                             <Button btnType="submit" >افزودن به سبد خرید</Button>
-                        </span>
-                        
+                        </span>     
                     </div>
                     
                     <section>
@@ -225,7 +209,6 @@ const ProductContent=(props)=>{
                         </ul>
                     </section>
                 </div>
-                
             </div>
         </>
     )

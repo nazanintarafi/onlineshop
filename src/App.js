@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Product from './pages/Product/product';
 import Cart from './pages/cart/cart';
+import EmptyCart from './pages/cart/emptyCart/emptyCart';
+import Successful from './pages/cart/successful/successful';
 import Arthboard from './pages/Arthboard/arthboard';
 import Seller from './pages/Seller/seller';
 import Profile from './pages/profilePages/Profile/profile';
@@ -23,7 +25,7 @@ import MediaHome3 from './pages/Media/mediaHome3/mediaHome3';
 import {BrowserRouter,Route} from 'react-router-dom';
 import MenuContextProvider from './context/MenuContext/MenuContext';
 import ProductContextProvider from './context/productContext/productContext';
-import CartContextProvider from './context/productContext/productContext';
+import CartContextProvider from './context/CartContext/cartContext';
 import MainMenu from './components/mainMenu/mainMenu';
 const App=() =>{
   return(
@@ -36,6 +38,8 @@ const App=() =>{
         <CartContextProvider>
           <Route path="/cart" exact component={Cart} />
         </CartContextProvider>
+        <Route path="/empty-cart" exact component={EmptyCart} />
+        <Route path="/successful" exact component={Successful} />
         <Route path="/arthboard" exact component={Arthboard} />
         <Route path="/media1" exact component={MediaHome1} />
         <Route path="/media2" exact component={MediaHome2} />

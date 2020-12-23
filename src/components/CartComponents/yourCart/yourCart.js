@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState , useContext } from 'react';
 import './yourCart.css';
 import CartBox from '../../../containers/ProductBox/cartBox/cartBox';
 import image01 from '../../../assets/images/Cosmetics (3).png';
@@ -8,20 +8,33 @@ import emptyCart from '../../../assets/images/Group 1728.png';
 import Button from '../../UI/button/button';
 import CartUp from '../../UI/button/CartUp/cartUp';
 import CartTop from '../../../assets/images/top.png';
-
+import {CartContext} from '../../../context/CartContext/cartContext';
 
 
 const YourCart=(props)=>{
+
+    const cartContext = useContext (CartContext);
+    const { ShowReview, showAddress , ShowAddress} = cartContext;
+
+    const goTop=()=>{
+        cartContext.ShowAddress();
+    }
+
+
+   
+
     return(
         <>
-            <Link to="/arthboard" className="CloseBtn">
+            <Link to="/arthboard" className="CloseBtn" style={{display:showAddress?"none":"block"}}>
                     <CloseButton />
             </Link>
             <div className="YourCart">
                 <div className="yourCartTitre">
                     <h2>سبد خرید شما</h2>
                 </div>
-                <div className="yourOrder">
+
+                {/*محتوا*/}
+                <div className="yourOrder" style={{display:showAddress?"none":"block"}}>
                     <CartBox
                         cartIMG={image01}
                         color="مشکی"
@@ -67,14 +80,17 @@ const YourCart=(props)=>{
                         </div>
                     </div>
                 </div>
-                <div className="emptyChooseAddress">
-                    <div className="chooseBTN">
+
+
+            </div>
+            
+            <div className="emptyChooseAddress" style={{top:showAddress?"30px":null,bottom:showAddress?null:'0'}}>
+                    <div className="chooseBTN" onClick={goTop} style={{zIndex:ShowReview?"3":null}}>
                         <CartUp imgName={CartTop} />
                     </div>
                     <div className="chooseTitre">
                         <h2>انتخاب آدرس</h2>
                     </div>
-                </div>
             </div>
         </>
     )

@@ -10,7 +10,7 @@ import {ProductContext} from '../../context/productContext/productContext';
 
 const Product=(props)=>{
     const productContext = useContext (ProductContext);
-    const { variety , price} = productContext;
+    const { price} = productContext;
 
     const[topProduct,setTopProduct]=useState(false);
     const TopProduct=(props)=>{

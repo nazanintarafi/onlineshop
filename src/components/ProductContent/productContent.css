@@ -56,7 +56,6 @@
 .btnProduct Button{
     text-align: center;
     box-shadow: none;
-    margin: 8px auto;
     width: 45%;
     display: block;
     height: 23px;
@@ -272,12 +271,12 @@
         background-color: #D4D3E3;
         border: #D4D3E3;
         color: transparent;
-        margin-top: 95px;
+        margin: 8px auto;
     }
     100%{
         background-color: #A5A5B2;
         border: #A5A5B2;
-        margin-top: 100px;
+        margin-top: 115px;
         color: white;
         width: 35%;
     }
