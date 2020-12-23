@@ -8,6 +8,7 @@ const CartContextProvider=(props)=>{
 
     const ShowAddress=()=>{
         setShowAddress(!showAddress);
+        setShowReview(false);
     }
 
     const ShowReview=()=>{

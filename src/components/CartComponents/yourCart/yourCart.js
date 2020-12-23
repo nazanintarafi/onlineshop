@@ -14,7 +14,7 @@ import {CartContext} from '../../../context/CartContext/cartContext';
 const YourCart=(props)=>{
 
     const cartContext = useContext (CartContext);
-    const { ShowReview, showAddress , ShowAddress} = cartContext;
+    const { showReview ,ShowReview, showAddress , ShowAddress} = cartContext;
 
     const goTop=()=>{
         cartContext.ShowAddress();
@@ -25,13 +25,24 @@ const YourCart=(props)=>{
 
     return(
         <>
-            <Link to="/arthboard" className="CloseBtn" style={{display:showAddress?"none":"block"}}>
-                    <CloseButton />
-            </Link>
-            <div className="YourCart">
+
+            <div className="closeCart">
+                <div className="closeBTN">
+                    <Link to="/arthboard" className="CloseBtn" style={{display:showAddress?"none":"block"}}>
+                        <CloseButton />
+                    </Link>   
+                </div>
                 <div className="yourCartTitre">
                     <h2>سبد خرید شما</h2>
                 </div>
+            </div>
+            {/*<Link to="/arthboard" className="CloseBtn" style={{display:showAddress?"none":"block"}}>
+                    <CloseButton />
+    </Link>*/}
+            <div className="YourCart">
+               {/*} <div className="yourCartTitre">
+                    <h2>سبد خرید شما</h2>
+</div>*/}
 
                 {/*محتوا*/}
                 <div className="yourOrder" style={{display:showAddress?"none":"block"}}>
@@ -44,6 +55,7 @@ const YourCart=(props)=>{
                         newPrice="12,000,000تومان"
                         number="1"
                     />
+                    
                     <div className="prices">
                         <div>
                             <p className="cartPrice">
@@ -84,7 +96,9 @@ const YourCart=(props)=>{
 
             </div>
             
-            <div className="emptyChooseAddress" style={{top:showAddress?"30px":null,bottom:showAddress?null:'0'}}>
+            <div className="emptyChooseAddress" style={{top:showAddress?"30px":null,bottom:showAddress?null:'8px',height:showReview?"5.5%":"18%",
+                zIndex:showReview?"10":null,position:showAddress?"absolute":"fixed"
+            }}>
                     <div className="chooseBTN" onClick={goTop} style={{zIndex:ShowReview?"3":null}}>
                         <CartUp imgName={CartTop} />
                     </div>
@@ -96,3 +110,4 @@ const YourCart=(props)=>{
     )
 }
 export default YourCart;
+

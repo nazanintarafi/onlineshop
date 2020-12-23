@@ -18,19 +18,7 @@ const SelectAddress=(props)=>{
 
     return(
         <>
-            {/*
-                <div>
-                    <div className="goBack">
-                        <h3>سبد خرید شما</h3>
-                    </div>
-                        
-                    <div className="CartButton">
-                        <CartButton />
-                    </div>
-                    <h2>انتخاب آدرس</h2>
-                </div>
-            */}
-            <div className="reviewButtonPos" style={{top:showReview?"43px":null,bottom:showReview?null:'45px',display:showAddress?"block":"none"}}>
+            <div className="reviewButtonPos" style={{top:showReview?"-64px":null,position:showReview?"absolute":"fixed",bottom:showReview?null:'50px',display:showAddress?"block":"none"}}>
                 <div className="reviewButton" onClick={goTop} style={{zIndex:ShowReview?"1":null}}>
                     <ReviewButton />
                 </div>

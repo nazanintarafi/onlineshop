@@ -4,8 +4,9 @@
     height: 40px;
     width: 75px;
     position: relative;
-    top:-4px;
-    left: -226px;
+    margin: auto;
+    padding-left: 11px;
+    right: -3px;
 }
 .ReviewButton .button{
     background-color: #DBDBEB;
@@ -15,7 +16,7 @@
     border-radius: 50%;
     border: white 7.5px solid;
     box-shadow: #DBDBEB 0px 6px 0px 1px;
-    margin-left: 13.5px;
+    margin-left: 3.5px;
     margin-top: 16px;
 
 }
@@ -34,7 +35,7 @@
     background-color: white;
     position: absolute;
     z-index: 300;
-    right: -15px;
+    right: -16px;
     top: 20px;
     border-top: 21px solid #DBDBEB;
     border-left: #DBDBEB solid 15px;

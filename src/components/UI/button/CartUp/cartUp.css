@@ -17,7 +17,9 @@
     border-radius: 50%;
     border: #f36b07 6px solid;
     box-shadow: white 0px 14px 0px 1px;
-
+}
+.CartUp .buttonShadow{
+    box-shadow: white 0px 0px 0px 0px;
 }
 .CartUp .button img{
     align-items: center;
@@ -36,7 +38,7 @@
     position: absolute;
     z-index: 300;
     right: -9px;
-    top: 0px;
+    top: 1px;
     border-top: 22px solid white;
     border-left: white solid 11px;
     border-right: white solid 11px;
@@ -49,7 +51,7 @@
     position: absolute;
     z-index: 300;
     left: -11px;
-    top: 0px;
+    top: 1px;
     border-top: 24px solid white;
     border-right:white solid 12px;
     border-left: white solid 10px;
