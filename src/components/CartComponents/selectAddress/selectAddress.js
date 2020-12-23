@@ -5,11 +5,15 @@ import Button from '../../UI/button/button';
 import {Link} from 'react-router-dom';
 import ReviewButton from '../../UI/button/reviewButton/reviewButton';
 import {CartContext} from '../../../context/CartContext/cartContext';
+import {MenuContext} from '../../../context/MenuContext/MenuContext';
 
 const SelectAddress=(props)=>{
 
     const cartContext = useContext (CartContext);
     const { showReview , ShowReview , showAddress} = cartContext;
+
+    const menuContext = useContext (MenuContext);
+    const {showMainMenu } = menuContext;
 
     const goTop=()=>{
         cartContext.ShowReview();
@@ -18,12 +22,15 @@ const SelectAddress=(props)=>{
 
     return(
         <>
-            <div className="reviewButtonPos" style={{top:showReview?"-64px":null,position:showReview?"absolute":"fixed",bottom:showReview?null:'50px',display:showAddress?"block":"none"}}>
-                <div className="reviewButton" onClick={goTop} style={{zIndex:ShowReview?"1":null}}>
-                    <ReviewButton />
-                </div>
-                <div className="reviewGoBack">
-                    <h3>بازبینی خرید</h3>
+            <div style={{display:showMainMenu?"none":"block"}}>
+                <div className="reviewButtonPos" style={{top:showReview?"-64px":null,
+                position:showReview?"absolute":"fixed",bottom:showReview?null:'50px',display:showAddress?"block":"none"}}>
+                    <div className="reviewButton" onClick={goTop} style={{zIndex:ShowReview?"1":null}}>
+                        <ReviewButton />
+                    </div>
+                    <div className="reviewGoBack">
+                        <h3>بازبینی خرید</h3>
+                    </div>
                 </div>
             </div>
 
