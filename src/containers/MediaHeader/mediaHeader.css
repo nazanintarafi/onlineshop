@@ -19,6 +19,7 @@
 }
 .searchMedia{
     position: relative;
+    text-align: center;
 }
 .searchIconMedia svg {
     position: absolute;

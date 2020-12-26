@@ -15,7 +15,7 @@ import {MenuContext} from '../../../context/MenuContext/MenuContext';
 const YourCart=(props)=>{
 
     const cartContext = useContext (CartContext);
-    const { showReview ,ShowReview, showAddress , ShowAddress} = cartContext;
+    const { showReview ,ShowReview, showAddress , showLoader} = cartContext;
     const menuContext = useContext (MenuContext);
     const {showMainMenu } = menuContext;
 
@@ -35,7 +35,7 @@ const YourCart=(props)=>{
                         <CloseButton />
                     </Link>   
                 </div>
-                <div className="yourCartTitre">
+                <div className="yourCartTitre" style={{display:showLoader?"none":"block"}}>
                     <h2>سبد خرید شما</h2>
                 </div>
             </div>
@@ -98,12 +98,14 @@ const YourCart=(props)=>{
                 bottom:showAddress?null:'8px',height:showReview?"5.5%":"18%",
                 zIndex:showReview?"10":null,position:showAddress?"absolute":"fixed"
             }}>
+                <div style={{display:showLoader?"none":"block"}}>
                     <div className="chooseBTN" onClick={goTop} style={{zIndex:ShowReview?"3":null}}>
                         <CartUp imgName={CartTop} />
                     </div>
                     <div className="chooseTitre">
                         <h2>انتخاب آدرس</h2>
                     </div>
+                </div>
             </div>
         </>
     )

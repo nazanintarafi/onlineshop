@@ -10,6 +10,7 @@ import BtnRight from '../UI/button/btnRight/btnRight';
 import BtnSeller from '../UI/button/btnRight/btnSeller/btnSeller';
 import Logo from '../logo/logo';
 import {MenuContext} from '../../context/MenuContext/MenuContext';
+import Media2Menu from '../mediaMenu/mediaMenu2/mediaMenu2';
 
 const ProfilePagesBody=(props)=>{
 
@@ -24,6 +25,9 @@ const ProfilePagesBody=(props)=>{
                     <ProfileMenu  rightToggle={show}/>
                 </div>
                 <div style={{opacity:props.sellerMenu?'1':'0'}}>
+                    <SellerMenu  rightToggle={show}/>
+                </div>
+                <div style={{opacity:props.media2Menu?'1':'0'}}>
                     <SellerMenu  rightToggle={show}/>
                 </div>
                 <div  className="homeHeader arthHeader" style={{opacity:props.arthPage?'1':'0',top:show?'90px':'0px',

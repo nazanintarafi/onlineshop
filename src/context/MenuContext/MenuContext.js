@@ -18,8 +18,6 @@ const MenuContextProvider=(props)=>{
     }
     const ShowMediaMenu2=()=>{
         setMediaMenu2(true);
-        setShowMainMenu(false);
-        setMediaMenu1(false);
     }
 
     const hideMainMenu=()=>{

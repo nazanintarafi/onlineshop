@@ -1,8 +1,8 @@
 import React , {useContext} from 'react';
 import './mediaMenu2.css';
-import down from '../../assets/images/Group 6.png';
-import left from '../../assets/images/down-arrowx.png';
-import {MenuContext} from '../../context/MenuContext/MenuContext';
+import down from '../../../assets/images/Group 6.png';
+import left from '../../../assets/images/down-arrowx.png';
+import {MenuContext} from '../../../context/MenuContext/MenuContext';
 
 const MediaMenu2=(props)=>{
 

@@ -5,6 +5,11 @@ const CartContextProvider=(props)=>{
 
     const[showAddress,setShowAddress]=useState(false);
     const[showReview,setShowReview]=useState(false);
+    const[showLoader,setShowLoader]=useState(false);
+
+    const ShowLoader=(props)=>{
+        setShowLoader(!showLoader)
+    }
 
     const ShowAddress=()=>{
         setShowAddress(!showAddress);
@@ -17,7 +22,7 @@ const CartContextProvider=(props)=>{
 
 
     return(
-        <CartContext.Provider value={{showAddress,showReview,ShowAddress,ShowReview}}>
+        <CartContext.Provider value={{showLoader,showAddress,showReview,ShowAddress,ShowReview,ShowLoader}}>
             {props.children}
         </CartContext.Provider>
     )

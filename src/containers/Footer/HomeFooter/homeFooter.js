@@ -99,17 +99,19 @@ const HomeFooter=(props)=>{
                     </div>
                     <div className="answer">
                         <h4>هفت روز هفته ، ۲۴ ساعت شبانه‌روز پاسخگوی شما هستیم</h4>
-                        <div className="email">
-                        <div>
-                            <img src={img18} alt="home" />
-                        </div>
-                        <span>info@onlineshop.ir </span>
-                        </div>
-                        <div className="email">
-                        <div>
-                            <img src={img19} alt="home" />
-                        </div>
-                        <span> ۰۲۱۴۱۶۹۸ - ۰۲۱۴۰۲۲۶۲۰۹ </span>
+                        <div className="emailAddress">
+                            <div className="email">
+                                <div>
+                                    <img src={img18} alt="home" />
+                                </div>
+                                <span>info@onlineshop.ir </span>
+                            </div>
+                            <div className="email">
+                                <div>
+                                    <img src={img19} alt="home" />
+                                </div>
+                                <span> ۰۲۱۴۱۶۹۸ - ۰۲۱۴۰۲۲۶۲۰۹ </span>
+                            </div>
                         </div>
                         <div className="enamad">
                         <img src={img20} alt="home" />

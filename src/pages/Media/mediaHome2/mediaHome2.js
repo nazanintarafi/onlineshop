@@ -1,6 +1,6 @@
 import React from 'react';
 import './mediaHome2.css';
-import Body from '../../../components/ProfilePagesBody/profilePagesBody';
+import Body from '../../../components/mediaBody/mediaBody';
 import Toolbar from '../../../containers/Footer/Toolbar/Toolbar';
 import VideoBox from '../../../components/mediaVideos/mediaVideos';
 import img1 from "../../../assets/images/photo-album-logo_7688-145.png";
@@ -12,7 +12,7 @@ const MediaHome2=()=>{
         <>
             <div className="MediaHome2">
                 <Toolbar minWidth="true"/>
-                <Body arthBtn="true" arthPage={false} sellerMenu={false} mediaPage={true}>
+                <Body arthBtn="true" arthPage={false} sellerMenu={false} mediaPage={true} Media2Menu={true} sellerBtn={true}>
                     <div className="groupingMedia container">
                         <div>
                             <span>دسته بندی 1</span>

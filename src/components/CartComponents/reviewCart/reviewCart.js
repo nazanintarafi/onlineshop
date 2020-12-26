@@ -10,11 +10,11 @@ import {Link} from 'react-router-dom';
 const ReviewCart=(props)=>{
 
     const cartContext = useContext (CartContext);
-    const { showReview , ShowReview , showAddress} = cartContext;
-    const[showLoader,setShowLoader]=useState(false);
+    const { showReview , showLoader} = cartContext;
 
-    const ShowLoader=(props)=>{
-        setShowLoader(!showLoader)
+
+    const ShowLoaderReview=(props)=>{
+        cartContext.ShowLoader();
     }
 
 
@@ -72,7 +72,7 @@ const ReviewCart=(props)=>{
                             نارنجستان دوم،  شماره تماس 09197149088 تحویل می گردد
                         </p>
                     </div>
-                    <div className="confirm" onClick={ShowLoader}>
+                    <div className="confirm" onClick={ShowLoaderReview}>
                         <Button btnType="signUp">تایید و پرداخت</Button>
                     </div>
 

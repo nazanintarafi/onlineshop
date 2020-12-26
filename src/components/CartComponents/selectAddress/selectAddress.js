@@ -10,7 +10,7 @@ import {MenuContext} from '../../../context/MenuContext/MenuContext';
 const SelectAddress=(props)=>{
 
     const cartContext = useContext (CartContext);
-    const { showReview , ShowReview , showAddress} = cartContext;
+    const { showReview , ShowReview , showAddress , showLoader} = cartContext;
 
     const menuContext = useContext (MenuContext);
     const {showMainMenu } = menuContext;
@@ -35,11 +35,13 @@ const SelectAddress=(props)=>{
             <div style={{display:showMainMenu?"none":"block"}}>
                 <div className={topClasses.join(' ')} style={{
                 position:showReview?"absolute":"fixed",bottom:showReview?null:'50px',display:showAddress?"block":"none"}}>
-                    <div className="reviewButton" onClick={goTop} style={{zIndex:ShowReview?"1":null}}>
-                        <ReviewButton />
-                    </div>
-                    <div className="reviewGoBack">
-                        <h3>بازبینی خرید</h3>
+                    <div style={{display:showLoader?"none":"block"}}>
+                        <div className="reviewButton" onClick={goTop} style={{zIndex:ShowReview?"1":null}}>
+                            <ReviewButton />
+                        </div>
+                        <div className="reviewGoBack">
+                            <h3>بازبینی خرید</h3>
+                        </div>
                     </div>
                 </div>
             </div>

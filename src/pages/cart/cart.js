@@ -7,12 +7,14 @@ import Successful from "../../components/CartComponents/successful/successful";
 import EmptyCart from "../../components/CartComponents/emtyCart/emptyCart";
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
 import {MenuContext} from '../../context/MenuContext/MenuContext';
+import {CartContext} from '../../context/CartContext/cartContext';
 
 
 const Cart=(props)=>{
 
 
-    const {show} = useContext(MenuContext);
+    const {show } = useContext(MenuContext);
+    const {showLoader } = useContext(CartContext);
 
     return(
         <>
@@ -22,7 +24,9 @@ const Cart=(props)=>{
                     top:show?'90px':'0px',height:show?'390px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}
             >
-                <Toolbar />
+                <div style={{display:showLoader?"none":"block"}}>
+                    <Toolbar />
+                </div>
                 <div className="firstPage" >
                     <div className="firstPageContent">
                         <YourCart />
