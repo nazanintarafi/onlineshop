@@ -38,21 +38,6 @@ const Cart=(props)=>{
                         <ReviewCart />
                     </div>
                 </div>
-
-
-                <div className="forthPageContent" style={{display:"none"}}>
-                    <div className="forthPage">
-                        <Successful />
-                    </div>
-                </div>
-
-
-                <div className="fifthPageContent" style={{display:"none"}}>
-                    <div className="fifthPage">
-                        <EmptyCart />
-                    </div>
-                </div>
-
                 
             </div>
         </>

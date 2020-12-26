@@ -5,12 +5,17 @@ import CartBox from '../../../containers/ProductBox/cartBox/cartBox';
 import image01 from '../../../assets/images/Cosmetics (3).png';
 import Button from '../../UI/button/button';
 import {CartContext} from '../../../context/CartContext/cartContext';
+import {Link} from 'react-router-dom';
 
 const ReviewCart=(props)=>{
 
     const cartContext = useContext (CartContext);
     const { showReview , ShowReview , showAddress} = cartContext;
+    const[showLoader,setShowLoader]=useState(false);
 
+    const ShowLoader=(props)=>{
+        setShowLoader(!showLoader)
+    }
 
 
     return(
@@ -18,7 +23,7 @@ const ReviewCart=(props)=>{
             <div className="ReviewCart" style={{display:showReview?"block":"none"}}>
 
                 {/*محتوا*/}
-                <div className="CartBoxReview" style={{display:showReview?"block":"none"}}>
+                <div className="CartBoxReview" style={{display:showReview?"block":"none",filter:showLoader?"blur(12px)":null,zIndex:showLoader?"499":null}}>
                     <div>
                         <CartBox
                             cartIMG={image01}
@@ -67,11 +72,26 @@ const ReviewCart=(props)=>{
                             نارنجستان دوم،  شماره تماس 09197149088 تحویل می گردد
                         </p>
                     </div>
-                    <div className="confirm">
+                    <div className="confirm" onClick={ShowLoader}>
                         <Button btnType="signUp">تایید و پرداخت</Button>
                     </div>
-                </div>
 
+                </div>
+                <div className="Loader" style={{display:showLoader?"block":"none"}}>
+                        <div className="LoaderContent">
+                            <div class="lds-spinner">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <p>در حال انتقال به درگاه پرداخت</p>
+                        </div>
+                    </div>
             </div>
         </>
     )

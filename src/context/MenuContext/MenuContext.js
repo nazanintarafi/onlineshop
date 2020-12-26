@@ -7,12 +7,19 @@ const MenuContextProvider=(props)=>{
     const[showMainMenu,setShowMainMenu]=useState(false);
     const[showSellerMenu,setShowSellerMenu]=useState(false);
     const[closeBtn,setCloseBtn]=useState(false);
-    const[mediaMenu,setMediaMenu]=useState(false);
+    const[mediaMenu1,setMediaMenu1]=useState(false);
+    const[mediaMenu2,setMediaMenu2]=useState(false);
     
 
-    const MediaMenu=()=>{
-        setMediaMenu(true);
+    const ShowMediaMenu1=()=>{
+        setMediaMenu1(true);
         setShowMainMenu(false);
+        setMediaMenu2(false);
+    }
+    const ShowMediaMenu2=()=>{
+        setMediaMenu2(true);
+        setShowMainMenu(false);
+        setMediaMenu1(false);
     }
 
     const hideMainMenu=()=>{
@@ -39,7 +46,8 @@ const MenuContextProvider=(props)=>{
 
 
     return(
-        <MenuContext.Provider value={{closeBtn,showSellerMenu,show,showProfileMenu,showMainMenu,ShowSellerMenu,Show,ShowProfileMenu,ShowMainMenu,hideMainMenu}}>
+        <MenuContext.Provider value={{closeBtn,showSellerMenu,show,showProfileMenu,showMainMenu,mediaMenu1,mediaMenu2,
+            ShowSellerMenu,Show,ShowProfileMenu,ShowMainMenu,hideMainMenu,ShowMediaMenu1,ShowMediaMenu2}}>
             {props.children}
         </MenuContext.Provider>
     )

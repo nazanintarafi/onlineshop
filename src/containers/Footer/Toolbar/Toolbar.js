@@ -8,13 +8,19 @@ import {Link} from 'react-router-dom';
 import {MenuContext} from '../../../context/MenuContext/MenuContext';
 const Toolbar=(props)=>{
     const menuContext = useContext(MenuContext);
-    const { show } = menuContext ;
+    const { show , mediaMenu1 , mediaMenu2 , ShowMediaMenu1 , ShowMediaMenu2 } = menuContext ;
 
     const ShowMainMenu=()=>{
         menuContext.ShowMainMenu();
     }
     const Show=()=>{
         menuContext.Show();
+    }
+    const ShowMadia1=()=>{
+        menuContext.ShowMediaMenu1();
+    }
+    const ShowMadia2=()=>{
+        menuContext.ShowMediaMenu2();
     }
 
     return(
@@ -23,7 +29,15 @@ const Toolbar=(props)=>{
             <footer className="toolbarStyle" style={{opacity:show?'0':'1'}}>
                 <div className="phone" style={{width:props.minWidth?'97%':'100%'}}>
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/"><img src={home} alt="home" /></Link></div></span>
-                    <span onClick={Show} className="toolbarItem"><div onClick={ShowMainMenu} className="imgBorder"><img src={menu} alt="menu" /></div></span>
+                    <span onClick={Show} className="toolbarItem">
+                        <div onClick={ShowMainMenu} className="imgBorder">
+                            <div onClick={ShowMadia1}>
+                                <div onClick={ShowMadia2}>
+                                    <img src={menu} alt="menu" />
+                                </div>
+                            </div>
+                        </div>
+                    </span>
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/cart"><img src={cart} alt="cart" /></Link></div></span>
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/profile"><img src={contact} alt="contact" /></Link></div></span>
                 </div>

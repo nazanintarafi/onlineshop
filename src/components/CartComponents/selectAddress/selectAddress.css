@@ -58,3 +58,47 @@
     top: 0px;
     left: 13px;
 }
+
+
+.newReviewButtonPos{
+    top:-64px;
+}
+.newReviewButtonPos .reviewButton{
+    top:0px;
+} 
+@media only screen and (min-width: 360px) {
+    .newReviewButtonPos .reviewButton{
+        top:-7px;
+    } 
+}
+@media only screen and (min-width: 375px ) {
+    .newReviewButtonPos{
+        top:-84px;
+    }
+    .reviewGoBack h3 {
+        padding-top: 10px;
+        height: 90px;
+    }
+    .newReviewButtonPos .reviewButton{
+        top:-17px;
+    } 
+    .newReviewButtonPos .reviewButton button::before{
+        top:27px;
+        left: -8px;
+    } 
+    .newReviewButtonPos .reviewButton button::after{
+        top:29px;
+    } 
+}
+@media only screen and (min-width: 414px) {
+    .newReviewButtonPos{
+        top:-71px;
+    }
+    .newReviewButtonPos .reviewButton{
+        top:-21px;
+    } 
+    .reviewGoBack h3 {
+        padding-top: 10px;
+        height: 90px;
+    }
+}

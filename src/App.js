@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css';
 import Product from './pages/Product/product';
 import Cart from './pages/cart/cart';
-import EmptyCart from './pages/cart/emptyCart/emptyCart';
-import Successful from './pages/cart/successful/successful';
+import EmptyCartPage from './pages/cart/emptyCartPage/emptyCartPage';
+import Successful from './pages/cart/successfulPage/successfulPage';
+import Loader from './components/CartComponents/Loader/loader';
 import Arthboard from './pages/Arthboard/arthboard';
 import Seller from './pages/Seller/seller';
 import Profile from './pages/profilePages/Profile/profile';
@@ -38,7 +39,8 @@ const App=() =>{
         <CartContextProvider>
           <Route path="/cart" exact component={Cart} />
         </CartContextProvider>
-        <Route path="/empty-cart" exact component={EmptyCart} />
+        <Route path="/loader" exact component={Loader} />
+        <Route path="/empty-cart" exact component={EmptyCartPage} />
         <Route path="/successful" exact component={Successful} />
         <Route path="/arthboard" exact component={Arthboard} />
         <Route path="/media1" exact component={MediaHome1} />

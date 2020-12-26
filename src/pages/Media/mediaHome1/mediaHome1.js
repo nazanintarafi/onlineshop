@@ -27,7 +27,7 @@ const MediaHome1=(props)=>{
         slidesToShow: 1 ,
         slidesToScroll: 1
     };
-    const {show} = useContext(MenuContext);
+    const {mediaMenu1} = useContext(MenuContext);
     
 
 
@@ -35,9 +35,9 @@ const MediaHome1=(props)=>{
     return(
         <>
             <div className="MediaHome1" style={{
-                    position:show?'fixed':'relative',right:show?'65%':'0px',
-                    top:show?'90px':'0px',height:show?'390px':'100vh',overflowX:show?'hidden':'auto',width:show?'100%':'100vw',
-                    transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
+                    position:mediaMenu1?'fixed':'relative',right:mediaMenu1?'65%':'0px',
+                    top:mediaMenu1?'90px':'0px',height:mediaMenu1?'390px':'100vh',overflowX:mediaMenu1?'hidden':'auto',width:mediaMenu1?'100%':'100vw',
+                    transition:mediaMenu1?'all 0.2s':'all 0.2s',zIndex:mediaMenu1?'100':"null"}}>
                 <Toolbar />
                 <Header />
                 <div className="container mediaBanner">

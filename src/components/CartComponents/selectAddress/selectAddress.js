@@ -20,10 +20,20 @@ const SelectAddress=(props)=>{
     }
 
 
+    let topClasses=["reviewButtonPos"];
+    switch(showReview){
+        case true:
+            topClasses.push("newReviewButtonPos");
+            break;
+        default:
+            break; 
+    }
+
+
     return(
         <>
             <div style={{display:showMainMenu?"none":"block"}}>
-                <div className="reviewButtonPos" style={{top:showReview?"-64px":null,
+                <div className={topClasses.join(' ')} style={{
                 position:showReview?"absolute":"fixed",bottom:showReview?null:'50px',display:showAddress?"block":"none"}}>
                     <div className="reviewButton" onClick={goTop} style={{zIndex:ShowReview?"1":null}}>
                         <ReviewButton />
