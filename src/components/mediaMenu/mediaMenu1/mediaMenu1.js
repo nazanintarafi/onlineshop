@@ -1,28 +1,34 @@
 import React ,{useContext} from 'react';
-import Logo from '../logo/logo';
+import Logo from '../../logo/logo';
 import './mediaMenu1.css';
 import {Link} from 'react-router-dom';
+import {MediaContext} from '../../../context/MediaContext/mediaContext';
 import {MenuContext} from '../../../context/MenuContext/MenuContext';
 
-const MainMenu=(props)=>{
-    const menuContext = useContext(MenuContext);
-    const {closeBtn,showMainMenu,mediaMenu} = useContext(MenuContext);
-    const hideMainMenu=()=>{
-        menuContext.hideMainMenu();
+const MediaMenu=(props)=>{
+    const mediaContext = useContext(MediaContext);
+    const {mediaMenu1} = mediaContext;
+
+    const ShowMediaMenu1=()=>{
+        mediaContext.ShowMediaMenu1();
     }
-    const MediaMenu=()=>{
-        menuContext.MediaMenu();
+
+    const menuContext = useContext(MenuContext);
+    const { show } = menuContext;
+
+    const Show=()=>{
+        menuContext.Show();
     }
 
     return(
         <>
-            <div style={{width:"100%",overflowY:"hidden"}} className="MainMenuu">
-                <div className="menuWidth"  style={{display:mediaMenu?'block':'none',zIndex:mediaMenu?'1000':'null',height:mediaMenu?'100vh':'null'}}>
+            <div style={{width:"100%",overflowY:"hidden"}} className="MediaMenu">
+                <div className="menuWidth"  style={{display:mediaMenu1?'block':'none',zIndex:mediaMenu1?'1000':'null',height:mediaMenu1?'100vh':'null'}}>
                     <div className="Logo">
                         <Logo />
                     </div>
-                    <div className="row">
-                        <div className="col-md-2 col-xs-2 col-2 List closeBtn"  onClick={hideMainMenu} >
+                    <div className="row"  onClick={Show} >
+                        <div className="col-md-2 col-xs-2 col-2 List closeBtn"  onClick={ShowMediaMenu1} >
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                             </svg>
@@ -51,8 +57,8 @@ const MainMenu=(props)=>{
                                     </div>
 
                                     <div className="mainMenuItems">
-                                        <input type="checkbox" id="item01"/>
-                                        <label className="mainMenuItems-label" for="item01">
+                                        <input type="checkbox" id="item02"/>
+                                        <label className="mainMenuItems-label" for="item02">
                                             <span>بازی ها</span>
                                             <span className="svgMenu">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
@@ -117,4 +123,4 @@ const MainMenu=(props)=>{
         </>
     )
 }
-export default MainMenu;
+export default MediaMenu;

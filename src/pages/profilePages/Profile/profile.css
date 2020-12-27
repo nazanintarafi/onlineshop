@@ -1,11 +1,12 @@
 .Profile{
     text-align: center;
     margin: auto;
+    height: 100vh;
 }
 .UserName{
     text-align: center;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 222px;
 }
 .userNameRadioBtn{
     width: 100%;
@@ -43,7 +44,7 @@
     font-size: 12px;
     position: relative;
     cursor: pointer;
-    width: 100%%;
+    width: 100%;
 }
 .userNameRadioBtn input{
     position: absolute;

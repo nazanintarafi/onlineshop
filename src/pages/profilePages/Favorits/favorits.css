@@ -1,15 +1,18 @@
 .favoritMargin{
-    margin-top: 100px;
+    margin-top: 222px;
 }
 .Favorits .rightBackgroundButton {
     top: -22px;
+}
+.Favorits{
+    height: 100vh;
 }
 @media only screen and (min-width: 338px) {
     .Favorits .rightBackgroundButton {
         top: -31px;
     }
     .favoritMargin{
-        margin-top: 142px;
+        margin-top: 222px;
     }
   }
   @media only screen and (min-width: 427px) {
@@ -17,7 +20,7 @@
         top: -31px;
     }
     .favoritMargin{
-        margin-top: 142px;
+        margin-top: 230px;
     }
   }
 

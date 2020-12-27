@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import './btnMedia.css';
 import right from '../../../../../assets/images/Path 2113.png';
-import {MenuContext} from '../../../../../context/MenuContext/MenuContext';
+import {MediaContext} from '../../../../../context/MediaContext/mediaContext';
 
 
 const BtnMedia=(props)=>{
@@ -10,14 +10,12 @@ const BtnMedia=(props)=>{
         setRight(!rightToggle)
     }
 
+    const mediaContext = useContext(MediaContext);
+    const { mediaMenu1 } = mediaContext ;  
 
-    const profileContext= useContext(MenuContext);
-
-    const ShowSellerMenu=()=>{
-        profileContext.ShowSellerMenu();
-    }
-    const Show=()=>{
-        profileContext.Show();
+    
+    const ShowMediaMenu1=()=>{
+        mediaContext.ShowMediaMenu1();
     }
 
 
@@ -25,21 +23,10 @@ const BtnMedia=(props)=>{
     if (rightToggle){
         imgClasses.push("rotate");
     }
-    let classes=["rightButton"];
-    switch(props.btnType){
-        case "sellerBtn":
-            classes.push("sellerBtn");
-            break;
-        case "arthBtn":
-            classes.push("arthBtn");
-            break;
-        default:
-            break; 
-    }
     return(
-        <div className="rightBackgroundButton sellerBackBtn"  onClick={ShowSellerMenu}>
-            <button onClick={props.clicked}  className={classes.join(' ')}>
-                <div onClick={Show} >
+        <div className="BtnMedia">
+            <button onClick={props.clicked}  className="rightMediaButton">
+                <div onClick={ShowMediaMenu1} >
                     <img src={right} alt="right"className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
                     transition:rightToggle?"all 0.2s":"all 0.2s"}} />
                 </div>

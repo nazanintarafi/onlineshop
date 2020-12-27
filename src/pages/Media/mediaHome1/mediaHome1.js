@@ -10,7 +10,7 @@ import fixedBanner3 from "../../../assets/images/onlineshop_media_ghostoftsushim
 import fixedBanner4 from "../../../assets/images/onlineshop_media_thelastofus2.png";
 import Toolbar from '../../../containers/Footer/Toolbar/Toolbar';
 import Header from '../../../containers/MediaHeader/mediaHeader';
-import {MenuContext} from '../../../context/MenuContext/MenuContext';
+import {MediaContext} from '../../../context/MediaContext/mediaContext';
 import Button from '../../../components/UI/button/button';
 import VideoBox from '../../../components/mediaVideos/mediaVideos';
 import img1 from "../../../assets/images/photo-album-logo_7688-145.png";
@@ -27,7 +27,7 @@ const MediaHome1=(props)=>{
         slidesToShow: 1 ,
         slidesToScroll: 1
     };
-    const {mediaMenu1} = useContext(MenuContext);
+    const {mediaMenu1} = useContext(MediaContext);
     
 
 

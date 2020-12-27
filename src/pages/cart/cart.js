@@ -12,7 +12,6 @@ import {CartContext} from '../../context/CartContext/cartContext';
 
 const Cart=(props)=>{
 
-
     const {show } = useContext(MenuContext);
     const {showLoader } = useContext(CartContext);
 

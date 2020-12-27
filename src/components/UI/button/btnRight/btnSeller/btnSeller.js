@@ -37,15 +37,16 @@ const BtnSeller=(props)=>{
             break; 
     }
     return(
-        <div className="rightBackgroundButton sellerBackBtn"  onClick={ShowSellerMenu}>
-            <button onClick={props.clicked}  className={classes.join(' ')}>
-                <div onClick={Show} >
-                    <img src={right} alt="right"className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                    transition:rightToggle?"all 0.2s":"all 0.2s"}} />
-                </div>
-            </button>
-        </div>
-        
+        <>
+            <div className="rightBackgroundButton sellerBackBtn"  onClick={ShowSellerMenu}>
+                <button onClick={props.clicked}  className={classes.join(' ')}>
+                    <div onClick={Show} >
+                        <img src={right} alt="right"className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                        transition:rightToggle?"all 0.2s":"all 0.2s"}} />
+                    </div>
+                </button>
+            </div>
+        </>
     )
 }
 export default BtnSeller;

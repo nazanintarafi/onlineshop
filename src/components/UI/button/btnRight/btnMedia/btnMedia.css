@@ -1,56 +1,57 @@
 
 
-.sellerBackBtn.rightButton {
-    padding: 0px 5px 0px 7px;
-}
-.rightBackgroundButton.sellerBackBtn{
+
+
+
+.BtnMedia{
     background-color: #D1E5F0;
-    height: 70px;
+    height: 76px;
     width: 24px;
     position: relative;
-    top:-20px;
     left: 10px;
 }
-.rightButton.sellerBtn {
-    border: #D1E5F0 5px solid;
-    padding: 0px 6px 0px 7px;
-}
-.rightButton.arthBtn::after{
+.rightMediaButton{
     background-color: white;
-    border-top: 22px solid white;
-    border-left: white solid 10px;
-    border-right: white solid 11px;
-    border-bottom: 3px solid white;
+    padding: 0px 9px 2px 9px;
+    color: black;
+    font-weight: 900;
+    border-radius: 50%;
+    border: #D1E5F0 7px solid;
+    margin-top: 17px;
+    margin-right: 3px;
 }
-.rightButton.arthBtn::before{
-    background-color: white;
-    border-top: 22px solid white;
-    border-right:white solid 11px;
-    border-left: white solid 10px;
+.rightMediaButton img{
+    align-items: center;
+    margin: auto;
+    margin-bottom: 3px;
+    height: 12px;
 }
-.rightButton.arthBtn img{
-    padding: 0px 0px 0px 0px;
+.rightMediaButton:focus{
+    outline: none;
 }
-.rightButton.sellerBtn::after{
+.rotate{
+    transform:rotate(180deg);
+}
+.rightMediaButton::after{
     content: "";
     background-color: white;
     position: absolute;
     z-index: 300;
     right: 8px;
-    top: -7px;
+    top: -8px;
     border-top: 22px solid white;
-    border-left:white solid 10px;
+    border-left: white solid 10px;
     border-right: white solid 11px;
     border-bottom: 3px solid white;
     border-radius: 24px 0px 24px 0px;
 }
-.rightButton.sellerBtn::before{
+.rightMediaButton::before{
     content: "";
     background-color: white;
     position: absolute;
     z-index: 300;
     left: -5px;
-    top: 50px;
+    top: 57px;
     border-top: 22px solid white;
     border-right:white solid 11px;
     border-left: white solid 10px;

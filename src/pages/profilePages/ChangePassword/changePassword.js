@@ -7,7 +7,7 @@ import Body from '../../../components/ProfilePagesBody/profilePagesBody';
 const ChangePassword=()=>{
     return(
         <>
-            <div className="orders">
+            <div className="ChangePassword">
                 <Body titre="تغییر پسورد" profilePage="true">
                     <form className="passwordsContent">
                         <Input type="text" placeholder="رمز عبور فعلی" />

@@ -7,10 +7,11 @@
     margin-right: 0;
 }
 .yourOrder{
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin: auto;
-    padding-top: 72px;
+    background-color: #f36b07;
+    padding: 72px 5% 150px;
 }
 .yourOrder .ProductBox{
     box-shadow: none;
@@ -114,8 +115,6 @@
     width: 100%;
     top:1px;
 }
-.closeBTN{
-    position: absolute;
-    top: 1px;
-    left: -36px;
+.yourOrder .CartBox{
+    margin: 5px auto;
 }

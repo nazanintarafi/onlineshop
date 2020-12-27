@@ -6,9 +6,10 @@ import menu from '../../../assets/images/Repeat Grid 3.png';
 import contact from '../../../assets/images/Group 1288.png';
 import {Link} from 'react-router-dom';
 import {MenuContext} from '../../../context/MenuContext/MenuContext';
+
 const Toolbar=(props)=>{
     const menuContext = useContext(MenuContext);
-    const { show , mediaMenu1 , mediaMenu2 , ShowMediaMenu1 , ShowMediaMenu2 } = menuContext ;
+    const { show } = menuContext ;
 
     const ShowMainMenu=()=>{
         menuContext.ShowMainMenu();
@@ -16,25 +17,17 @@ const Toolbar=(props)=>{
     const Show=()=>{
         menuContext.Show();
     }
-    const ShowMadia1=()=>{
-        menuContext.ShowMediaMenu1();
-    }
-    const ShowMadia2=()=>{
-        menuContext.ShowMediaMenu2();
-    }
+
 
     return(
-        
         <>
             <footer className="toolbarStyle" style={{opacity:show?'0':'1'}}>
                 <div className="phone" style={{width:props.minWidth?'97%':'100%'}}>
                     <span className="toolbarItem"><div className="imgBorder"><Link to="/"><img src={home} alt="home" /></Link></div></span>
                     <span onClick={Show} className="toolbarItem">
                         <div onClick={ShowMainMenu} className="imgBorder">
-                            <div onClick={ShowMadia1}>
-                                <div onClick={ShowMadia2}>
-                                    <img src={menu} alt="menu" />
-                                </div>
+                            <div>
+                                <img src={menu} alt="menu" />
                             </div>
                         </div>
                     </span>
@@ -43,7 +36,6 @@ const Toolbar=(props)=>{
                 </div>
             </footer>
         </>
-
     )
 }
 export default Toolbar;

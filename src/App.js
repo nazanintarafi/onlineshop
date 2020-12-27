@@ -28,11 +28,14 @@ import MenuContextProvider from './context/MenuContext/MenuContext';
 import ProductContextProvider from './context/productContext/productContext';
 import CartContextProvider from './context/CartContext/cartContext';
 import MainMenu from './components/mainMenu/mainMenu';
+import Media1Menu from './components/mediaMenu/mediaMenu1/mediaMenu1';
+import Media2Menu from './components/mediaMenu/mediaMenu2/mediaMenu2';
+
 const App=() =>{
   return(
     <BrowserRouter>
       <MenuContextProvider>
-        <MainMenu />
+          <MainMenu />
         <ProductContextProvider>
           <Route path="/product" exact component={Product} />
         </ProductContextProvider>
@@ -43,9 +46,6 @@ const App=() =>{
         <Route path="/empty-cart" exact component={EmptyCartPage} />
         <Route path="/successful" exact component={Successful} />
         <Route path="/arthboard" exact component={Arthboard} />
-        <Route path="/media1" exact component={MediaHome1} />
-        <Route path="/media2" exact component={MediaHome2} />
-        <Route path="/media3" exact component={MediaHome3} />
         <Route path="/" exact component={HomePage} />
         <Route path="/about" exact component={AboutOnlineShop} />
         <Route path="/rules" exact component={Rules} />

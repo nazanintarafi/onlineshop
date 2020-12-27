@@ -13,21 +13,21 @@
     height: 100%;
     z-index: 5;
 }
-.btnRight{
+.MediaBody .btnRight{
     position: fixed;
     right: 12px;
     top: 200px;
 }
-.btnMedia{
+.MediaBody .btnMedia{
     position: fixed;
     right: 12px;
-    top: 82px;
+    top: 167px;
 }
-.Content{
+.MediaBody .Content{
     margin-bottom: 150px;
     overflow: auto;
 }
-.homeHeader.arthHeader {
+.MediaBody .homeHeader.arthHeader {
     box-shadow: 5px 1px 10px 9px #7070700f;
     left: 0;
     z-index: 101;
@@ -36,34 +36,34 @@
 
 
 @media only screen and (min-width: 440px){
-    .btnRight{
+    .MediaBody .btnRight{
         top: 300px;
     }
-    .btnMedia{
+    .MediaBody .btnMedia{
         top: 40px;
     }
 }
 @media only screen and (min-width: 514px){
-    .btnRight{
+    .MediaBody .btnRight{
         top: 330px;
     }
-    .btnMedia{
+    .MediaBody .btnMedia{
         top: 40px;
     }
 }
 @media only screen and (min-width: 586px){
-    .btnRight{
+    .MediaBody .btnRight{
         top: 360px;
     }
-    .btnMedia{
+    .MediaBody .btnMedia{
         top: 40px;
     }
 }
 @media only screen and (min-width: 647px){
-    .btnRight{
+    .MediaBody .btnRight{
         top: 430px;
     }
-    .btnMedia{
+    .MediaBody .btnMedia{
         top: 180px;
     }
 }

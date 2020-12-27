@@ -2,14 +2,20 @@ import React , {useContext} from 'react';
 import './mediaMenu2.css';
 import down from '../../../assets/images/Group 6.png';
 import left from '../../../assets/images/down-arrowx.png';
-import {MenuContext} from '../../../context/MenuContext/MenuContext';
+import {MediaContext} from '../../../context/MediaContext/mediaContext';
 
 const MediaMenu2=(props)=>{
 
-    const {showSellerMenu , show} = useContext(MenuContext);
+
+
+    const mediaContext = useContext(MediaContext);
+    const { mediaMenu , mediaMenu2} = mediaContext ;
+    const MediaMenu=()=>{
+        mediaContext.MediaMenu();
+    }
 
     return(
-        <ul className="MediaMenu2"  style={{display:show?'block':'none',zIndex:showSellerMenu?"99":"0"}}>
+        <ul className="MediaMenu2"  style={{display:mediaMenu?'block':'none',zIndex:mediaMenu2?"99":"0"}}>
             <main/>
             <li>
                 <h4>
@@ -44,6 +50,7 @@ const MediaMenu2=(props)=>{
                             <div className="CheckBox">
                                 <label>
                                     <input type="checkbox" name="checkbox"/>
+                                
                                     <span className="checkbox"></span>
                                     <span className="checkmark">شیائومی</span>
                                 </label>

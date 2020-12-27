@@ -1,8 +1,9 @@
-.MainMenuu{
+.MediaMenu{
     background-color: #D1E5F0;
     width: 100%;
+    height: 100vh;
 }
-.MainMenuu{
+.MediaMenu {
     direction: rtl;
     text-align: right;
     margin: auto;
@@ -14,94 +15,94 @@
     color: #080957;
     overflow: hidden;
 }
-.Logo{
+.MediaMenu .Logo{
     padding: 40px 16px;
 }
-.menuWidth{
+.MediaMenu .menuWidth{
     width: 55%;
     height: 100%;
     text-align: right;
 }
-.menuTitre{
+.MediaMenu .menuTitre{
     align-items: center;
 }
-.aboutUs{
+.MediaMenu .aboutUs{
     list-style: none;
     padding-right: 15px;
     font-size: 13px;
     line-height: 35px;
 }
-.aboutUs li a{
+.MediaMenu .aboutUs li a{
     color: #080957;
     text-decoration: none;
 }
-.List svg{
+.MediaMenu .List svg{
     font-weight: bold;
     font-size: 20px;
 }
-.profile span{
+.MediaMenu .profile span{
     font-size: 14px;
     padding-right: 5%;
 }
-.profile svg{
+.MediaMenu .profile svg{
     font-size: 18px;
     margin-bottom: 5px;
 }
 
 
 
-.mainMenuuu{
+.MediaMenu .mainMenuuu{
     padding-right: 12px;
     font-size: 12px;
     line-height: 25px;
 }
-.mainMenuuu input{
+.MediaMenu .mainMenuuu input{
     position: absolute;
     opacity: 0;
     z-index: -1;
 }
-.mainMenuuu .mainMenuItems{
+.MediaMenu .mainMenuuu .mainMenuItems{
     overflow:hidden;
 }
-.mainMenuuu .mainMenuItems{
+.MediaMenu .mainMenuuu .mainMenuItems{
     width: 100%;
     overflow: hidden;
 }
-.mainMenuuu .mainMenuItems-label{
+.MediaMenu .mainMenuuu .mainMenuItems-label{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
-.mainMenuuu .mainMenuItems-content{
+.MediaMenu .mainMenuuu .mainMenuItems-content{
     max-height: 0;
     padding: 0 ;
     transition: 0.2s;
 }
-.mainMenuuu input:checked + .mainMenuItems-label .svgMenu{
+.MediaMenu .mainMenuuu input:checked + .mainMenuItems-label .svgMenu{
     transform: rotate(-90deg);
     color: #FF6D02;
 }
-.mainMenuuu input:checked ~ .mainMenuItems-content {
+.MediaMenu .mainMenuuu input:checked ~ .mainMenuItems-content {
     max-height: 200px;
     padding: 10px;
     width: 90%;
     font-size: 12px;
     transition: 0.2s;
 }
-.mainMenuuu input:checked ~ .mainMenuItems-label{
+.MediaMenu .mainMenuuu input:checked ~ .mainMenuItems-label{
     color: orange;
     transition: 0.2s;
 }
-.svgMenu{
+.MediaMenu .svgMenu{
     text-align: left;
     margin: auto;
     margin-left: 0;
 }
-.mainMenuuu a{
+.MediaMenu .mainMenuuu a{
     font-size: 10px;
     color: #080987;
 }
-.mainMenuuu a:hover{
+.MediaMenu .mainMenuuu a:hover{
     text-decoration: none;
 }
 

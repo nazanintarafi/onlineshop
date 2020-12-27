@@ -43,13 +43,13 @@ const ProfilePagesBody=(props)=>{
                         top:show?'90px':'0px',height:show?'390px':'100%',width:show?'100%':'100%',
                         overflowX:show?'hidden':'hidden',overflowY:show?'hidden':'auto',
                         transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
-                        <div style={{opacity:props.profilePage?'1':'0'}}>
+                        <div style={{display:props.profilePage?'block':'none'}}>
                             <Header rightToggle={show} titre={props.titre} profile={props.profile}/>
                         </div>
-                        <div style={{opacity:props.sellerPage?'1':'0'}}>
+                        <div style={{display:props.sellerPage?'block':'none'}}>
                             <SellerHeader rightToggle={show} titre={props.titre} profile={props.profile}/>
                         </div>
-                        <div style={{opacity:props.mediaPage?'1':'0'}}>
+                        <div style={{display:props.mediaPage?'block':'none'}}>
                             <MediaHeader rightToggle={show}/>
                         </div>
                         <div className="Content" style={{marginTop:props.arthPage?'60px':null}}>

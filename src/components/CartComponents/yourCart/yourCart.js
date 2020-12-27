@@ -53,6 +53,33 @@ const YourCart=(props)=>{
                         newPrice="12,000,000تومان"
                         number="1"
                     />
+                                        <CartBox
+                        cartIMG={image01}
+                        color="مشکی"
+                        warranty="ضمانت سلامت تحویل کالا آنلاین شاپ"
+                        storeName="آنلاین شاپ"
+                        oldPrice="6,000,000تومان"
+                        newPrice="12,000,000تومان"
+                        number="1"
+                    />
+                                        <CartBox
+                        cartIMG={image01}
+                        color="مشکی"
+                        warranty="ضمانت سلامت تحویل کالا آنلاین شاپ"
+                        storeName="آنلاین شاپ"
+                        oldPrice="6,000,000تومان"
+                        newPrice="12,000,000تومان"
+                        number="1"
+                    />
+                                        <CartBox
+                        cartIMG={image01}
+                        color="مشکی"
+                        warranty="ضمانت سلامت تحویل کالا آنلاین شاپ"
+                        storeName="آنلاین شاپ"
+                        oldPrice="6,000,000تومان"
+                        newPrice="12,000,000تومان"
+                        number="1"
+                    />
                     
                     <div className="prices">
                         <div>
