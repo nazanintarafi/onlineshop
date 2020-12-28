@@ -1,7 +1,7 @@
 
 import React, {useContext} from 'react';
 import './mediaBody.css';
-import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
+import Toolbar from '../../containers/Footer/MediaToolbar/mediaToolbar';
 import MediaHeader from '../../containers/MediaHeader/mediaHeader';
 import BtnMedia from '../UI/button/btnRight/btnMedia/btnMedia';
 import {MediaContext} from '../../context/MediaContext/mediaContext';
@@ -28,10 +28,10 @@ const MediaBody=(props)=>{
                         <div style={{opacity:props.mediaPage?'1':'0'}}>
                             <MediaHeader rightToggle={mediaMenu}/>
                         </div>
-                        <div className="Content" style={{marginTop:props.arthPage?'60px':null}}>
+                        <div className="Content">
                             {props.children}
                         </div>
-                        <div className="btnRight btnMedia" style={{opacity:props.sellerBtn?'1':'0',right:mediaMenu?"65.5%":"12px",
+                        <div className="btnRight btnMedia" style={{right:mediaMenu?"65.5%":"12px",
                         top:mediaMenu?"270px":null,zIndex:mediaMenu?"200":"200",transition:mediaMenu?'all 0.2s':'all 0.2s'}}>
                             <BtnMedia btnType="sellerBtn"/>
                         </div>

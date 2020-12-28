@@ -8,7 +8,7 @@ import fixedBanner2 from "../../../assets/images/onlineshop_media_left_ps512.png
 import fixedBanner from "../../../assets/images/onlineshop_mediumbanner_samsung.png";
 import fixedBanner3 from "../../../assets/images/onlineshop_media_ghostoftsushima2.png";
 import fixedBanner4 from "../../../assets/images/onlineshop_media_thelastofus2.png";
-import Toolbar from '../../../containers/Footer/Toolbar/Toolbar';
+import Toolbar from '../../../containers/Footer/MediaToolbar/mediaToolbar';
 import Header from '../../../containers/MediaHeader/mediaHeader';
 import {MediaContext} from '../../../context/MediaContext/mediaContext';
 import Button from '../../../components/UI/button/button';

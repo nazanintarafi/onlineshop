@@ -4,6 +4,8 @@ import Body from '../../components/ProfilePagesBody/profilePagesBody';
 import SearchBar from '../../components/searchBar/searchBar';
 import Slider from '../../containers/ProductBox/productBox';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
+import {Link} from 'react-router-dom';
+
 const Arthboard=()=>{
     return(
         <>
@@ -13,15 +15,28 @@ const Arthboard=()=>{
                     <div className="search">
                         <SearchBar />
                     </div>
+                    <div className="bredCrumbs">
+                        <ul>
+                            <li>
+                                <Link to="#">کالای دیجیتال</Link>
+                            </li>
+                            <li>
+                                <Link to="#">موبایل</Link>
+                            </li>
+                            <li>
+                                <Link to="#">گوشی موبایل</Link>
+                            </li>
+                        </ul>
+                    </div>
                     <div className="grouping container">
                         <div>
-                            <span>دسته بندی 1</span>
-                            <span>دسته بندی 1</span>
-                            <span>دسته بندی 1</span>
+                            <Link to="#"><span>دسته بندی 1</span></Link>
+                            <Link to="#"><span>دسته بندی 1</span></Link>
+                            <Link to="#"><span>دسته بندی 1</span></Link>
                         </div>
                         <div>
-                            <span>دسته بندی 1</span>
-                            <span>دسته بندی 1</span>
+                            <Link to="#"><span>دسته بندی 1</span></Link>
+                            <Link to="#"><span>دسته بندی 1</span></Link>
                         </div>
                     </div>
                     <div className="arthSlider">

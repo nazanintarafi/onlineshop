@@ -26,10 +26,10 @@ import MediaHome3 from './pages/Media/mediaHome3/mediaHome3';
 import {BrowserRouter,Route} from 'react-router-dom';
 import MenuContextProvider from './context/MenuContext/MenuContext';
 import ProductContextProvider from './context/productContext/productContext';
+import MediaContextProvider from './context/MediaContext/mediaContext';
 import CartContextProvider from './context/CartContext/cartContext';
 import MainMenu from './components/mainMenu/mainMenu';
 import Media1Menu from './components/mediaMenu/mediaMenu1/mediaMenu1';
-import Media2Menu from './components/mediaMenu/mediaMenu2/mediaMenu2';
 
 const App=() =>{
   return(
@@ -61,6 +61,12 @@ const App=() =>{
         <Route path="/login" exact component={LogIn} />
         <Route path="/seller" exact component={Seller} />
       </MenuContextProvider>
+      <MediaContextProvider>
+        <Media1Menu />
+        <Route path="/media1" exact component={MediaHome1} />
+        <Route path="/media2" exact component={MediaHome2} />
+        <Route path="/media3" exact component={MediaHome3} />
+      </MediaContextProvider>
     </BrowserRouter>
     
   )

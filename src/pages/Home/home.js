@@ -40,8 +40,8 @@ import Footer from '../../containers/Footer/HomeFooter/homeFooter';
 
 const Home=(props) =>{
   const proTable=[
-    {glassesImg1:{glasses1},glassesImg2:{glasses2},glassesImg3:{glasses3},glassesImg4:{glasses4},glassesImg5:{glasses5},
-    glassesImg6:{glasses6},glassesImg7:{glasses7},glassesImg8:{glasses8},glassesImg9:{glasses2}}
+    {glassesImg1:glasses1,glassesImg2:glasses2,glassesImg3:glasses3,glassesImg4:glasses4,glassesImg5:glasses5,
+    glassesImg6:glasses6,glassesImg7:glasses7,glassesImg8:glasses8,glassesImg9:glasses2}
   ]
   var setting = {
     dots: true,

@@ -11,11 +11,15 @@ const BtnMedia=(props)=>{
     }
 
     const mediaContext = useContext(MediaContext);
-    const { mediaMenu1 } = mediaContext ;  
+    const { mediaMenu1 , mediaMenu } = mediaContext ;  
 
     
-    const ShowMediaMenu1=()=>{
-        mediaContext.ShowMediaMenu1();
+    const ShowMediaMenu2=()=>{
+        mediaContext.ShowMediaMenu2();
+    }
+
+    const Show=()=>{
+        mediaContext.MediaMenu();
     }
 
 
@@ -23,16 +27,16 @@ const BtnMedia=(props)=>{
     if (rightToggle){
         imgClasses.push("rotate");
     }
+    
     return(
         <div className="BtnMedia">
-            <button onClick={props.clicked}  className="rightMediaButton">
-                <div onClick={ShowMediaMenu1} >
+            <button onClick={props.clicked} className="rightMediaButton"  onClick={ShowMediaMenu2}>
+                <div onClick={Show} >
                     <img src={right} alt="right"className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
                     transition:rightToggle?"all 0.2s":"all 0.2s"}} />
                 </div>
             </button>
         </div>
-        
     )
 }
 export default BtnMedia;

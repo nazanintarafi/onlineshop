@@ -5,7 +5,7 @@
     padding-right: 11%;
     width: 90%;
 }
-.grouping div span{
+.grouping div a{
     font-size: 11px;
     background-color: #D4D3E3;
     margin: 2px 3px;
@@ -17,8 +17,41 @@
     line-height: 10px;
     color: #707070;
 }
+.grouping div a:hover{
+    text-decoration: none;
+}
 .arthSlider{
     width: 80%;
     text-align: center;
     margin: auto;
+}
+.bredCrumbs{
+    margin-top: 10px;
+}
+.bredCrumbs ul{
+    list-style: none;
+    display: flex;
+    font-size: 10px;
+}
+.bredCrumbs ul li a{
+    color : #A5A5B2 ;
+}
+.bredCrumbs ul li a:hover{
+    text-decoration: none;
+}
+.bredCrumbs ul li {
+    position: relative;
+    padding: 0 6px;
+}
+.bredCrumbs ul li::after{
+    content :">";
+    position: absolute;
+    left: -4px;
+    color : #A5A5B2 ;
+}
+.bredCrumbs ul li:last-child::after{
+    content :"";
+    position: absolute;
+    left: -4px;
+    color : #A5A5B2 ;
 }

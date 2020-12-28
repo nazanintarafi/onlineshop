@@ -160,9 +160,9 @@ const MainMenu=(props)=>{
 
                         <hr />
                         <ul className="aboutUs">
-                            <li><Link to="/">سوالی دارید</Link></li>
-                            <li><Link to="/">درباره ما</Link></li>
-                            <li><Link to="/">تماس با ما</Link></li>
+                            <li><Link to="/questions">سوالی دارید</Link></li>
+                            <li><Link to="/about">درباره ما</Link></li>
+                            <li><Link to="/contacts">تماس با ما</Link></li>
                         </ul>
                         <hr />
                         <div className="row profile" style={{lineHeight:"40px",paddingBottom:"80px"}}>

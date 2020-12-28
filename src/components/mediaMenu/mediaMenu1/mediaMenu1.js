@@ -3,27 +3,23 @@ import Logo from '../../logo/logo';
 import './mediaMenu1.css';
 import {Link} from 'react-router-dom';
 import {MediaContext} from '../../../context/MediaContext/mediaContext';
-import {MenuContext} from '../../../context/MenuContext/MenuContext';
 
 const MediaMenu=(props)=>{
     const mediaContext = useContext(MediaContext);
-    const {mediaMenu1} = mediaContext;
+    const {mediaMenu1 , mediaMenu} = mediaContext;
 
     const ShowMediaMenu1=()=>{
         mediaContext.ShowMediaMenu1();
     }
 
-    const menuContext = useContext(MenuContext);
-    const { show } = menuContext;
-
     const Show=()=>{
-        menuContext.Show();
+        mediaContext.MediaMenu();
     }
 
     return(
         <>
-            <div style={{width:"100%",overflowY:"hidden"}} className="MediaMenu">
-                <div className="menuWidth"  style={{display:mediaMenu1?'block':'none',zIndex:mediaMenu1?'1000':'null',height:mediaMenu1?'100vh':'null'}}>
+            <div style={{width:"100%",overflowY:"hidden",display:mediaMenu1?'block':'none'}} className="MediaMenu">
+                <div className="menuWidth"  style={{zIndex:mediaMenu1?'1000':'null',height:mediaMenu1?'100vh':'null'}}>
                     <div className="Logo">
                         <Logo />
                     </div>
@@ -103,9 +99,9 @@ const MediaMenu=(props)=>{
 
                     <hr />
                     <ul className="aboutUs">
-                        <li><Link to="/">سوالی دارید</Link></li>
-                        <li><Link to="/">درباره ما</Link></li>
-                        <li><Link to="/">تماس با ما</Link></li>
+                        <li><Link to="/questions">سوالی دارید</Link></li>
+                        <li><Link to="/about">درباره ما</Link></li>
+                        <li><Link to="/contacts">تماس با ما</Link></li>
                     </ul>
                     <hr />
                     <div className="row profile" style={{lineHeight:"40px",paddingBottom:"80px"}}>
