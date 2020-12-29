@@ -8,7 +8,6 @@ const MainMenu=(props)=>{
     const {closeBtn,showMainMenu,hideMainMenu} = useContext(MenuContext);
 
 
-//mediaContext ro koja add ro app
     return(
         <>
             <div style={{width:"100%",overflowY:"hidden"}} className="MainMenuu">
@@ -30,7 +29,7 @@ const MainMenu=(props)=>{
 
 
 
-                        <dic className="container">
+                        <div>
                             <div className="row">
                                 <div className="col">
                                     <div className="mainMenuuu">
@@ -83,7 +82,7 @@ const MainMenu=(props)=>{
                                             </div>
                                         </div>
 
-                                        {/*زیرمنواول*/}
+                                        {/*تیتر اصلی*/}
                                         <div className="mainMenuItems">
                                             <input type="checkbox" id="item02"/>
                                             <label className="mainMenuItems-label" for="item02">
@@ -99,7 +98,7 @@ const MainMenu=(props)=>{
                                                 <input type="checkbox" id="item002"/>
                                                 <label className="mainMenuItems-label" for="item002">موبایل</label>
                                                 {/*زیرمنوی دوم*/}
-                                                <div className="mainMenuItems-content">
+                                                <div className="mainMenuItems-content2">
                                                     <input type="checkbox" id="item0002"/>
                                                     <label className="mainMenuItems-label" for="item0002">گوشی موبایل</label>
                                                 </div>
@@ -153,7 +152,7 @@ const MainMenu=(props)=>{
                                     </div>
                                 </div>
                             </div>
-                        </dic>
+                        </div>
 
 
 

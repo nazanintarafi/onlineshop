@@ -19,10 +19,12 @@ const ProfilePagesBody=(props)=>{
         <>
             <div className="Profile" style={{backgroundColor:"#bfbfcf"}}>
                 <div className="profileToolbar">
-                    <Toolbar minWidth="true"/>
+                    <Toolbar minWidth="true" profile={true}/>
                 </div>
-                <div style={{opacity:show?'1':'0'}}>
-                    <ProfileMenu  rightToggle={show}/>
+                <div style={{opacity:props.sellerPage?'0':'1',zIndex:props.sellerPage?'-10':null}}>
+                    <div style={{opacity:show?'1':'0'}}>
+                        <ProfileMenu  rightToggle={show}/>
+                    </div>
                 </div>
                 <div style={{opacity:props.sellerMenu?'1':'0'}}>
                     <SellerMenu  rightToggle={show}/>
@@ -35,12 +37,10 @@ const ProfilePagesBody=(props)=>{
                         <Logo />
                 </div>
                 
-
-
                 
                 <div className="bodyToggle" style={{
                         position:show?'fixed':'relative',right:show?'65%':null,
-                        top:show?'90px':'0px',height:show?'390px':'100%',width:show?'100%':'100%',
+                        top:show?'90px':'0px',height:show?'437px':'100%',width:show?'100%':'100%',
                         overflowX:show?'hidden':'hidden',overflowY:show?'hidden':'auto',
                         transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
                         <div style={{display:props.profilePage?'block':'none'}}>
@@ -52,7 +52,7 @@ const ProfilePagesBody=(props)=>{
                         <div style={{display:props.mediaPage?'block':'none'}}>
                             <MediaHeader rightToggle={show}/>
                         </div>
-                        <div className="Content" style={{marginTop:props.arthPage?'60px':null}}>
+                        <div className="Content" style={{marginTop:props.arthPage?'60px':null,paddingTop:props.sellerPage?"211px":null}}>
                             {props.children}
                         </div>
                         <div></div>

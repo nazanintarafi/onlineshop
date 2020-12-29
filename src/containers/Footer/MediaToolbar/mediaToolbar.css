@@ -14,11 +14,11 @@
     box-shadow: 0px 0px 6px 1px #0000001a;
     
 }
-.toolbarMediaStyle .toolbarItem{
+.toolbarMediaStyle .toolbarMediaItem{
     text-align: center;
     margin: auto;
 }
-.toolbarMediaStyle .toolbarItem:hover .imgBorder{
+.toolbarMediaStyle .toolbarMediaItem:hover .imgBorder{
     border-radius: 50%;
     box-shadow: 0px 6px 0px 1px #2125290d, 0px 0px 4px -1px #21252959 ;
     position: relative;
@@ -33,7 +33,7 @@
     border: 1px solid #2125291c;
     transition: box-shadow 0.3s;
 }
-.toolbarMediaStyle .toolbarItem:hover img{
+.toolbarMediaStyle .toolbarMediaItem:hover img{
     width: 22px;
     margin-bottom: 25px;
     align-items: center;
@@ -48,7 +48,7 @@
     top: -7px;
     transition: all 0.5s;
 }
-.toolbarMediaStyle .toolbarItem:hover::after{
+.toolbarMediaStyle .toolbarMediaItem:hover::after{
     content: "";
     background-color: white;
     position: absolute;
@@ -63,7 +63,7 @@
     box-shadow: -3px -4px 8px -4px #2125291f;
     transition: box-shadow 3s;
 }
-.toolbarMediaStyle .toolbarItem:hover::before{
+.toolbarMediaStyle .toolbarMediaItem:hover::before{
     content: "";
     background-color: white;
     position: absolute;

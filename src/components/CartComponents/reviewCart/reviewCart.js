@@ -20,10 +20,11 @@ const ReviewCart=(props)=>{
 
     return(
         <>
-            <div className="ReviewCart" style={{display:showReview?"block":"none"}}>
+            <div className="ReviewCart" style={{display:showReview?"block":"none",paddingTop:showLoader?"215px":"50px"}}>
 
                 {/*محتوا*/}
-                <div className="CartBoxReview" style={{display:showReview?"block":"none",filter:showLoader?"blur(12px)":null,zIndex:showLoader?"499":null}}>
+                <div className="CartBoxReview" style={{display:showReview?"block":"none",filter:showLoader?"blur(12px)":null,
+                    zIndex:showLoader?"499":null,height:showLoader?"100vh":null}}>
                     <div>
                         <CartBox
                             cartIMG={image01}

@@ -11,7 +11,7 @@ const BtnMedia=(props)=>{
     }
 
     const mediaContext = useContext(MediaContext);
-    const { mediaMenu1 , mediaMenu } = mediaContext ;  
+    const { mediaMenu2 , mediaMenu } = mediaContext ;  
 
     
     const ShowMediaMenu2=()=>{
@@ -30,12 +30,14 @@ const BtnMedia=(props)=>{
     
     return(
         <div className="BtnMedia">
-            <button onClick={props.clicked} className="rightMediaButton"  onClick={ShowMediaMenu2}>
-                <div onClick={Show} >
-                    <img src={right} alt="right"className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                    transition:rightToggle?"all 0.2s":"all 0.2s"}} />
+            <div onClick={ShowMediaMenu2}>
+                <div onClick={Show}>
+                    <button onClick={props.clicked} className="rightMediaButton">
+                        <img src={right} alt="right"className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                        transition:rightToggle?"all 0.2s":"all 0.2s"}} />
+                    </button>
                 </div>
-            </button>
+            </div>
         </div>
     )
 }

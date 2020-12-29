@@ -4,9 +4,10 @@
     height: 100%;
     overflow:hidden;
     position: relative;
+    right:10px;
     z-index: 4;
 }
-.bodyToggle{
+.mediaBodyToggle{
     background-color:white;
     position: relative;
     right: 10px;

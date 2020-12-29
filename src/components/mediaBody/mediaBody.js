@@ -1,11 +1,10 @@
-
 import React, {useContext} from 'react';
 import './mediaBody.css';
 import Toolbar from '../../containers/Footer/MediaToolbar/mediaToolbar';
 import MediaHeader from '../../containers/MediaHeader/mediaHeader';
 import BtnMedia from '../UI/button/btnRight/btnMedia/btnMedia';
 import {MediaContext} from '../../context/MediaContext/mediaContext';
-import Media2Menu from '../mediaMenu/mediaMenu2/mediaMenu2';
+import mediaMenu2 from '../../components/mediaMenu/mediaMenu2/mediaMenu2';
 
 const MediaBody=(props)=>{
     const {mediaMenu} = useContext(MediaContext);
@@ -15,18 +14,18 @@ const MediaBody=(props)=>{
                 <div className="profileToolbar">
                     <Toolbar minWidth="true"/>
                 </div>
-                <div style={{opacity:props.mediaMenu?'1':'0'}}>
-                    <Media2Menu rightToggle={mediaMenu}/>
+                <div style={{opacity:mediaMenu?'1':'0'}}>
+                    <mediaMenu2 rightToggle={mediaMenu}/>
                 </div>
                 
                 
-                <div className="bodyToggle" style={{
-                        position:mediaMenu?'fixed':'relative',right:mediaMenu?'65%':null,
-                        top:mediaMenu?'90px':'0px',height:mediaMenu?'390px':'100vh',width:mediaMenu?'100%':'100%',
+                <div className="mediaBodyToggle" style={{
+                        position:mediaMenu?'fixed':'relative',right:mediaMenu?'65%':"10px",
+                        top:mediaMenu?'90px':'0px',height:mediaMenu?'440px':'100vh',width:mediaMenu?'100%':'100%',
                         overflowX:mediaMenu?'hidden':'hidden',overflowY:mediaMenu?'hidden':'auto',
-                        transition:mediaMenu?'all 0.2s':'all 0.2s',zIndex:mediaMenu?'100':"null"}}>
+                        transition:mediaMenu?'all 0.2s':'all 0.2s',zIndex:mediaMenu?'100':"100"}}>
                         <div style={{opacity:props.mediaPage?'1':'0'}}>
-                            <MediaHeader rightToggle={mediaMenu}/>
+                            <MediaHeader rightToggle={mediaMenu} />
                         </div>
                         <div className="Content">
                             {props.children}

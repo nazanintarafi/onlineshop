@@ -55,7 +55,7 @@ const Home=(props) =>{
   return(
     <>
       <div className="Home">
-        <Toolbar />
+        <Toolbar home={true}/>
         <section className="menuToggle" style={{
                     position:show?'fixed':'relative',right:show?'65%':'0px',
                     top:show?'90px':'0px',height:show?'390px':'100vh',overflowX:show?'hidden':'auto',width:show?'100%':'100vw',

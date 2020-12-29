@@ -1,14 +1,15 @@
 .MediaMenu2{
     text-align: right;
     margin:auto;
-    width: 100%;
+    width: 100vw;
     list-style: none;
     height: 100vh;
     position: relative;
     right: 0;
-    top: -301px;
+    top: 0;
     line-height: 62px;
     padding-right: 20px;
+    padding-top:100px;
     background-color: #D1E5F0;
 }
 .MediaMenu2 li a{

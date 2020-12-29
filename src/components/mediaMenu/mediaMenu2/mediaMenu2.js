@@ -9,8 +9,7 @@ const MediaMenu2=(props)=>{
     const { mediaMenu2 , mediaMenu } = useContext(MediaContext);
 
     return(
-        <ul className="MediaMenu2"  style={{display:mediaMenu?'block':'none',zIndex:mediaMenu2?"99":"0"}}>
-            <main/>
+        <ul className="MediaMenu2"  style={{display:mediaMenu?'block':'none',zIndex:mediaMenu2?"0":"0"}}>
             <li>
                 <h4>
                     <span>مرتب سازی</span>

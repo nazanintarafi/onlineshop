@@ -17,10 +17,14 @@ const Warranty=(props)=>{
             <div className="Warranty" style={{display:warranty?"block":"none"}}>
                 <h3>گارانتی ضمانت سلامت تحویل کالا آنلاین شاپ</h3>
                 <hr />
-                <span onClick={HideWarranty}>گارانتی شرکتی 18 ماهه</span>
-                <hr />
-                <span onClick={HideWarranty}>گارانتی پارسیان</span>
-                <hr />
+                <div className="typeOfWarranty">
+                    <span onClick={HideWarranty}>گارانتی شرکتی 18 ماهه</span>
+                    <hr />
+                    <span onClick={HideWarranty}>گارانتی پارسیان</span>
+                    <hr />
+                    <span onClick={HideWarranty}>گارانتی پارسیان</span>
+                    <hr />
+                </div>
             </div>
         </>
     )

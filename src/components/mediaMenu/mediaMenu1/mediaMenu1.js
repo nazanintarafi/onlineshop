@@ -36,13 +36,13 @@ const MediaMenu=(props)=>{
 
 
 
-                    <dic className="container">
+                    <div className="container">
                         <div className="row">
                             <div className="col">
-                                <div className="mainMenuuu">
-                                    <div className="mainMenuItems">
+                                <div className="mediaMenuuu">
+                                    <div className="mediaMenuItems">
                                         <input type="checkbox" id="item01"/>
-                                        <label className="mainMenuItems-label" for="item01">
+                                        <label className="mediaMenuItems-label" for="item01">
                                             <span>کالای دیجیتال</span>
                                             <span className="svgMenu">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
@@ -50,11 +50,48 @@ const MediaMenu=(props)=>{
                                                 </svg>
                                             </span>
                                         </label>
-                                    </div>
+                                        {/*زیرمنواول*/}
+                                            <div className="mediaMenuItems-content ">
+                                                <div>
+                                                    <input type="checkbox" id="item001"/>
+                                                    <label className="mediaMenuItems-label" for="item001">
+                                                        <span>موبایل</span>
+                                                        <span className="svgMenu">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    {/*زیرمنوی دوم*/}
+                                                    <div className="mediaMenuItems-content">
+                                                        <input type="checkbox" id="item0001"/>
+                                                        <label className="mediaMenuItems-label" for="item0001"><Link to="/">گوشی موبایل</Link></label>
+                                                        <input type="checkbox" id="item0001"/>
+                                                        <label className="mediaMenuItems-label" for="item0001"><Link to="/">شارژر</Link></label>
+                                                        <input type="checkbox" id="item0001"/>
+                                                        <label className="mediaMenuItems-label" for="item0001"><Link to="/">قاب و محافظ</Link></label>
+                                                    </div>
+                                                </div>
 
-                                    <div className="mainMenuItems">
+                                                {/*زیرمنواول*/}
+                                                <div>
+                                                    <input type="checkbox" id="item0022"/>
+                                                    <label className="mediaMenuItems-label" for="item0022">
+                                                        <span>لپ تاپ</span>
+                                                        <span className="svgMenu">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    <div className="mediaMenuItems">
                                         <input type="checkbox" id="item02"/>
-                                        <label className="mainMenuItems-label" for="item02">
+                                        <label className="mediaMenuItems-label" for="item02">
                                             <span>بازی ها</span>
                                             <span className="svgMenu">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
@@ -65,9 +102,9 @@ const MediaMenu=(props)=>{
                                     </div>
 
 
-                                    <div className="mainMenuItems">
+                                    <div className="mediaMenuItems">
                                         <input type="checkbox" id="item03"/>
-                                        <label className="mainMenuItems-label" for="item03">
+                                        <label className="mediaMenuItems-label" for="item03">
                                             <span>فیلم</span>
                                             <span className="svgMenu">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
@@ -78,9 +115,9 @@ const MediaMenu=(props)=>{
                                     </div>
 
                                     {/*زیرمنواول*/}
-                                    <div className="mainMenuItems">
+                                    <div className="mediaMenuItems">
                                         <input type="checkbox" id="item04"/>
-                                        <label className="mainMenuItems-label" for="item04">
+                                        <label className="mediaMenuItems-label" for="item04">
                                             <span>آرایشی و بهداشتی</span>
                                             <span className="svgMenu">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
@@ -92,7 +129,7 @@ const MediaMenu=(props)=>{
                                 </div>
                             </div>
                         </div>
-                    </dic>
+                    </div>
 
 
 

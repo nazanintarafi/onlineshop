@@ -30,6 +30,8 @@ import MediaContextProvider from './context/MediaContext/mediaContext';
 import CartContextProvider from './context/CartContext/cartContext';
 import MainMenu from './components/mainMenu/mainMenu';
 import Media1Menu from './components/mediaMenu/mediaMenu1/mediaMenu1';
+import Media2Menu from './components/mediaMenu/mediaMenu2/mediaMenu2';
+
 
 const App=() =>{
   return(
@@ -63,6 +65,7 @@ const App=() =>{
       </MenuContextProvider>
       <MediaContextProvider>
         <Media1Menu />
+        <Media2Menu />
         <Route path="/media1" exact component={MediaHome1} />
         <Route path="/media2" exact component={MediaHome2} />
         <Route path="/media3" exact component={MediaHome3} />

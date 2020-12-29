@@ -53,15 +53,17 @@
     display: flex;
     justify-content: space-between;
     line-height: 34px;
+    margin-bottom: 0;
 }
 .QuestionBoxContent{
     max-height: 0;
     padding: 0;
-    
+    opacity: 0;
 }
 .boxContains input:checked ~ .QuestionBoxContent{
     max-height: 100%;
-    transition: all 0.9s;
+    opacity: 1;
+    transition: all 0.2s;
 }
 .QuestionIcon {
     margin-right: 18px;
@@ -87,7 +89,7 @@
     line-height: 20px;
     position: relative;
     width: 95%;
-    border-bottom: 1px solid #a5a5b245;
+    /*border-bottom: 1px solid #a5a5b245;*/
     margin: auto 5px;
     padding-bottom: 5px;
 }
@@ -103,4 +105,31 @@
 .boxContains input:checked + .QuestionBoxLabel.mainQ{
     font-size: 10px;
     transition: all 0.2s;
+}
+
+.QuestionBoxContent .QuestionBox-content2{
+    max-height: 0;
+    padding: 0 ;
+    opacity: 0;
+    transition: 0.1s;
+}
+.QuestionBoxContent input:checked ~ .QuestionBox-content2 {
+    max-height: 200px;
+    padding: 10px;
+    width: 90%;
+    font-size: 12px;
+    transition: 0.1s;
+    padding-top: 0;
+    opacity: 1;
+}
+.QuestionBoxContent{
+    border-bottom: 1px solid #a5a5b245;
+    margin: 0 8px;
+}
+.optionsP{
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: justify;
+    padding-top: 0;
 }

@@ -22,3 +22,7 @@
     background-color: #d1e5f02b;
     height: 1px;
 }
+.typeOfWarranty{
+    max-height: 70px;
+    overflow-y: auto;
+}

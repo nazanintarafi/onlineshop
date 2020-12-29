@@ -16,7 +16,7 @@ const Colors=(props)=>{
     return(
         <>
             <div className="Colors" style={{display:color?"block":"none"}}>
-                <div>
+                <div style={{maxWidth:"1000px",overflowX:"auto",display:"flex"}}>
                     <label >
                         <input type="radio" name="colors"/>
                         <span className="colorName" onClick={HideColor}>مشکی</span>

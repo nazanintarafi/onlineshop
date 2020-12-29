@@ -13,23 +13,25 @@ const AddressList=(props)=>{
     ]
     return(
         <>
-            <Body titre="آدرس های ثبت شده" className="Favorits" profilePage="true">
-                <div className="addressListContent">
-                    <AddressBox 
-                        address={address[0]}
-                    />
-                    <AddressBox 
-                        address={address[1]}
-                    />
-                    <AddressBox 
-                        address={address[2]}
-                    />
-                    
-                    <Link to="/add-address" className="addAddress">
-                        <Button btnType="signUp">افزودن آدرس جدید</Button>
-                    </Link>
-                </div>
-            </Body>
+            <div className="AddressList">
+                <Body titre="آدرس های ثبت شده" className="Favorits" profilePage="true">
+                    <div className="addressListContent">
+                        <AddressBox 
+                            address={address[0]}
+                        />
+                        <AddressBox 
+                            address={address[1]}
+                        />
+                        <AddressBox 
+                            address={address[2]}
+                        />
+                        
+                        <Link to="/add-address" className="addAddress">
+                            <Button btnType="signUp">افزودن آدرس جدید</Button>
+                        </Link>
+                    </div>
+                </Body>
+            </div>
         </>
     )
 }

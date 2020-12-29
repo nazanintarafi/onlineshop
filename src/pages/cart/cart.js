@@ -20,13 +20,13 @@ const Cart=(props)=>{
             
             <div className="Cart" style={{
                     position:show?'fixed':'relative',right:show?'65%':'0px',
-                    top:show?'90px':'0px',height:show?'390px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
+                    top:show?'90px':'0px',height:show?'457px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}
             >
                 <div style={{display:showLoader?"none":"block"}}>
-                    <Toolbar />
+                    <Toolbar cart={true}/>
                 </div>
-                <div className="firstPage" >
+                <div className="firstPage" style={{display:showLoader?"none":"block"}} >
                     <div className="firstPageContent">
                         <YourCart />
                     </div>
@@ -36,7 +36,7 @@ const Cart=(props)=>{
                         <SelectAddress />
                     </div>
                 </div>
-                <div className="thirdPageContent" >
+                <div className="thirdPageContent" style={{top:showLoader?"0":"12%"}} >
                     <div className="thirdPage">
                         <ReviewCart />
                     </div>

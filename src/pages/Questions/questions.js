@@ -59,8 +59,17 @@ const Questions=(props)=>{
                                         <label className="QuestionBoxLabel" for="s1">
                                             <p className="optionsQ">چگونه در آنلاین شاپ خرید کنم؟</p>
                                         </label>
-                                        {/*محتوا*/ }
-                                        
+                                        {/*محتوای دوم*/ }
+                                        <div className="QuestionBox-content2">
+                                            <p className="optionsP">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از 
+                                                صنعت چاپ، و با استفاده از طراحان گرافیک است، 
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و 
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی 
+                                                مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای 
+                                                کاربردی می باشد، کتابهای زیادی در شصت و سه درصد  
+                                            </p>
+                                        </div>
                                     </div>
 
                                     <div className="QuestionBoxContent">
@@ -68,6 +77,17 @@ const Questions=(props)=>{
                                         <label className="QuestionBoxLabel" for="s2">
                                             <p className="optionsQ">چگونه می توانم مشخصات کاربری و ایمیل خود را آپدیت کنم؟</p>
                                         </label>
+                                        {/*محتوای دوم*/ }
+                                        <div className="QuestionBox-content2">
+                                            <p className="optionsP">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از 
+                                                صنعت چاپ، و با استفاده از طراحان گرافیک است، 
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و 
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی 
+                                                مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای 
+                                                کاربردی می باشد، کتابهای زیادی در شصت و سه درصد  
+                                            </p>
+                                        </div>
                                     </div>
 
                                     <div className="QuestionBoxContent">
@@ -75,6 +95,17 @@ const Questions=(props)=>{
                                         <label className="QuestionBoxLabel" for="s3">
                                             <p className="optionsQ">چگونه در آنلاین شاپ خرید کنم؟</p>
                                         </label>
+                                        {/*محتوای دوم*/ }
+                                        <div className="QuestionBox-content2">
+                                            <p className="optionsP">
+                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از 
+                                                صنعت چاپ، و با استفاده از طراحان گرافیک است، 
+                                                چاپگرها و متون بلکه روزنامه و مجله در ستون و 
+                                                سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی 
+                                                مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای 
+                                                کاربردی می باشد، کتابهای زیادی در شصت و سه درصد  
+                                            </p>
+                                        </div>
                                     </div>
 
                                     <div className="QuestionBoxContent">
@@ -205,8 +236,6 @@ const Questions=(props)=>{
                                         {/*محتوا*/ }
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>

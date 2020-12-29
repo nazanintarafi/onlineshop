@@ -38,13 +38,15 @@ const BtnSeller=(props)=>{
     }
     return(
         <>
-            <div className="rightBackgroundButton sellerBackBtn"  onClick={ShowSellerMenu}>
-                <button onClick={props.clicked}  className={classes.join(' ')}>
-                    <div onClick={Show} >
-                        <img src={right} alt="right"className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                        transition:rightToggle?"all 0.2s":"all 0.2s"}} />
+            <div className="rightBackgroundButton sellerBackBtn">
+                <div onClick={ShowSellerMenu}>
+                    <div onClick={Show}>
+                        <button onClick={props.clicked} className={classes.join(' ')}>
+                            <img src={right} alt="right"className={imgClasses.join(' ')} onClick={Right} style={{transform:rightToggle?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                                transition:rightToggle?"all 0.2s":"all 0.2s"}} />
+                        </button>
                     </div>
-                </button>
+                </div>
             </div>
         </>
     )

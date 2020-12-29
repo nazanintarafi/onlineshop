@@ -1,9 +1,13 @@
 .MediaMenu{
+    height: 100vh;
     background-color: #D1E5F0;
-    width: 100%;
+}
+.mediaMenuu{
+    background-color: #D1E5F0;
+    width: 100vw;
     height: 100vh;
 }
-.MediaMenu {
+.mediaMenuu{
     direction: rtl;
     text-align: right;
     margin: auto;
@@ -15,97 +19,98 @@
     color: #080957;
     overflow: hidden;
 }
-.MediaMenu .Logo{
+.Logo{
     padding: 40px 16px;
 }
-.MediaMenu .menuWidth{
+.menuWidth{
     width: 55%;
     height: 100%;
     text-align: right;
 }
-.MediaMenu .menuTitre{
+.menuTitre{
     align-items: center;
 }
-.MediaMenu .aboutUs{
+.aboutUs{
     list-style: none;
     padding-right: 15px;
     font-size: 13px;
     line-height: 35px;
 }
-.MediaMenu .aboutUs li a{
+.aboutUs li a{
     color: #080957;
     text-decoration: none;
 }
-.MediaMenu .List svg{
+.List svg{
     font-weight: bold;
     font-size: 20px;
 }
-.MediaMenu .profile span{
+.profile span{
     font-size: 14px;
     padding-right: 5%;
 }
-.MediaMenu .profile svg{
+.profile svg{
     font-size: 18px;
     margin-bottom: 5px;
 }
 
 
 
-.MediaMenu .mainMenuuu{
+.mediaMenuuu{
     padding-right: 12px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 25px;
+    padding-top: 15px;
 }
-.MediaMenu .mainMenuuu input{
+.mediaMenuuu input{
     position: absolute;
     opacity: 0;
     z-index: -1;
 }
-.MediaMenu .mainMenuuu .mainMenuItems{
+.mediaMenuuu .mediaMenuItems{
     overflow:hidden;
 }
-.MediaMenu .mainMenuuu .mainMenuItems{
+.mediaMenuuu .mediaMenuItems{
     width: 100%;
     overflow: hidden;
 }
-.MediaMenu .mainMenuuu .mainMenuItems-label{
+.mediaMenuuu .mediaMenuItems-label{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
-.MediaMenu .mainMenuuu .mainMenuItems-content{
+.mediaMenuuu .mediaMenuItems-content{
     max-height: 0;
     padding: 0 ;
+    opacity: 0;
     transition: 0.2s;
 }
-.MediaMenu .mainMenuuu input:checked + .mainMenuItems-label .svgMenu{
+.mediaMenuuu input:checked + .mediaMenuItems-label .svgMenu{
     transform: rotate(-90deg);
     color: #FF6D02;
 }
-.MediaMenu .mainMenuuu input:checked ~ .mainMenuItems-content {
+.mediaMenuuu input:checked ~ .mediaMenuItems-content {
     max-height: 200px;
     padding: 10px;
     width: 90%;
     font-size: 12px;
     transition: 0.2s;
+    opacity: 1;
 }
-.MediaMenu .mainMenuuu input:checked ~ .mainMenuItems-label{
+.mediaMenuuu input:checked ~ .mediaMenuItems-label{
     color: orange;
     transition: 0.2s;
 }
-.MediaMenu .svgMenu{
+.svgMenu{
     text-align: left;
     margin: auto;
     margin-left: 0;
 }
-.MediaMenu .mainMenuuu a{
+.mediaMenuuu a{
     font-size: 10px;
     color: #080987;
 }
-.MediaMenu .mainMenuuu a:hover{
+.mediaMenuuu a:hover{
     text-decoration: none;
 }
-
-
 
 

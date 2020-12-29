@@ -24,11 +24,15 @@ const BtnRight=(props)=>{
     }
 
     return(
-        <div className="rightBackgroundButton"  onClick={ShowProfileMenu}>
-            <button onClick={props.clicked} className="rightButton">
-                <img src={right} alt="right" onClick={Show} className={classes.join(' ')} style={{transform:show?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
-                transition:show?"all 0.1s":"all 0.1s"}} />
-            </button>
+        <div className="rightBackgroundButton">
+            <div onClick={ShowProfileMenu}>
+                <div onClick={Show}>
+                    <button className="rightButton" onClick={props.clicked}>
+                        <img src={right} alt="right" className={classes.join(' ')} style={{transform:show?([{rotate:"180deg"}]):([{rotate:"-90deg"}]),
+                        transition:show?"all 0.1s":"all 0.1s"}} />
+                    </button>
+                </div>
+            </div>
         </div>
     )
 }

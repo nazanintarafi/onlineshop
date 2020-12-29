@@ -14,11 +14,11 @@
       box-shadow: 0px 0px 6px 1px #0000001a;
       
 }
-.toolbarItem{
+.firstStyle{
       text-align: center;
       margin: auto;
 }
-.toolbarItem:hover .imgBorder{
+.toolbarItem .imgBorder{
       border-radius: 50%;
       box-shadow: 0px 6px 0px 1px #2125290d, 0px 0px 4px -1px #21252959 ;
       position: relative;
@@ -33,7 +33,7 @@
       border: 1px solid #2125291c;
       transition: box-shadow 0.3s;
 }
-.toolbarItem:hover img{
+.toolbarItem img{
       width: 22px;
       margin-bottom: 25px;
       align-items: center;
@@ -48,7 +48,7 @@
       top: -7px;
       transition: all 0.5s;
 }
-.toolbarItem:hover::after{
+.toolbarItem::after{
       content: "";
       background-color: white;
       position: absolute;
@@ -63,7 +63,7 @@
       box-shadow: -3px -4px 8px -4px #2125291f;
       transition: box-shadow 3s;
 }
-.toolbarItem:hover::before{
+.toolbarItem::before{
       content: "";
       background-color: white;
       position: absolute;

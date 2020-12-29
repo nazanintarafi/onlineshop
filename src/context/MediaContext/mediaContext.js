@@ -16,7 +16,7 @@ const MediaContextProvider=(props)=>{
 
     const ShowMediaMenu2=()=>{
         setMediaMenu2(!mediaMenu2);
-        setMediaMenu(false)
+        setMediaMenu1(false);
     }
 
 

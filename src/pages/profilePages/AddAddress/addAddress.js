@@ -7,7 +7,7 @@ import Body from '../../../components/ProfilePagesBody/profilePagesBody';
 const AddAddress=()=>{
     return(
         <>
-            <div className="orders">
+            <div className="AddAddress">
                 <Body titre="آدرس ها" profilePage="true">
                     <form>
                         <Input type="text" placeholder="تحویل گیرنده" />
