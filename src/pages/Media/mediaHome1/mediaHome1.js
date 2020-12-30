@@ -24,7 +24,16 @@ const MediaHome1=(props)=>{
         infinite: true,
         loop:true,
         speed: 500,
-        slidesToShow: 1 ,
+        slidesToShow: 1.07 ,
+        slidesToScroll: 1
+    };
+    var setting = {
+        display:true,
+        dots: false ,
+        infinite: true,
+        loop:true,
+        speed: 500,
+        slidesToShow: 1.02 ,
         slidesToScroll: 1
     };
     const {mediaMenu1} = useContext(MediaContext);
@@ -46,17 +55,22 @@ const MediaHome1=(props)=>{
                             <img src={banner} alt="online shop"/>
                         </div>
                         <div>
-                        <img src={banner} alt="online shop"/>
+                            <img src={banner} alt="online shop"/>
                         </div>
                         <div>
-                        <img src={banner} alt="online shop"/>
+                            <img src={banner} alt="online shop"/>
+                        </div>
+                        <div>
+                            <img src={banner} alt="online shop"/>
+                        </div>
+                        <div>
+                            <img src={banner} alt="online shop"/>
                         </div>
                     </SlidShow>
                 </div>
                 <div className="container fixedBanner">
                     <img src={fixedBanner} alt="product"/>
                 </div>
-
                 <div className="newVideos">
                     <div className="container">
                         <div className="newVideosTitre">
@@ -67,8 +81,8 @@ const MediaHome1=(props)=>{
                                 </svg>
                             </Button>
                         </div>
-                        <div>
-                            <SlidShow {...settings}>
+                        <div className="topViews">
+                            <SlidShow {...setting}>
                                 <div>
                                     <VideoBox detail={true} videoImg={img1}/>
                                 </div>
@@ -98,8 +112,8 @@ const MediaHome1=(props)=>{
                                 </svg>
                             </Button>
                         </div>
-                        <div>
-                            <SlidShow {...settings}>
+                        <div className="topViews">
+                            <SlidShow {...setting}>
                                 <div>
                                     <VideoBox detail={true} videoImg={img1}/>
                                 </div>

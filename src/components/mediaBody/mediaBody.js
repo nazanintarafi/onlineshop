@@ -20,10 +20,10 @@ const MediaBody=(props)=>{
                 
                 
                 <div className="mediaBodyToggle" style={{
-                        position:mediaMenu?'fixed':'relative',right:mediaMenu?'65%':"10px",
-                        top:mediaMenu?'90px':'0px',height:mediaMenu?'440px':'100vh',width:mediaMenu?'100%':'100%',
+                        position:mediaMenu?'fixed':'relative',right:mediaMenu?'65%':null,width:mediaMenu?'100%':"97%",
+                        top:mediaMenu?'90px':'0px',height:mediaMenu?'440px':'100vh',
                         overflowX:mediaMenu?'hidden':'hidden',overflowY:mediaMenu?'hidden':'auto',
-                        transition:mediaMenu?'all 0.2s':'all 0.2s',zIndex:mediaMenu?'100':"100"}}>
+                        transition:mediaMenu?'all 0.2s':'all 0.2s',zIndex:mediaMenu?'100':"null"}}>
                         <div style={{opacity:props.mediaPage?'1':'0'}}>
                             <MediaHeader rightToggle={mediaMenu} />
                         </div>

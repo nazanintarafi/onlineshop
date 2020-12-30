@@ -1,10 +1,9 @@
 .MediaHome1{
     height: 100vh;
     background-color: white;
-    text-align: center;
 }
 .mediaBanner img{
-    width: 100%;
+    width: 110%;
 }
 .mediaBanner .ProductSlider .slick-prev:before, .slick-next:before {
     display: none;
@@ -67,4 +66,11 @@
 }
 .videoItemsTitre hr{
     margin: 11px auto;
+}
+.topViews .MediaVideo{
+    padding: 0px;
+    margin: 24px 5px;
+}
+.topViews .videoContent p {
+    padding-top: 0px;
 }

@@ -10,7 +10,7 @@ const Arthboard=()=>{
     return(
         <>
             <div className="Arthboard">
-                <Toolbar />
+                <Toolbar minWidth={true}/>
                 <Body arthBtn="true" arthPage="true" sellerMenu="true">
                     <div className="search">
                         <SearchBar />

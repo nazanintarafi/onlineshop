@@ -16,50 +16,47 @@ const Slider=(props)=>{
             slidesToScroll: 1
     };
     return(
-        <div className="ProductSlider">
-            <SlidShow {...settings}>
-                <div className="SliderContent">
-                    <ProductBox 
-                        description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '
-                        oldPrice='6,500,000'
-                        newPrice='4,200,000 تومان'
-                        isDiscount='4,200,000 تومان'
-                        discount="30%"
-                        isDiscount={props.isDiscount}
-                    />
-                </div>
-                <div className="SliderContent">
-                    <ProductBox 
-                        description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '
-                        oldPrice='6,500,000'
-                        newPrice='4,200,000 تومان'
-                        isDiscount='4,200,000 تومان'
-                        discount="30%"
-                        isDiscount={props.isDiscount}
-                    />
-                </div>
-                <div className="SliderContent">
-                    <ProductBox 
-                        description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '
-                        oldPrice='6,500,000'
-                        newPrice='4,200,000 تومان'
-                        isDiscount='4,200,000 تومان'
-                        discount="30%"
-                        isDiscount={props.isDiscount}
-                    />
-                </div>
-                <div className="SliderContent">
-                    <ProductBox 
-                        description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '
-                        oldPrice='6,500,000'
-                        newPrice='4,200,000 تومان'
-                        isDiscount='4,200,000 تومان'
-                        discount="30%"
-                        isDiscount={props.isDiscount}
-                    />
-                </div>
-            </SlidShow>
-        </div>
+        <>
+            <div className="ProductSlider">
+                <SlidShow {...settings}>
+                    <div className="SliderContent">
+                        <ProductBox 
+                            description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '
+                            oldPrice='6,500,000'
+                            newPrice='4,200,000 تومان'
+                            isDiscount="false"
+                        />
+                    </div>
+                    <div className="SliderContent">
+                        <ProductBox 
+                            description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '
+                            oldPrice='6,500,000'
+                            newPrice='4,200,000 تومان'
+                            discount="30%"
+                            isDiscount={props.isDiscount}
+                        />
+                    </div>
+                    <div className="SliderContent">
+                        <ProductBox 
+                            description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '
+                            oldPrice='6,500,000'
+                            newPrice='4,200,000 تومان'
+                            discount="10%"
+                            isDiscount={props.isDiscount}
+                        />
+                    </div>
+                    <div className="SliderContent">
+                        <ProductBox 
+                            description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '
+                            oldPrice='6,500,000'
+                            newPrice='4,200,000 تومان'
+                            discount="5%"
+                            isDiscount={props.isDiscount}
+                        />
+                    </div>
+                </SlidShow>
+            </div>
+        </>
     )
 }
 export default Slider;

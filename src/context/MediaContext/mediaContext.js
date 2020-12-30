@@ -9,6 +9,11 @@ const MediaContextProvider=(props)=>{
     const[mediaMenu2,setMediaMenu2]=useState(false);
     
 
+    const HideMediaMenu=()=>{
+        setMediaMenu1(false);
+        setMediaMenu(false)
+    }
+
 
     const ShowMediaMenu1=()=>{
         setMediaMenu1(!mediaMenu1);
@@ -26,7 +31,7 @@ const MediaContextProvider=(props)=>{
 
 
     return(
-        <MediaContext.Provider value={{ mediaMenu1 , mediaMenu2 , mediaMenu , ShowMediaMenu1 , ShowMediaMenu2 , MediaMenu}}>
+        <MediaContext.Provider value={{ mediaMenu1 , mediaMenu2 , mediaMenu , ShowMediaMenu1 , ShowMediaMenu2 , MediaMenu , HideMediaMenu }}>
             {props.children}
         </MediaContext.Provider>
     )
