@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Product from './pages/Product/product';
 import Cart from './pages/cart/cart';
@@ -32,8 +32,22 @@ import MainMenu from './components/mainMenu/mainMenu';
 import Media1Menu from './components/mediaMenu/mediaMenu1/mediaMenu1';
 import Media2Menu from './components/mediaMenu/mediaMenu2/mediaMenu2';
 
-
+import {get,post} from './library/request';// in
 const App=() =>{
+  useEffect(()=>{
+    //tanha kari k lazeme bokoni bara rest ine k in file balayiyo import koni ,bad age method get bood get ro biyar , age post bod post ro biyar 
+    // too tamame safahat ? ya unjaha k form mikhad , onjahayi k lazeme az back data begiri , tagriban hameye safahatet , inayi k to zadi hamashon statican bayad dynamic beshe
+    //bad mese payine endpint akhariyaro mizani inja "users" bood bad to then data ro bet pas mide , age error ham dad to catch
+    // soal moali ? :D na daram hazm mikonam felan =D bebin , to daRKHAST DADI YE DATAYIRO AZ YE ADREESE DG DAR GHALEBE OBJECT GEREFTI
+    //OKEYE ? :d BORO BEKHON AGHAA beram bekhunm ok vali vidEO E GOFTI ZIADE RE , HAALA TO BVEBIN HAMASHO BASHEEE MOCHAKERAAAAAMMMM:d FADA MADA
+    get('users') //in
+    .then(data=>{
+      console.log(data)
+    })
+    .catch(e=>{
+      console.log(e)
+    })
+  },[])
   return(
     <BrowserRouter>
       <MenuContextProvider>
@@ -63,13 +77,15 @@ const App=() =>{
         <Route path="/login" exact component={LogIn} />
         <Route path="/seller" exact component={Seller} />
       </MenuContextProvider>
-      <MediaContextProvider>
-        <Media1Menu />
-        <Media2Menu />
-        <Route path="/media1" exact component={MediaHome1} />
-        <Route path="/media2" exact component={MediaHome2} />
-        <Route path="/media3" exact component={MediaHome3} />
-      </MediaContextProvider>
+      <div style={{backgroundColor:"#d1e5f0"}}>
+        <MediaContextProvider>
+          <Media1Menu />
+          <Media2Menu />
+          <Route path="/media1" exact component={MediaHome1} />
+          <Route path="/media2" exact component={MediaHome2} />
+          <Route path="/media3" exact component={MediaHome3} />
+        </MediaContextProvider>
+      </div>
     </BrowserRouter>
     
   )

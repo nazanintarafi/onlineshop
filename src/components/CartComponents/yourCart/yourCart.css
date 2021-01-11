@@ -1,6 +1,6 @@
 .YourCart{
     background-color: #F36B07;
-    height: 100vh;
+    height: 7vh;
     width: 100vw;
     text-align: center;
     margin: auto;
@@ -19,7 +19,7 @@
 .BtnClose{
     background-color:#F36B07 ;
     width: 100vw;
-    height: 58px;
+    height: 26px;
 }
 .yourCartTitre h2{
     font-size: 12px;
@@ -111,7 +111,7 @@
 
 .closeCart{
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     width: 100%;
     top:1px;
 }

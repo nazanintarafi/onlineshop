@@ -26,7 +26,7 @@ const MediaContextProvider=(props)=>{
 
 
     const MediaMenu=()=>{
-        setMediaMenu(!mediaMenu)
+        setMediaMenu(!mediaMenu);
     }
 
 

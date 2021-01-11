@@ -51,14 +51,14 @@
 }
 .Specifications input:checked ~ .tabContent{
     max-height: 200px;
-    transition: all 0.7s;
+    transition: all 0.2s;
 }
 .Specifications input:checked .tabLabel::after {
     transform: rotate(90deg);
 }
 .Specifications input:checked ~ .tabLabel div{
     animation-name: img;
-    animation-duration: 0.5s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 @keyFrames img{

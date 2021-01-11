@@ -18,8 +18,8 @@ const MediaMenu=(props)=>{
 
     return(
         <>
-        <div style={{width:"100%",overflowY:"hidden",display:mediaMenu1?"block":"none"}} className="mediaMenuu">
-            <div>
+        <div style={{width:"100%",overflowY:"hidden",display:mediaMenu1?"block":"none",paddingTop:"28px"}} className="mediaMenuu">
+            <div className="overFlowStyle1">
                 <div className="menuWidth"  style={{display:mediaMenu?'block':'none',zIndex:mediaMenu1?'1000':'null',height:mediaMenu1?'100vh':'null'}}>
                     <div className="Logo">
                         <Logo />
@@ -134,6 +134,8 @@ const MediaMenu=(props)=>{
                                             </div>
                                         </div>
                                     </div>
+
+
 
                                     {/*زیرمنواول*/}
                                     <div className="mediaMenuItems">

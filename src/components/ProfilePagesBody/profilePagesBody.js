@@ -10,7 +10,6 @@ import BtnRight from '../UI/button/btnRight/btnRight';
 import BtnSeller from '../UI/button/btnRight/btnSeller/btnSeller';
 import Logo from '../logo/logo';
 import {MenuContext} from '../../context/MenuContext/MenuContext';
-import Media2Menu from '../mediaMenu/mediaMenu2/mediaMenu2';
 
 const ProfilePagesBody=(props)=>{
 
@@ -27,10 +26,9 @@ const ProfilePagesBody=(props)=>{
                     </div>
                 </div>
                 <div style={{opacity:props.sellerMenu?'1':'0'}}>
-                    <SellerMenu  rightToggle={show}/>
-                </div>
-                <div style={{opacity:props.media2Menu?'1':'0'}}>
-                    <SellerMenu  rightToggle={show}/>
+                    <div style={{opacity:show?'1':'0'}}>
+                        <SellerMenu  rightToggle={show}/>
+                    </div>
                 </div>
                 <div  className="homeHeader arthHeader" style={{opacity:props.arthPage?'1':'0',top:show?'90px':'0px',
                     left:show?'-62%':null,transition:show?'all 0.2s':'all 0.2s'}}>
@@ -41,7 +39,7 @@ const ProfilePagesBody=(props)=>{
                 <div className="bodyToggle" style={{
                         position:show?'fixed':'relative',right:show?'65%':null,
                         top:show?'90px':'0px',height:show?'437px':'100%',width:show?'100%':'100%',
-                        overflowX:show?'hidden':'hidden',overflowY:show?'hidden':'auto',
+                        overflowX:show?'hidden':'hidden',
                         transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
                         <div style={{display:props.profilePage?'block':'none'}}>
                             <Header rightToggle={show} titre={props.titre} profile={props.profile}/>

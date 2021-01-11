@@ -31,7 +31,7 @@ const MediaVideo=(props)=>{
                                         <img src={Likee} alt="like"/>
                                     </div>
                                     <div className="activeLike" style={{display:like?"block":"none"}}>
-                                        <img src={activeLike} alt="like" style={{width:"90%"}}/>
+                                        <img src={activeLike} alt="like"/>
                                     </div>
                                 </span>
                             </div>

@@ -1,6 +1,11 @@
 .SelectAddress {
     background-color: white;
     position: relative;
+    height: 100vh;
+    text-align: center;
+    margin: auto;
+    height: 100vh;
+    padding-bottom: 200px;
 }
 .SelectAddress .AddressBox label{
     z-index: 100;
@@ -27,13 +32,6 @@
     margin: auto;
     padding-right: 25%;
 }
-.SelectAddress{
-    text-align: center;
-    margin: auto;
-    height: 100vh;
-    margin-bottom: 200px;
-}
-
 .reviewGoBack{
     text-align: right;
 }
@@ -58,8 +56,11 @@
     left: 13px;
 }
 .newReviewButtonPos{
-    top:-64px;
+    top:-60px;
 }
+
+
+
 .newReviewButtonPos .reviewButton{
     top:0px;
 } 
@@ -70,7 +71,7 @@
 }
 @media only screen and (min-width: 375px ) {
     .newReviewButtonPos{
-        top:-84px;
+        top:-61px;
     }
     .reviewGoBack h3 {
         padding-top: 10px;
@@ -80,8 +81,8 @@
         top:-17px;
     } 
     .newReviewButtonPos .reviewButton button::before{
-        top:27px;
-        left: -8px;
+        top:29px;
+        left: -7px;
     } 
     .newReviewButtonPos .reviewButton button::after{
         top:29px;
@@ -90,7 +91,7 @@
 
 @media only screen and (min-width: 414px) {
     .newReviewButtonPos{
-        top:-71px;
+        top:-64px;
     }
     .newReviewButtonPos .reviewButton{
         top:-21px;

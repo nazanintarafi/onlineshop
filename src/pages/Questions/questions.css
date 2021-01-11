@@ -91,7 +91,8 @@
     width: 95%;
     /*border-bottom: 1px solid #a5a5b245;*/
     margin: auto 5px;
-    padding-bottom: 5px;
+    padding-bottom: 9px;
+    padding-top: 9px;
 }
 .optionsQ.last{
     border: none;
@@ -132,4 +133,5 @@
     line-height: 20px;
     text-align: justify;
     padding-top: 0;
+    color: #080819;
 }

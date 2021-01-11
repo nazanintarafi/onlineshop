@@ -22,6 +22,7 @@
     width: 55%;
     height: 100%;
     text-align: right;
+    padding-top: 52px;
 }
 .menuTitre{
     align-items: center;
@@ -110,3 +111,21 @@
 }
 
 
+.mainOverFlow{
+    max-height: 550px;
+    overflow: auto;
+}
+
+@media screen and (min-width: 360px) {
+    .mainOverFlow{
+        max-height: 629px;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .mainOverFlow{
+        max-height: 725px;
+        overflow: auto;
+    }
+}

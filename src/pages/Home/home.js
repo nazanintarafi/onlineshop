@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import './home.css';
 import Toolbar from '../../containers/Footer/Toolbar/Toolbar';
-import SlidShow from 'react-slick';
+import SlideShow from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -43,7 +43,7 @@ const Home=(props) =>{
     {glassesImg1:glasses1,glassesImg2:glasses2,glassesImg3:glasses3,glassesImg4:glasses4,glassesImg5:glasses5,
     glassesImg6:glasses6,glassesImg7:glasses7,glassesImg8:glasses8,glassesImg9:glasses2}
   ]
-  var setting = {
+  var sliderSetting = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -57,7 +57,7 @@ const Home=(props) =>{
       <div className="Home">
         <Toolbar home={true}/>
         <section className="menuToggle" style={{
-                    position:show?'fixed':'relative',right:show?'65%':'0px',
+                    position:show?'fixed':'fixed',right:show?'65%':'0px',
                     top:show?'90px':'0px',height:show?'390px':'100vh',overflowX:show?'hidden':'auto',width:show?'100%':'100vw',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}>
           
@@ -79,7 +79,7 @@ const Home=(props) =>{
             </div>
           </header>
           <div className="question">
-            <Link to="/home"><img src={img1} alt="online shop" /></Link>
+            <Link to="/questions"><img src={img1} alt="online shop" /></Link>
           </div>
           <ul className="boxes">
             <li><Link to="/home"><img src={img2} alt="online shop" /></Link></li>
@@ -130,7 +130,7 @@ const Home=(props) =>{
           </div>
           {/*اسلایدر زرد*/}
           <div className="monoSlide">
-            <SlidShow {...setting}>
+            <SlideShow {...sliderSetting}>
               <div>
                 <img src={img8} alt="online shop" />
               </div>
@@ -140,7 +140,7 @@ const Home=(props) =>{
               <div>
                 <img src={img8} alt="online shop" />
               </div>
-            </SlidShow>
+            </SlideShow>
           </div>
           {/*محصولات شگفت انگیز*/}
           <div className="amazingProductBlue productSlider">

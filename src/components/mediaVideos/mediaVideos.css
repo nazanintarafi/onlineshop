@@ -21,7 +21,7 @@
 .videoContent p{
     font-weight: bold;
     color: #707070;
-    font-size: 12px;
+    font-size: 11px;
     text-align: justify;
     height: 100%;
     padding: 0;
@@ -29,7 +29,7 @@
     margin-bottom: 0;
 }
 .withDetail span{
-    font-size: 10px;
+    font-size: 7px;
     padding: 0 2px;
 }
 .MediaVideo hr{
@@ -49,4 +49,11 @@
 .withOutDetail p{
     font-weight: normal;
     font-size: 11px;
+}
+
+.MediaVideo .like img{
+    width: 62%;
+}
+.withDetail .activeLike img{
+    width: 54%;
 }

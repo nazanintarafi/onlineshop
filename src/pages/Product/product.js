@@ -55,7 +55,8 @@ const Product=(props)=>{
             <div  className={topClasses.join(' ')}>
                 <Toolbar />
                 <div className="First">
-                    <div style={{display:topProduct?"none":"block",width:topProduct?"0":"100%",height:topProduct?"0":"100%",transition:topProduct?'all 0.1s':'all 0.1s'}}>
+                    <div style={{display:topProduct?"none":"block",width:topProduct?"0":"100%"
+                        ,height:topProduct?"0":"100%",transition:topProduct?'all 0.1s':'all 0.1s'}}>
                         <ProductContent />
                     </div>
                     <div className="specifications" style={{display:topProduct?"block":"none",width:topProduct?"100%":"0",height:topProduct?"100%":"0",

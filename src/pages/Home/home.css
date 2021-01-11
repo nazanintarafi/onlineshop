@@ -27,6 +27,7 @@
 }
 .boxes li{
     list-style: none;
+    width: 100%;
 }
 .boxes li img{
     width: 100%;
@@ -60,16 +61,11 @@
     color: #080819!important;
     opacity: 0.3!important;
 }
-.monoSlide button.slick-next{
-    position: absolute;
-    right: 12px;
-}
 .monoSlide button.slick-prev{
     position: absolute;
     left: 10px;
     z-index: 2;
 }
-
 .productSlider{
     text-align: center;
     align-items: center;

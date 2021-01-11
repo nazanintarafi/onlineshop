@@ -24,13 +24,11 @@ const MediaHome3=(props)=>{
 
     return(
         <>
+            <Toolbar />
             <div className="MediaHome3" style={{
                     position:mediaMenu1?'fixed':'relative',right:mediaMenu1?'65%':'0px',
-                    top:mediaMenu1?'90px':'0px',height:mediaMenu1?'390px':'100vh',overflowX:mediaMenu1?'hidden':'auto',width:mediaMenu1?'100%':'100vw',
+                    top:mediaMenu1?'145px':'0px',height:mediaMenu1?'390px':'100vh',overflowX:mediaMenu1?'hidden':'auto',width:mediaMenu1?'100%':'100vw',
                     transition:mediaMenu1?'all 0.2s':'all 0.2s',zIndex:mediaMenu1?'100':"null"}}>
-                <Toolbar />
-
-
                 <div className="Video">
                     <Link to="/">
                         <img src={ButtonClose} alt="go to home" />

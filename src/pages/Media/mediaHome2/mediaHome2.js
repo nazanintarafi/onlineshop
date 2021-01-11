@@ -10,8 +10,8 @@ import Footer from "../../../containers/Footer/HomeFooter/homeFooter";
 const MediaHome2=()=>{
     return(
         <>
+            <Toolbar minWidth="true"/>
             <div className="MediaHome2">
-                <Toolbar minWidth="true"/>
                 <Body arthBtn="true" arthPage={false} mediaMenu={true} mediaPage={true} Media2Menu={true} sellerBtn={true}>
                     <div className="groupingMedia container">
                         <div>

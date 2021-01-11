@@ -333,7 +333,6 @@
         padding: 0;
     }
 }
-
 .varietyImgAnimation .ProductImG{
     animation-name: varietyImgAnimation;
     animation-duration: 0.5s;  
@@ -350,3 +349,7 @@
         width: 45%;
     }
 }
+
+
+
+

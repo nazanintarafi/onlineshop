@@ -13,20 +13,20 @@ import {CartContext} from '../../context/CartContext/cartContext';
 const Cart=(props)=>{
 
     const {show } = useContext(MenuContext);
-    const {showLoader } = useContext(CartContext);
+    const {showLoader , showReview } = useContext(CartContext);
 
     return(
         <>
             
             <div className="Cart" style={{
-                    position:show?'fixed':'relative',right:show?'65%':'0px',
+                    position:show?'fixed':'fixed',right:show?'65%':'0px',
                     top:show?'90px':'0px',height:show?'457px':'100%',overflowX:show?'hidden':'auto',width:show?'100%':'100%',
                     transition:show?'all 0.2s':'all 0.2s',zIndex:show?'100':"null"}}
             >
                 <div style={{display:showLoader?"none":"block"}}>
                     <Toolbar cart={true}/>
                 </div>
-                <div className="firstPage" style={{display:showLoader?"none":"block"}} >
+                <div className="firstPage" style={{display:showLoader?"none":"block",backgroundColor:showReview?"white":"#F36B07"}} >
                     <div className="firstPageContent">
                         <YourCart />
                     </div>

@@ -18,10 +18,21 @@ const ReviewButton=(props)=>{
     if (changeCart){
         carts.push("buttonPadding");
     }
+
+
+    let backgroundClass=["backgroundButton"];
+    switch(showReview){
+        case true:
+            backgroundClass.push("backgroundButtonPos");
+            break;
+        default:
+            break; 
+    }
+
     return(
         <>
             <div className="ReviewButton">
-                <div className="backgroundButton" style={{top:showReview?"-7px":"-20px"}}>
+                <div className={backgroundClass.join(' ')}>
                     <button className={carts.join(' ')}>
                         <img src={Close} alt="close" className={cart.join(' ')} onClick={ChangeCart} style={{
                             paddingTop:changeCart?"5px":"0",transition:changeCart?"0.1s":"0.1s"}} 

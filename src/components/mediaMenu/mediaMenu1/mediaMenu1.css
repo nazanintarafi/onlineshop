@@ -109,3 +109,22 @@
 }
 
 
+.overFlowStyle1{
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+
+@media screen and (min-width: 360px) {
+    .overFlowStyle1{
+        max-height: 629px;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .overFlowStyle1{
+        max-height: 725px;
+        overflow: auto;
+    }
+}

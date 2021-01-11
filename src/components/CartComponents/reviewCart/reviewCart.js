@@ -1,11 +1,9 @@
 import React, { useState , useContext } from 'react';
 import './reviewCart.css';
-import ReviewButton from '../../UI/button/reviewButton/reviewButton';
 import CartBox from '../../../containers/ProductBox/cartBox/cartBox';
 import image01 from '../../../assets/images/Cosmetics (3).png';
 import Button from '../../UI/button/button';
 import {CartContext} from '../../../context/CartContext/cartContext';
-import {Link} from 'react-router-dom';
 
 const ReviewCart=(props)=>{
 
@@ -20,12 +18,13 @@ const ReviewCart=(props)=>{
 
     return(
         <>
-            <div className="ReviewCart" style={{display:showReview?"block":"none",paddingTop:showLoader?"215px":"50px"}}>
-
+            <div className="ReviewCart" style={{display:showReview?"block":"none",paddingTop:showLoader?"215px":null,
+                filter:showLoader?"blur(12px)":null,
+                zIndex:showLoader?"499":null,height:showLoader?"100vh":"100vh"}}>
                 {/*محتوا*/}
-                <div className="CartBoxReview" style={{display:showReview?"block":"none",filter:showLoader?"blur(12px)":null,
-                    zIndex:showLoader?"499":null,height:showLoader?"100vh":null}}>
-                    <div>
+                <div className="CartBoxReview" style={{display:showReview?"block":"none"}}>
+
+                    <div className="productPadding">
                         <CartBox
                             cartIMG={image01}
                             color="مشکی"
@@ -68,32 +67,37 @@ const ReviewCart=(props)=>{
                         </p>
                     </div>
                     <hr />
-                    <div className="finallReview">
-                        <p>این سفارش به آرین رئیسی به آدرس پاسداران، کوچه 
-                            نارنجستان دوم،  شماره تماس 09197149088 تحویل می گردد
-                        </p>
-                    </div>
-                    <div className="confirm" onClick={ShowLoaderReview}>
-                        <Button btnType="signUp">تایید و پرداخت</Button>
-                    </div>
-
-                </div>
-                <div className="Loader" style={{display:showLoader?"block":"none"}}>
-                        <div className="LoaderContent">
-                            <div class="lds-spinner">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <p>در حال انتقال به درگاه پرداخت</p>
+                    <div className="bottomStyle">
+                        <div className="finallReview">
+                            <p>این سفارش به آرین رئیسی به آدرس پاسداران، کوچه 
+                                نارنجستان دوم،  شماره تماس 09197149088 تحویل می گردد
+                            </p>
+                        </div>
+                        <div className="confirm" onClick={ShowLoaderReview}>
+                            <Button btnType="signUp">تایید و پرداخت</Button>
                         </div>
                     </div>
+                </div>
             </div>
+
+
+            {/*Loader*/}
+            <div className="Loader" style={{display:showLoader?"block":"none"}}>
+                <div className="LoaderContent">
+                    <div class="lds-spinner">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p>در حال انتقال به درگاه پرداخت</p>
+                </div>
+            </div>
+
         </>
     )
 }

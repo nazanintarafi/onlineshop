@@ -30,6 +30,7 @@ const SelectAddress=(props)=>{
     }
 
 
+
     return(
         <>
             <div style={{display:showMainMenu?"none":"block"}}>
@@ -45,6 +46,7 @@ const SelectAddress=(props)=>{
                     </div>
                 </div>
             </div>
+
 
             {/*محتوا*/}
             <div style={{display:showReview?"none":"block"}}>
@@ -62,6 +64,7 @@ const SelectAddress=(props)=>{
                     <Link to="/add-address" className="addAddress">
                         <Button btnType="signUp">افزودن آدرس جدید</Button>
                     </Link>
+
                 </div>
             </div>
         </>

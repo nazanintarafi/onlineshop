@@ -6,19 +6,19 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductBox from '../../containers/ProductBox/productBox';
 
 const Slider=(props)=>{
-    var settings = {
+    var mainSettings = {
             display:true,
             dots: false ,
             infinite: true,
             loop:true,
             speed: 500,
             slidesToShow:props.number,
-            slidesToScroll: 1
+            slidesToScroll: props.number
     };
     return(
         <>
             <div className="ProductSlider">
-                <SlidShow {...settings}>
+                <SlidShow {...mainSettings}>
                     <div className="SliderContent">
                         <ProductBox 
                             description='لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ ووط  '

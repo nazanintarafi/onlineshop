@@ -7,6 +7,7 @@
     margin: auto;
     padding-left: 11px;
     right: -3px;
+    top: -20px;
 }
 .ReviewButton .button{
     background-color: #DBDBEB;
@@ -18,7 +19,6 @@
     box-shadow: #DBDBEB 0px 6px 0px 1px;
     margin-left: 3.5px;
     margin-top: 16px;
-
 }
 .ReviewButton .buttonPadding{
     padding: 4px 8px 3px 9px;
@@ -35,9 +35,9 @@
     background-color: white;
     position: absolute;
     z-index: 300;
-    right: -16px;
+    right: -15px;
     top: 20px;
-    border-top: 21px solid #DBDBEB;
+    border-top: 45px solid #DBDBEB;
     border-left: #DBDBEB solid 15px;
     border-right: #DBDBEB solid 15px;
     border-bottom: 3px solid #DBDBEB;
@@ -50,11 +50,27 @@
     z-index: 300;
     left: -9px;
     top: 20px;
-    border-top: 21px solid #DBDBEB;
+    border-top: 24px solid #DBDBEB;
     border-right:#DBDBEB solid 9px;
     border-left: #DBDBEB solid 14px;
     border-radius: 0px 23px 4px 0px;
 }
 .ReviewButton .Rotate{
     transform:rotate(180deg);
+}
+.ReviewButton  .backgroundButtonPos{
+    top: -12px;
+}
+
+
+@media only screen and (min-width: 414px) {
+    .ReviewButton  .backgroundButtonPos{
+        top: -8px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ReviewButton .backgroundButtonPos{
+        top: -15px;
+    }
 }

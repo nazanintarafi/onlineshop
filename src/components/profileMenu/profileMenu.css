@@ -13,3 +13,10 @@
 .ProfileMenu li a{
     color: #080957;
 }
+
+
+@media screen and (min-width: 375px) {
+    .ProfileMenu{
+        top: 185px;
+    }
+}

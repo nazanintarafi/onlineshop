@@ -6,10 +6,10 @@ import {MenuContext} from '../../context/MenuContext/MenuContext';
 
 const SellerMenu=(props)=>{
 
-    const {showSellerMenu , show} = useContext(MenuContext);
+    const {showSellerMenu , show , showMainMenu} = useContext(MenuContext);
 
     return(
-        <ul className="SellerMenu"  style={{display:show?'block':'none',zIndex:showSellerMenu?"99":"0"}}>
+        <ul className="SellerMenu"  style={{display:show?'block':'none',zIndex:showSellerMenu?"99":"0",opacity:showMainMenu?"0":"1"}}>
             <main/>
             <li>
                 <h4>

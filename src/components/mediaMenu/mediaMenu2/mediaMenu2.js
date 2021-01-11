@@ -6,10 +6,10 @@ import {MediaContext} from '../../../context/MediaContext/mediaContext';
 
 const MediaMenu2=(props)=>{
 
-    const { mediaMenu2 , mediaMenu } = useContext(MediaContext);
+    const { mediaMenu2 , mediaMenu , mediaMenu1 } = useContext(MediaContext);
 
     return(
-        <ul className="MediaMenu2"  style={{display:mediaMenu?'block':'none',zIndex:mediaMenu2?"0":"0"}}>
+        <ul className="MediaMenu2"  style={{display:mediaMenu?'block':'none',zIndex:mediaMenu2?"0":"0",opacity:mediaMenu1?"0":"1",marginTop:"49px"}}>
             <li>
                 <h4>
                     <span>مرتب سازی</span>

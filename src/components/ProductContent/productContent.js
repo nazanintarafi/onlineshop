@@ -22,7 +22,7 @@ const ProductContent=(props)=>{
     }
 
     const productContext = useContext (ProductContext);
-    const { variety , color , warranty , price} = productContext;
+    const { variety , color , warranty , price } = productContext;
 
     const HidePrice=()=>{
         productContext.HidePrice()
@@ -210,6 +210,18 @@ const ProductContent=(props)=>{
                     </section>
                 </div>
             </div>
+
+            <div className="testt">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-xs-12 col-md-12">
+                            <img src="../assets/images/1-01.png" alt="image"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </>
     )
 }
